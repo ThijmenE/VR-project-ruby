@@ -1,4 +1,3 @@
-
 # Programma van Eisen
 
 Versienummer : 1
@@ -18,8 +17,8 @@ Datum : 2026-10-01
 | Datum      | Versie | Wie | Wijzigingen |
 | ---------- | ------ | --- | ----------- |
 | 2026-10-01 | 1.0    | Thijmen | PvE ingevuld |
-| 2026-10-01 | 1.0    | Marijn | PvE ingevuld |
-|            |        |     |             |
+| 2026-10-01 | 1.0    | Marijn  | PvE ingevuld |
+| 2026-10-05 | 1.1    | Marijn  |Spelfouten en punctuatie verbeterd |
 
 <div style="page-break-after: always;"></div>
 
@@ -61,9 +60,9 @@ bron: uit een mail van de opdrachtgever (Marjan):
 
 Het lijkt me leuk als de robot builder kan worden gebruikt voor basisscholieren om kort kennis te maken met VR
 Kiezen uit verschillende soorten robots of dieren.
-onderdelen kiezen en aankleden
-twee robots of dieren kiezen
-de robots of dieren iets laten doen, bv drinken, eten, spelen, dansen 
+Onderdelen kiezen en aankleden
+Twee robots of dieren kiezen
+De robots of dieren iets laten doen, bv drinken, eten, spelen, dansen 
 
 ### Eisen en wensen (MoSCoW)
 
@@ -76,7 +75,7 @@ Must have
 Should have
 - : Robots kunnen aankleden
 - : Meerdere robots
-- : thema van game moet een kinderkamer zijn
+- : Thema van game moet een kinderkamer zijn
 
 Could have
 - : Robot onderdelen liggen door de kamer verspreid
@@ -96,4 +95,4 @@ Zodra het project is afgerond krijgt ruby het project en komen er geen updates m
 
 ## Technische eisen
 
-Om de game te runnen heb je een computer/laptop nodig die VR ondersteund. Verouderde systemen gaat waarschijnlijk geen VR projecten kunnen runnen, daarom stellen we voor dat je tenminste windows 10/11 hebt of alternatief MacOS10.15 of hoger. en natuurlijk heb je een VR headset nodig, alle nieuwere VR headsets werken voor ons project.
+Om de game te runnen heb je een computer/laptop nodig die VR ondersteund. Verouderde systemen gaat waarschijnlijk geen VR projecten kunnen runnen, daarom stellen we voor dat je tenminste windows 10/11 hebt of alternatief MacOS10.15 of hoger. En natuurlijk heb je een VR headset nodig, alle nieuwere VR headsets werken voor ons project.

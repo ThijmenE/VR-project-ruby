@@ -17,8 +17,8 @@ Datum : 2026-09-30
 | Datum      | Versie | Wie | Wijzigingen |
 | ---------- | ------ | --- | ----------- |
 | 2026-09-30 | 1.0    | Thijmen    | Game Concept Document ingevuld|
-| 2026-09-30 | 1.0    | Marijn    | Game Concept Document ingevuld|
-|            |        |     |             |
+| 2026-09-30 | 1.0    | Marijn     | Game Concept Document ingevuld|
+| 2026-10-05 | 1.1    | Marijn     | Spelfouten en punctuatie verbeterd|
 
 <div style="page-break-after: always;"></div>
 
@@ -74,7 +74,7 @@ Verder zijn er andere interactieve dingen in de kamer om mee te spelen (blokken,
 | Kenmerk      | Beschrijving |
 | ------------ | ------------ |
 | Hoofdgenre   | Sandbox      |
-| Sub-genre(s) | physics sandbox |
+| Sub-genre(s) | Physics sandbox |
 | Inspiratie   | Assemble Bots van Wii Party U |
 
 ### Doelgroep
@@ -82,15 +82,15 @@ Verder zijn er andere interactieve dingen in de kamer om mee te spelen (blokken,
 | Kenmerk          | Beschrijving |
 | ---------------- | ------------ |
 | Leeftijdsgroep   |  Dit project word gemaakt voor kinderen in groep acht (11-13 jaar).|
-| Gamingervaring   | geen/minimaal |
-| Interesses       | vr/sandbox games |
+| Gamingervaring   | Geen/Minimaal |
+| Interesses       | VR/Sandbox games |
 | PEGI-classificatie | Pegi 3     |
 
 ### Platform
 
 | Platform | Versie / Specificaties |
 | -------- | ---------------------- |
-| computer/VR | een computer die VR kan runnen, een vr headset met 2 controllers. |
+| Computer/VR | Een computer die VR kan runnen, een VR headset met 2 controllers. |
 |          |                        |
 
 ### Speelstijl
@@ -99,7 +99,7 @@ Verder zijn er andere interactieve dingen in de kamer om mee te spelen (blokken,
 | -------------- | ------------ |
 | Perspectief    | First Person |
 | Spelersmodus   | Singeplayer  |
-| Sessie lengte  | 5-15 minuten |
+| Sessie lengte  | 5-15 Minuten |
 
 <div style="page-break-after: always;"></div>
 
@@ -113,14 +113,14 @@ Deze game heeft geen verhaallijn, omdat het een sandbox Game is.
 
 | Kenmerk       | Beschrijving |
 | ------------- | ------------ |
-| Tijdsperiode  | hedendaags   |
+| Tijdsperiode  | Hedendaags   |
 | Locatie(s)    | Kinder(slaap) kamer |
-| Sfeer / Toon  | relaxed en kalm |
-| Bijzonderheden | geen        |
+| Sfeer / Toon  | Relaxed en kalm |
+| Bijzonderheden | Geen        |
 
 ### Personages
 
-Er zijn geen belangrijke personages omdat het een sandbox game is.
+Er zijn geen belangrijke personages, omdat het een sandbox game is.
 
 <div style="page-break-after: always;"></div>
 
@@ -135,7 +135,7 @@ Er zijn geen belangrijke personages omdat het een sandbox game is.
 
 | Actie       | Toets / Knop | Platform |
 | ----------- | ------------ | -------- |
-| Bewegen     | linker joystick | VR    |
+| Bewegen     | Linker joystick | VR    |
 | Springen    | A knop       | VR       |
 | Draaien     | Rechter joystick | VR   |
 | Knijpen     | Trigger button links en rechts | VR |
@@ -148,7 +148,7 @@ Er zijn geen belangrijke personages omdat het een sandbox game is.
 | ---------- | ------------ |
 | Progressie | Een robot in elkaar zetten |
 | Unlocks    | De robot krijgen die in elkaar is gezet |
-| Beloningen | reacties van gemaakte robot krijgen |
+| Beloningen | Reacties van gemaakte robot krijgen |
 
 <div style="page-break-after: always;"></div>
 
@@ -160,9 +160,9 @@ Er zijn geen belangrijke personages omdat het een sandbox game is.
 
 | Kenmerk          | Beschrijving |
 | ---------------- | ------------ |
-| ModelStijl       | low poly meshes |
+| ModelStijl       | Low poly meshes |
 | UI-stijl         | Cartoony     |
-| Referentiespellen | Model: Muck, UI: Slime rancher 2 |
+| Referentiespellen| Model: Muck, UI: Slime rancher 2 |
 | Kleurenpalet     | Felle makkelijk te identificeerbaar (foto hier onder) |
 
 ![Kleuren-Palet](../Opdracht-1//Fotos/KleurenPalet.png)
@@ -172,9 +172,9 @@ Er zijn geen belangrijke personages omdat het een sandbox game is.
 | Kenmerk           | Beschrijving |
 | ----------------- | ------------ |
 | Muziekstijl       | Ambient      |
-| Sfeer             | rustige achtergrond muziek |
-| Geluidseffecten   | wanneer objecten worden opgepakt/als er op word gericht |
-| Stemopnames       | geen         |
+| Sfeer             | Rustige achtergrond muziek |
+| Geluidseffecten   | Wanneer objecten worden opgepakt/als er op word gericht |
+| Stemopnames       | Geen         |
 
 <div style="page-break-after: always;"></div>
 
@@ -186,7 +186,7 @@ Er zijn geen belangrijke personages omdat het een sandbox game is.
 | Programmeertaal      | C#             | Dit is de taal die gebruikt word in Unity. |
 | Versiebeheersysteem  | Git            | Alle game engines ondersteunen Git. |
 | Art tool(s)          | Blender        | Blender is gratis en wij hebben allebei ervaring hierin. |
-| Audio tool(s)        | Unity Native Audio System | is ingebouwd in Unity |
+| Audio tool(s)        | Unity Native Audio System | Is ingebouwd in Unity |
 
 **Minimale systeemvereisten (speler):**
 
@@ -216,8 +216,8 @@ Er zijn geen belangrijke personages omdat het een sandbox game is.
 | Sprint / Week | Doel | Deliverable |
 | ------------- | ---- | ----------- |
 | Week 1        | Basis elementen game | ja |
-| Week 2        | robot maker machine | ja |
-| Week 3        | robot praten/emoties geven | ja |
+| Week 2        | Robot maker machine | ja |
+| Week 3        | Robot praten/emoties geven | ja |
 | Week 4        | Playtesting van leerlingen/studenten | ja |
 
 <div style="page-break-after: always;"></div>
@@ -226,9 +226,9 @@ Er zijn geen belangrijke personages omdat het een sandbox game is.
 
 **Haalbaarheid:**
 
-Het game design van ons project is te halen omdat we redelijk wat ervaring hebben in Unity en vooral low poly models gaan maken.
+Het game design van ons project is te halen, omdat we redelijk wat ervaring hebben in Unity en vooral low poly models gaan maken.
 
-De technologie is te halen omdat we vooral 2 grote functies nodig hebben (robot machine maker en de robot persoonlijkheden/emoties). We kunnen hierdoor makkelijk taken verdelen zodat eerst 1 iemand de machine kan doen en de ander de emoties. Terwijl het andere teamlid bezig is met een grote functie kan er veel gedaan worden aan kleinere systemen, zodat we de hele tijd bezig zijn.
+De technologie is te halen, omdat we vooral 2 grote functies nodig hebben (robot machine maker en de robot persoonlijkheden/emoties). We kunnen hierdoor makkelijk taken verdelen zodat eerst 1 iemand de machine kan doen en de ander de emoties. Terwijl het andere teamlid bezig is met een grote functie kan er veel gedaan worden aan kleinere systemen, zodat we de hele tijd bezig zijn.
 
 Wij denken dat dit project te halen is in 4 sprints/weken omdat we gaan werken in de preset van VR Unity, waardoor de basis van sommige vr punten gedaan zijn.
 

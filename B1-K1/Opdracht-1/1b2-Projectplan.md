@@ -73,7 +73,7 @@ Should have
 
 Could have
 - : Score tracking in minigames
-- : meer expressieve robot
+- : Meer expressieve robot
 
 Won't have (now)
 - : Grotere map/meerdere kamers

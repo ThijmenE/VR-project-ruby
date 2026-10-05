@@ -21,7 +21,7 @@ Datum : 2026-10-01
 ## Afspraken met teamleden
 
 Wij gaan de scrum methode gebruiken tijdens ons project.
-Daily standup tussen 8:30 en 9:00 elke dag in 2.11a (tenzij we niet op locatie zijn).
+Daily standup tussen 8:30 en 9:00 elke dag in 2.11a (tenzij we niet op locatie zijn of als het lokaal bezet is).
 Sprints duren 1 week (vakantie telt niet mee).
 Het project duurt 4 sprints
 
@@ -36,7 +36,7 @@ Voor elke grote feature of kleine groep features, word verschillende branches aa
 
 Alle nodige features worden in de Github project gestopt en worden goed op de tijdlijn genoteerd. In elke feature word beschreven hoelang je denkt dat het duurt om te maken en wanneer deze is afgerond in de beschrijving van de feature. Als er issues zijn word die in het issues blok gestopt zodat teamgenoten ernaar kunnen kijken en kan oplossen.
 
-ben je ziek, voor 9 uur melden aan groep.
+Ben je ziek, voor 9 uur melden aan groep.
 
 Overleg afspraken: .../B1-K2/Opdracht-5/Videos/AfsprakenPortfolio.mp4
 
