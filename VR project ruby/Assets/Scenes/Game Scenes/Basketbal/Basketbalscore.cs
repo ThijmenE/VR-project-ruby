@@ -4,14 +4,15 @@ using TMPro;
 public class Basketbalscore : MonoBehaviour
 {
     private int score = 0;
+
     public TextMeshProUGUI scoreText;
 
-    void Start()
+    private void Start()
     {
         UpdateScoreUI();
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Basketbal"))
         {
@@ -20,11 +21,17 @@ public class Basketbalscore : MonoBehaviour
         }
     }
 
-    void UpdateScoreUI()
+    private void UpdateScoreUI()
     {
         if (scoreText != null)
         {
             scoreText.text = "Score: " + score;
         }
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
+        UpdateScoreUI();
     }
 }
