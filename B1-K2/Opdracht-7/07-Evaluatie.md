@@ -55,7 +55,3 @@ Dit document is opgesteld als bewijs na oplevering van het (deel)product. Hierin
 ## Verbtervoorstellen
 
 >:memo:In dit onderdeel worden de verbeterpunten benoemd voor het proces, product, team en jezelf. Je geeft aan hoe deze verbeterpunten in de toekomst kunnen worden aangepakt.
-
-
-
-
