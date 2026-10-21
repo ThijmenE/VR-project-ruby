@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 
+Datum : 2026-10-21
 
 <div style="page-break-after: always;"></div>
 
@@ -16,8 +16,8 @@ Datum :
 
 | Datum      | Versie | Wie | Wijzigingen |
 | ---------- | ------ | --- | ----------- |
-| yyyy-mm-dd | x.x    |     |             |
-|            |        |     |             |
+| 2026-10-21 | 1.0    |  Marijn | testen ingevuld      |
+| 2026-10-21 | 1.0    | Thijmen | testen ingevuld      |
 |            |        |     |             |
 
 
@@ -45,53 +45,59 @@ In dit document wordt het testplan met testcases omschreven van een (deel van ee
 
 ## Overzicht van de testen functionaliteiten
 
->:memo: Bepaal en maak een lijst met functionaliteiten (user stories) die jij gaat testen. Zorg voor test data indien nodig. <br> **Let op**: Je moet aantonen dat jij een aantal functionaliteiten test en dat jij een aantal functionaliteiten door een ander laat testen.
+Playtest 1 (Halverwege project)
+
+Darten, Trigger, Grip, Rondkijken, Lopen, Springen, Menu UI, Bowling baan, Basketbal, bouw blokken, reset button, blokken spawner, menu muziek, muziek knop, knop manager, uileg/tutorial, prullenbak
+
+Playtest 2 (Einde project)
 
 ## Test omgeving
 
->:memo: Beschrijf wat voor test je gaat uitvoeren, bijvoorbeeld Unit test, gebruikerstest etc. Beschrijf hier hoe de testomgeving opgebouwd moet gaan worden of hoe de (deel van de) applicatie getest moet worden. <br> **Let op**: Zorg ervoor dat dat je een test data gebruikt die representatief is voor een echte situatie.
+
+Wij zijn bij ruby om onze game te laten testen door kinderen van de basischool. We testen vandaag: Playtesting, gebruikerstest, usability testing,
+
+Voor test 1 zijn wij bij ruby met een vr bril , omdat niet veel een eigen vr bril hebben. Wij zetten de build klaar en de testers kunnen gelijk bezig.
 
 ## Planning testactiviteiten
 
->:memo: Maak een overzicht van de testen, plan daarbij wie de test gaat uitvoeren en wanneer en hoeveel tijd ervoor nodig is. Zie [Testplan](###Testplan).
+>:memo: Maak een overzicht van de testen, plan daarbij wie de test gaat uitvoeren en wanneer en hoeveel tijd ervoor nodig is. Zie     - [Testplan](#testplan).
 
 |Testcases volgnr. | Tester | Wanneer | Doorlooptijd test |
 |------------------|--------|---------|-------------------|
-| #1 |	Tester1 |	yyyy-mm-dd |	 1 dag |
-| #2 |	Tester2 |	yyyy-mm-dd |	 2 uur |
-| #3 |	Tester1 |	yyyy-mm-dd |	 2.5 uur|
-| #4 |	Tester2 |	yyyy-mm-dd |	 30 min |
+| #1 |	Tester1 |	2026-10-21 |	 5 a 15 min |
+| #2 |	Tester2 |	2026-10-21 |	 5 a 15 min |
+| #3 |	Tester3 |	2026-10-21 |	 5 a 15 min |
+| #4 |	Tester4 |	2026-10-21 |	 5 a 15 min |
+| #5 |	Tester5 |	2026-10-21 |	 5 a 15 min |
+| #6 |	Tester6 |	2026-10-21 |	 5 a 15 min |
 
 <div style="page-break-after: always;"></div>
 
 ### Testplan
 
-Benodigde informatie voor het testen van de applicatie.
-|Inlogcodes | Test- en Databestanden (indien van toepassing) | Extra informatie |
-|--|--|--|
-|Geef voor elke test-actor een gebruikersnaam en wachtwoord. | Beschrijf welke bestanden zijn gebruikt om de systeemtest uit te voeren; zowel voorafgaand aan de systeemtest als tijdens de systeemtest. | Hierin kun je alles beschrijven wat je extra hebt gebruikt of nodig had om de test uit te voeren. |
-|-- |-- |-- |
-| | | |
-| | | |
-| | | |
-| | | |
+Er is een VR bril nodig om te kunnen testen, we zijn nog niet klaar want dit is een tussentijdse test. Daarom hebben we nog geen build klaar.
+
+Je hebt een app nodig van de VR bril om hem te gebruiken op je pc. Zodra de game klaar is moet de game gedownload worden uit de repository en kan daarna lokaal gelanceerd worden.
 
 ### Testcases en resultaten
 
 | Volgnr | Functionaliteit | Scenario | Test input | Verwachte werking\output | Werkelijke werking\output | Conclusie test |
 |--------|------------------|----------|------------|--------------------------|--------------------------|----------------|
 | |Beschrijving van de functionaliteit (vaak genoemd in functioneel ontwerp) | Hoe gaat getest worden of de functie werkt? | Welke test-data gaan gebruikt worden? | Welk resultaat verwacht je van de functie? | Wat is het resultaat van de test? | Werkt de functie zoals verwacht? Indien van niet geef aan wat fout is. |
-| #1 | | | | | | |
-| #2 | | | | | | |
-| #3 | | | | | | |
-| #4 | | | | | | |
-| #5 | | | | | | |
-| #6 | | | | | | |
-| #7 | | | | | | |
-| #8 | | | | | | |
-| #9 | | | | | | |
-| 10 | | | | | | |
-| ... | | | | | | |
+| #1 | Darten | de minigame spelen | performence testers en code| lastig om te spelen maar dat is de bedoeling (clipping problemen)| | |
+| #1 | Bowlen | de minigame spelen| performence testers en code| Makkelijk te spelen| | |
+| #1 | Bouwblokken | de minigame spelen| performence testers en code| makkelijk maar clipping problemen (weten we vanaf)| | |
+| #1 | Basketbal | de minigame spelen| performence testers en code| moeilijk te spelen maar dat is de bedoeling| | |
+| #1 | Knoppenmanager | De knoppen gebruiken| performence code| Dat de knoppen werken| | |
+| #1 | Blokken spawner| De knoppen gebruiken| performence code| Dat de knoppen werken| | |
+| #2 | Darten | de minigame spelen | performence testers en code| lastig om te spelen maar dat is de bedoeling (clipping problemen)| | |
+| #2 | Bowlen | de minigame spelen| performence testers en code| Makkelijk te spelen| | |
+| #2 | Bouwblokken | de minigame spelen| performence testers en code| makkelijk maar clipping problemen (weten we vanaf)| | |
+| #2 | Basketbal | de minigame spelen| performence testers en code| moeilijk te spelen maar dat is de bedoeling| | |
+| #2 | Knoppenmanager | De knoppen gebruiken| performence code| Dat de knoppen werken| | |
+| #2 | Blokken spawner| De knoppen gebruiken| performence code| Dat de knoppen werken| | |
+
+
 
 
 
