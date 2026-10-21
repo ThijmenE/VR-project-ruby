@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -13,8 +14,7 @@ public class UIController : MonoBehaviour
 
     public void StartGame() // Loads a scene from the build profiles based on name
     {
-        // SceneManager.LoadScene(sceneName);
-        Debug.Log("loading scene");
+        SceneManager.LoadScene("Kamer");
     }
 
     public void StopGame() // closes the game when a build has been made
