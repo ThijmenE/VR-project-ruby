@@ -1,6 +1,6 @@
 # Testen
 
-Versienummer : 1
+Versienummer : 1.1
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-10-21
+Datum : 2026-10-22
 
 <div style="page-break-after: always;"></div>
 
@@ -16,9 +16,10 @@ Datum : 2026-10-21
 
 | Datum      | Versie | Wie | Wijzigingen |
 | ---------- | ------ | --- | ----------- |
-| 2026-10-21 | 1.0    |  Marijn | testen ingevuld      |
-| 2026-10-21 | 1.0    | Thijmen | testen ingevuld      |
-|            |        |     |             |
+| 2026-10-21 |  1.0   |  Marijn | Planning van testen ingevuld      |
+| 2026-10-21 |  1.0   | Thijmen | Planning van testen ingevuld      |
+| 2026-10-22 |  1.1   |  Marijn |  Alle data genoteerd + eindconclusie en verbetervoorstellen |
+| 2026-10-22 |  1.1   |  Thijmen | eindconclusie en verbetervoorstellen|
 
 
 <div style="page-break-after: always;"></div>
@@ -29,7 +30,7 @@ Datum : 2026-10-21
   - [Versiebeheer](#versiebeheer)
   - [Inhoudsopgave](#inhoudsopgave)
   - [Inleiding](#inleiding)
-  - [Overzicht van de testen functiionaliteiten](#overzicht-van-de-testen-functiionaliteiten)
+  - [Overzicht van de testen functionaliteiten](#overzicht-van-de-testen-functionaliteiten)
   - [Test omgeving](#test-omgeving)
   - [Planning testactiviteiten](#planning-testactiviteiten)
     - [Testplan](#testplan)
@@ -53,23 +54,24 @@ Playtest 2 (Einde project)
 
 ## Test omgeving
 
-
 Wij zijn bij ruby om onze game te laten testen door kinderen van de basischool. We testen vandaag: Playtesting, gebruikerstest, usability testing,
 
 Voor test 1 zijn wij bij ruby met een vr bril , omdat niet veel een eigen vr bril hebben. Wij zetten de build klaar en de testers kunnen gelijk bezig.
 
 ## Planning testactiviteiten
 
->:memo: Maak een overzicht van de testen, plan daarbij wie de test gaat uitvoeren en wanneer en hoeveel tijd ervoor nodig is. Zie     - [Testplan](#testplan).
+Playtest 1:
 
 |Testcases volgnr. | Tester | Wanneer | Doorlooptijd test |
 |------------------|--------|---------|-------------------|
-| #1 |	Tester1 |	2026-10-21 |	 5 a 15 min |
-| #2 |	Tester2 |	2026-10-21 |	 5 a 15 min |
-| #3 |	Tester3 |	2026-10-21 |	 5 a 15 min |
-| #4 |	Tester4 |	2026-10-21 |	 5 a 15 min |
-| #5 |	Tester5 |	2026-10-21 |	 5 a 15 min |
-| #6 |	Tester6 |	2026-10-21 |	 5 a 15 min |
+| #1 |	Tester1 |	2026-10-21 |	 15 min |
+| #2 |	Tester2 |	2026-10-21 |	 15 min |
+| #3 |	Tester3 |	2026-10-21 |	 5 min  |
+| #4 |	Tester4 |	2026-10-21 |	 10 min |
+| #5 |	Tester5 |	2026-10-21 |	 10 min |
+| #6 |	Tester6 |	2026-10-21 |	 5 min  |
+| #7 |	Tester7 |	2026-10-21 |	 5 min  |
+| #8 |	Tester8 |	2026-10-21 |	 5 min  |
 
 <div style="page-break-after: always;"></div>
 
@@ -91,11 +93,11 @@ Je hebt een app nodig van de VR bril om hem te gebruiken op je pc. Zodra de game
 | #1 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Niet getest| Niet getest|
 | #1 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Niet getest| Niet getest|
 | #2 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen clipping problemen, pijltjes gaan verkeerdom in het bord.| Geen clipping dus dat is goed, alleen nog fixen dat de pijtles met de goede kant het bord in gaan.|
-| #2 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen| gooit vaak door de grond een muur, bal gooit niet als een bowlingbal| Werkt zoals verwacht. Wisten van de issues af.|
-| #2 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| gebruikt de blokken goed, en gooit ze weg via prullenbak. alleen clippen de blokken door de muur en grond.| We wisten van de clipping issue af.|
+| #2 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen| Gooit vaak door de grond een muur, bal gooit niet als een bowlingbal| Werkt zoals verwacht. Wisten van de issues af.|
+| #2 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Gebruikt de blokken goed, en gooit ze weg via prullenbak. alleen clippen de blokken door de muur en grond.| We wisten van de clipping issue af.|
 | #2 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Niet getest| Niet getest|
 | #2 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken|Werkt goed, geen problemen|Geen issues|
-| #2 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed, alleen kan je nog te veel spammen met blokken spawnen| werkt goed, iets langere cooldown op de spawn|
+| #2 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed, alleen kan je nog te veel spammen met blokken spawnen| Werkt goed, iets langere cooldown op de spawn|
 | #3 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Niet getest| Niet getest|
 | #3 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen| Niet getest| Niet getest|
 | #3 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Bouwen werkt goed, zelfde issue met clipping| Werkt zoals verwacht, wisten van de clipping issue af.|
@@ -123,13 +125,13 @@ Je hebt een app nodig van de VR bril om hem te gebruiken op je pc. Zodra de game
 | #7 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen problemen met clipping, wel lastig.| Werkt beter als verwacht met clipping. pijltjes moeten gelijk naar je hand als je ze oppakt|
 | #7 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins.| Werkt zoals we hadden verwacht. gelijk naar hand als je de bal oppakt, dan word het makkelijker.|
 | #7 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Bouwt met blokken, wel weer clipping problemen| naast clipping geen problemen met het bouwen zelf|
-| #7 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| niet door plafond of muur gegaan, gooien ging goed| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
+| #7 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Niet door plafond of muur gegaan, gooien ging goed| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
 | #7 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
 | #7 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
-| #8 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen problemen met clipping, wel lastig om goed te gooien.| Werkt beter als verwacht met clipping. pijltjes moeten gelijk naar je hand als je ze oppakt.|
+| #8 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen problemen met clipping, wel lastig om goed te gooien.| Werkt beter als verwacht met clipping. Pijltjes moeten gelijk naar je hand als je ze oppakt.|
 | #8 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins. De pins omgooien werkt goed| Werkt zoals we hadden verwacht. gelijk naar hand als je de bal oppakt, dan word het makkelijker.|
-| #8 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Bouwt veel met blokken, wel weer clipping problemen| naast clipping geen problemen met het bouwen zelf|
-| #8 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| niet door plafond of muur gegaan, gooien ging goed| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
+| #8 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Bouwt veel met blokken, wel weer clipping problemen| Naast clipping geen problemen met het bouwen zelf|
+| #8 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Niet door plafond of muur gegaan, gooien ging goed| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
 | #8| Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
 | #8 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
 
