@@ -1487,8 +1487,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23df5b65052bd7a44bd9c207b775b32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bowlenscript
-  pins: []
-  BowlingBal: {fileID: 0}
+  pins:
+  - {fileID: 1792674609}
+  - {fileID: 1710192619}
+  - {fileID: 140837580}
+  - {fileID: 2026499956}
+  - {fileID: 1781060417}
+  - {fileID: 1296676724}
+  - {fileID: 2060219688}
+  - {fileID: 1934949688}
+  - {fileID: 1830461253}
+  - {fileID: 1401119153}
+  BowlingBal: {fileID: 1856909889}
 --- !u!136 &132811711
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4982,7 +4992,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!23 &360344977
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5052,8 +5062,8 @@ Transform:
   m_GameObject: {fileID: 360344975}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0053403326, y: 0.9999858, z: -0, w: 0}
-  m_LocalPosition: {x: 8.72, y: 1.47, z: 13.974}
-  m_LocalScale: {x: 75, y: 75, z: 75}
+  m_LocalPosition: {x: 8.593, y: 1.47, z: 13.974}
+  m_LocalScale: {x: 136.875, y: 136.875, z: 136.875}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1893668991}
@@ -5321,8 +5331,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23df5b65052bd7a44bd9c207b775b32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bowlenscript
-  pins: []
-  BowlingBal: {fileID: 0}
+  pins:
+  - {fileID: 892660751}
+  - {fileID: 1264586446}
+  BowlingBal: {fileID: 1034294421}
 --- !u!1 &375844895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6117,7 +6129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &420931108
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9128,13 +9140,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671270736}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.9999994, y: -0, z: -0, w: 0.0011307448}
   m_LocalPosition: {x: 0, y: 0.078, z: 0}
   m_LocalScale: {x: 1.5, y: 14, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1264586451}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 179.87, y: 0, z: 0}
 --- !u!65 &671270738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9715,13 +9727,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709373896}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.9999994, y: -0, z: -0, w: 0.0011307448}
   m_LocalPosition: {x: 0, y: 0.078, z: 0}
   m_LocalScale: {x: 1.5, y: 14, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1034294426}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 179.87, y: 0, z: 0}
 --- !u!65 &709373898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11205,7 +11217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -3887185075125053422, guid: c6984c48aed9a154294088f4265d8478, type: 3}
@@ -11616,6 +11628,11 @@ Transform:
   - {fileID: 1580734016}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &837154120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4677460305500781396, guid: 753505d367f39d04c8ef944e9491a149, type: 3}
+  m_PrefabInstance: {fileID: 173854645}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &845529740
 GameObject:
   m_ObjectHideFlags: 0
@@ -12003,6 +12020,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871475562}
   m_CullTransparentMesh: 1
+--- !u!1 &873097727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4677460305500781396, guid: 753505d367f39d04c8ef944e9491a149, type: 3}
+  m_PrefabInstance: {fileID: 551183290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &879560217
 GameObject:
   m_ObjectHideFlags: 0
@@ -12123,7 +12145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PermittedDisplacementAxes: 7
+  m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
   m_AllowOneHandedScaling: 1
@@ -12251,7 +12273,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 3.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -12289,7 +12311,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!4 &892660756
 Transform:
   m_ObjectHideFlags: 0
@@ -12661,6 +12683,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.999999, y: 2.2204459e-16, z: 10}
   m_Center: {x: 0, y: 0, z: -0.000000026484486}
+--- !u!1 &926484871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4677460305500781396, guid: 753505d367f39d04c8ef944e9491a149, type: 3}
+  m_PrefabInstance: {fileID: 1549155057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &926520564
 GameObject:
   m_ObjectHideFlags: 0
@@ -14517,7 +14544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PermittedDisplacementAxes: 7
+  m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
   m_AllowOneHandedScaling: 1
@@ -14645,7 +14672,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 3.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -14683,7 +14710,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!4 &1034294426
 Transform:
   m_ObjectHideFlags: 0
@@ -17406,7 +17433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PermittedDisplacementAxes: 7
+  m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
   m_AllowOneHandedScaling: 1
@@ -17534,7 +17561,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 3.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -17572,7 +17599,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!4 &1264586451
 Transform:
   m_ObjectHideFlags: 0
@@ -17923,7 +17950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1294397275
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21014,7 +21041,7 @@ RectTransform:
   m_Father: {fileID: 2078568803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -22616,8 +22643,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbd49652c7fd5d438e72c5ef2375f7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::basketbalreset
-  basketBallen: []
-  basketbalScore: {fileID: 0}
+  basketBallen:
+  - {fileID: 837154120}
+  - {fileID: 873097727}
+  - {fileID: 926484871}
+  basketbalScore: {fileID: 2100521067}
 --- !u!1 &1684130896
 GameObject:
   m_ObjectHideFlags: 0
@@ -25487,7 +25517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
-  m_PermittedDisplacementAxes: 7
+  m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
   m_AllowOneHandedScaling: 1
@@ -25615,7 +25645,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 2.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -25927,7 +25957,7 @@ RectTransform:
   m_Father: {fileID: 1595596909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -29104,13 +29134,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074794675}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.9999994, y: -0, z: -0, w: 0.0011307448}
   m_LocalPosition: {x: 0, y: 0.078, z: 0}
   m_LocalScale: {x: 1.5, y: 14, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 892660756}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 179.87, y: 0, z: 0}
 --- !u!65 &2074794677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29850,7 +29880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4754c52d39fa14b84b803f86948816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Basketbalscore
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 446191422}
 --- !u!64 &2100521068
 MeshCollider:
   m_ObjectHideFlags: 0
