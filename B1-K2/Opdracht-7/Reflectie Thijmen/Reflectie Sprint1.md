@@ -16,7 +16,7 @@ Datum : 2026-10-19
 - [Wat je anders zou doen in een volgende Sprint](#wat-je-anders-zou-doen-in-een-volgende-sprint)
 
 ## Je eigen bijdrage en leerervaringen
-Ik en Marijn hebben afgelopen week aan sprint 1 van ons project.
+Ik en Marijn hebben afgelopen week gewerkt aan sprint 1 van ons project.
 Mijn bijdrage is: Darten, Menu UI en Bouwblokken spawner.
 Ik heb niet eerder met VR gewerkt waardoor ik wat langzamer mijn werk af kreeg.
 Het darten in specifiek heeft me veel tijd gekost omdat ik moest zorgen dat de pijltes aan het dartbord bleven plakken maar er ook weer af te halen zijn met de VR pak functies.
