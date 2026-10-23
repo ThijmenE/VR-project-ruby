@@ -16,7 +16,7 @@ Datum : 2026-10-23
 
 ## Je eigen bijdrage en leerervaringen
 Ik en Thijmen hebben aan de game gewerkt voor Ruby.
-Mijn bijdrage is de grab op de controller, Dart pijltjes draaien nu en gaat met de tip in het bord. Bouw blokken verder uitgewerkt en andere collisions toegevoegd. Basketbal heeft nu textures. Tutorial heb je nu open wanneer je de game start en je kan door 8 cards heen kijken en lezen. Ook hadden we deze week een playtest bij ruby. Daar heb ik de data van genoteerd in de file Testen.md.
+Mijn bijdrage is de grab op de controller. Eerst kon je met de controller als je een item beet had nog naar voren en achteren doen, waardoor je de minigames niet goed kon spelen of juist vals kon spelen. Dus dat heb ik nu aangepast zodat je de objecten niet meer kan veranderen van positie, Dart pijltjes draaien nu en gaat met de tip in het bord. Bouw blokken verder uitgewerkt en andere collisions toegevoegd. Basketbal heeft nu textures. Tutorial heb je nu open wanneer je de game start en je kan door 8 cards heen kijken en lezen. Ook hadden we deze week een playtest bij ruby. Daar heb ik de data van genoteerd in de file Testen.md.
 
 Het debuggen van alle minigames heeft deze week best wel wat tijd gekost, dat zorgt ervoor dat de planning wel krap gaat worden.
 Door de playtest hebben we ook best wel wat tijd verloren, maar we hebben wel best veel feedback gekregen waar we weer mee verder kunnen.
