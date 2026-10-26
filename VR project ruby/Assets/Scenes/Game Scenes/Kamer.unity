@@ -5269,6 +5269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basketbal (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5841250146203221535, guid: 66856042b9346744dac8de1afd73ee15, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8326512124595109478, guid: 66856042b9346744dac8de1afd73ee15, type: 3}
       propertyPath: m_LocalScale.x
       value: 50
@@ -5324,6 +5328,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2365344892686137983, guid: 66856042b9346744dac8de1afd73ee15, type: 3}
+    - {fileID: 1016531576776335462, guid: 66856042b9346744dac8de1afd73ee15, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8326512124595109478, guid: 66856042b9346744dac8de1afd73ee15, type: 3}
       insertIndex: -1
@@ -27834,6 +27839,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2365344892686137983, guid: 66856042b9346744dac8de1afd73ee15, type: 3}
+    - {fileID: 1016531576776335462, guid: 66856042b9346744dac8de1afd73ee15, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8326512124595109478, guid: 66856042b9346744dac8de1afd73ee15, type: 3}
       insertIndex: -1
@@ -27893,7 +27899,8 @@ PrefabInstance:
       value: Basketbal (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4346526763908708820, guid: 04359ce24b3b637499dec4c66215452e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04359ce24b3b637499dec4c66215452e, type: 3}
