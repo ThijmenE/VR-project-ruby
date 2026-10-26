@@ -9,7 +9,7 @@ public class BouwBlokkenSpawn : MonoBehaviour
     [SerializeField] private GameObject blok1x2;
     [SerializeField] private GameObject blok2x2;
 
-    public bool isSpawning = false;
+    private bool isSpawning = false;
 
     public void SpawnButton1x1()
     {

@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class BlokMenu : MonoBehaviour
 {
     public GameObject blokMenu;
-    private bool status = true;
+    private bool status = false;
     private InputAction yButtonAction;
     void Awake()
     {
