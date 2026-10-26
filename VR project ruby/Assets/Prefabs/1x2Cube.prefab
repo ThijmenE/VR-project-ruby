@@ -4054,7 +4054,6 @@ GameObject:
   - component: {fileID: 4492646398277560440}
   - component: {fileID: 1053511085957946087}
   - component: {fileID: 5434334603099723258}
-  - component: {fileID: 2652811626649946568}
   m_Layer: 0
   m_Name: 1x2Cube
   m_TagString: Blok
@@ -4259,18 +4258,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &2652811626649946568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9059475462330643758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52104b3d1a208c148bb19221380c5820, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollBouwblokken
 --- !u!1 &9099967489108850325
 GameObject:
   m_ObjectHideFlags: 0

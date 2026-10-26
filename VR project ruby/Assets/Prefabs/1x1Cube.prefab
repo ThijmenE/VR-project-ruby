@@ -559,7 +559,6 @@ GameObject:
   - component: {fileID: 455281239283689549}
   - component: {fileID: 5739898250505523763}
   - component: {fileID: 2433804068941249170}
-  - component: {fileID: -4030502351941882841}
   m_Layer: 0
   m_Name: 1x1Cube
   m_TagString: Blok
@@ -766,18 +765,6 @@ MonoBehaviour:
   m_MinimumScaleRatio: 1
   m_MaximumScaleRatio: 1
   m_ScaleMultiplier: 0.25
---- !u!114 &-4030502351941882841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2916595089074878231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52104b3d1a208c148bb19221380c5820, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollBouwblokken
 --- !u!1 &3111428470335181043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,7 +1845,7 @@ Transform:
   m_GameObject: {fileID: 7510562778317792051}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0.935, z: 0}
+  m_LocalPosition: {x: 0, y: 0.935, z: -0}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
