@@ -8,6 +8,11 @@ TagManager:
   - Basketbal
   - DartBoard
   - Blok
+  - Head
+  - Torso
+  - Legs
+  - Hat
+  - Face
   layers:
   - Default
   - TransparentFX
