@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 public class RobotButton : MonoBehaviour
 {
+    [SerializeField] private bool randomizePersonalityOnBuild = true;
+    [SerializeField] private RobotPersonality personality = RobotPersonality.Happy;
+
+    public RobotPersonality Personality => personality;
+
     public GameObject head;
     public GameObject torso;
     public GameObject legs;
@@ -48,7 +53,28 @@ public class RobotButton : MonoBehaviour
             legsMeshOutput.sharedMesh = legsMeshInput.sharedMesh;
             hatMeshOutput.sharedMesh = hatMeshInput != null ? hatMeshInput.sharedMesh : null;
             faceMeshOutput.sharedMesh = faceMeshInput != null ? faceMeshInput.sharedMesh : null;
-            Debug.Log("Create robot");
+
+            if (robot == null && headMeshOutput.transform.parent != null)
+            {
+                robot = headMeshOutput.transform.parent.gameObject;
+            }
+
+            if (robot == null)
+            {
+                robot = headMeshOutput.gameObject;
+            }
+
+            if (ItemsOpslaan.Count == 0)
+            {
+                BeginPos(robot);
+            }
+
+            if (randomizePersonalityOnBuild)
+            {
+                personality = (RobotPersonality)Random.Range(0, System.Enum.GetValues(typeof(RobotPersonality)).Length);
+            }
+
+            Debug.Log($"Created robot with {personality} personality.");
         }
         else
         {
