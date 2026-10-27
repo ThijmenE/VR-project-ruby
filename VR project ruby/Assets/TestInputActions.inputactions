@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "TestInputActions",
+    "maps": [
+        {
+            "name": "HandInteractions",
+            "id": "41e3a60a-f0f7-47ce-869b-990cab0bcf48",
+            "actions": [
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "acd63da5-95e8-460c-95d0-afdbacdca1ef",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ecbaf87c-83b9-4f48-92ea-fa7a8caa6832",
+                    "path": "<XRController>{RightHand}/{GripButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
