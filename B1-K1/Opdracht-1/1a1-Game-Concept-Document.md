@@ -1,6 +1,6 @@
 # Game Concept Document
 
-Versienummer : 1
+Versienummer : 1.2
 
 Auteur : Thijmen, Marijn
 

@@ -1,6 +1,6 @@
 # Programma van Eisen
 
-Versienummer : 1.2
+Versienummer : 1.3
 
 Auteur : Thijmen, Marijn
 
@@ -19,7 +19,8 @@ Datum : 2026-10-01
 | 2026-10-01 | 1.0    | Thijmen | PvE ingevuld |
 | 2026-10-01 | 1.0    | Marijn  | PvE ingevuld |
 | 2026-10-05 | 1.1    | Marijn  |Spelfouten en punctuatie verbeterd |
-| 2026-10-05 | 1.2    | Marijn  |Moscow beter genoteerd en foto toegevoegd|
+| 2026-10-29 | 1.2    | Marijn  |Moscow beter genoteerd en foto toegevoegd|
+| 2026-10-29 | 1.3    | Thijmen    | Uitleg opdrachtgever verbetert|
 
 <div style="page-break-after: always;"></div>
 

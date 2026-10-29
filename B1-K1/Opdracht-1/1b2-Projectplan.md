@@ -1,6 +1,6 @@
 # Projectplan
 
-Versienummer : 1.1
+Versienummer : 1.2
 
 Auteur : Thijmen, Marijn
 

@@ -1,6 +1,6 @@
 # Technisch Ontwerp
 
-Versienummer : 1
+Versienummer : 1.1
 
 Auteur : Thijmen, Marijn
 
