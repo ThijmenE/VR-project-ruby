@@ -1,6 +1,6 @@
 # Programma van Eisen
 
-Versienummer : 1
+Versienummer : 1.2
 
 Auteur : Thijmen, Marijn
 
@@ -19,7 +19,7 @@ Datum : 2026-10-01
 | 2026-10-01 | 1.0    | Thijmen | PvE ingevuld |
 | 2026-10-01 | 1.0    | Marijn  | PvE ingevuld |
 | 2026-10-05 | 1.1    | Marijn  |Spelfouten en punctuatie verbeterd |
-| 2026-10-29 | 1.2    | Thijmen    | Uitleg opdrachtgever verbetert|
+| 2026-10-05 | 1.2    | Marijn  |Moscow beter genoteerd en foto toegevoegd|
 
 <div style="page-break-after: always;"></div>
 
@@ -49,7 +49,7 @@ projectdoelstellingen, besprekingen en opleveringen vastgelegd. Het een en ander
 
 ### Over het project en de opdrachtgever
 
-De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Campus. Je kan bij Ruby langskomen als je vragen hebt over wat digitale ontwikkeling in jouw leven kan betekenen. Bij Ruby ondersteunen ze ondernemers met slimme adviezen om processen te verbeteren, bereik te vergroten en kansen te grijpen. En ze helpen studenten door hen opdrachten te geven om hun digitale skills sterker te maken. Ze hebben bijvoorbeeld een workshop gehad over hoe je met AI kan werken en ze hebben een toeristische databank genaamd Touripedia officieel gelanceerd bij Ruby zelf.
+De opdrachtgever heet Marjan de Jonge van Ruby Campus. Bij Ruby proberen ze inwoners en MKB bedrijven in Noord-Nederland te digitaliseren. Ruby wil het gebouw ontwikkelen tot een inspirerende plek waar kunst, technologie en innovatie samenkomen. Onze game gaat gebruikt worden om basis school studenten te introduceren aan VR.
 
 ## Behoeftebeschrijving opdrachtgever
 
@@ -57,24 +57,18 @@ De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Camp
 
 Afstemming gesprek: B1-K2/Opdracht-5/Videos/VR project opdacht afstemmen ruby.mp4
 
-bron: uit een mail van de opdrachtgever (Marjan):
-
-Het lijkt me leuk als de robot builder kan worden gebruikt voor basisscholieren om kort kennis te maken met VR
-Kiezen uit verschillende soorten robots of dieren.
-Onderdelen kiezen en aankleden
-Twee robots of dieren kiezen
-De robots of dieren iets laten doen, bv drinken, eten, spelen, dansen 
+![Fotomail](../Opdracht-1/Fotos/FotomailMarjan.png)
 
 ### Eisen en wensen (MoSCoW)
 
 Must have
-- : De game moet gemaakt worden voor basisscholieren
-- : De gebruiker kan robots bouwen door robotonderdelen te kiezen
+- : De game moet makkelijk en simpel te spelen zijn
+- : De gebruiker kan robot bouwen door robotonderdelen te kiezen
 - : Robots moeten iets kunnen doen (drinken, eten, spelen, dansen)
-- : Meer te doen dan alleen met robots spelen (minigames)
+- : Meer te doen dan alleen met robots spelen (minigames: darten, basketbal, bowlen, bouwblokken)
 
 Should have
-- : Robots kunnen aankleden
+- : Robots kunnen aankleden (Verschillende accessoires)
 - : Meerdere robots
 - : Thema van game moet een kinderkamer zijn
 
@@ -92,8 +86,8 @@ Marijn: Notulist, programmeur, modelleur, aanspreekpunt, +31633677013, mlubbers5
 
 ## Projectgrenzen
 
-Zodra het project is afgerond krijgt Ruby het project en komen er geen updates meer (tenzij er een gamebreaking bug in de game zit). Er komen geen transacties in de game voor echt geld. De game is bedoeld om kort gespeeld te worden dus er komen geen uitbreidingen. Omdat de game bedoeld is voor jonge kinderen komt er geen realistisch geweld of seksuele onderwerpen in de game voor.
+Zodra het project is afgerond krijgt ruby het project en komen er geen updates meer (tenzij er een gamebreaking bug in de game zit). Er komen geen transacties in de game voor voor echt geld. De game is bedoeld om kort gespeeld te worden dus er komen geen uitbreidingen. Omdat de game bedoeld is voor jonge kinderen komt er geen realistisch geweld of seksuele onderwerpen in de game voor.
 
 ## Technische eisen
 
-Om de game te runnen heb je een computer/laptop nodig die VR ondersteunt. Verouderde systemen gaan waarschijnlijk geen VR projecten kunnen runnen, daarom stellen we voor dat je tenminste Windows 10/11 hebt of alternatief MacOS10.15 of hoger. En natuurlijk heb je een VR headset nodig. Alle nieuwere VR headsets werken voor ons project.
+Om de game te runnen heb je een computer/laptop nodig die VR ondersteund. Verouderde systemen gaat waarschijnlijk geen VR projecten kunnen runnen, daarom stellen we voor dat je tenminste windows 10/11 hebt of alternatief MacOS10.15 of hoger. En natuurlijk heb je een VR headset nodig, alle nieuwere VR headsets werken voor ons project.
