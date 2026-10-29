@@ -1,6 +1,6 @@
 # Programma van Eisen
 
-Versienummer : 1
+Versienummer : 1.2
 
 Auteur : Thijmen, Marijn
 
@@ -19,6 +19,7 @@ Datum : 2026-10-01
 | 2026-10-01 | 1.0    | Thijmen | PvE ingevuld |
 | 2026-10-01 | 1.0    | Marijn  | PvE ingevuld |
 | 2026-10-05 | 1.1    | Marijn  |Spelfouten en punctuatie verbeterd |
+| 2026-10-05 | 1.2    | Marijn  |Moscow beter genoteerd en foto toegevoegd|
 
 <div style="page-break-after: always;"></div>
 
@@ -56,24 +57,18 @@ De opdrachtgever heet Marjan de Jonge van Ruby Campus. Bij Ruby proberen ze inwo
 
 Afstemming gesprek: B1-K2/Opdracht-5/Videos/VR project opdacht afstemmen ruby.mp4
 
-bron: uit een mail van de opdrachtgever (Marjan):
-
-Het lijkt me leuk als de robot builder kan worden gebruikt voor basisscholieren om kort kennis te maken met VR
-Kiezen uit verschillende soorten robots of dieren.
-Onderdelen kiezen en aankleden
-Twee robots of dieren kiezen
-De robots of dieren iets laten doen, bv drinken, eten, spelen, dansen 
+![Fotomail](../Opdracht-1/Fotos/FotomailMarjan.png)
 
 ### Eisen en wensen (MoSCoW)
 
 Must have
-- : De game moet gemaakt worden voor basisscholieren
-- : Robot onderdelen kiezen
+- : De game moet makkelijk en simpel te spelen zijn
+- : De gebruiker kan robot bouwen door robotonderdelen te kiezen
 - : Robots moeten iets kunnen doen (drinken, eten, spelen, dansen)
-- : Meer te doen dan alleen met robots spelen (minigames)
+- : Meer te doen dan alleen met robots spelen (minigames: darten, basketbal, bowlen, bouwblokken)
 
 Should have
-- : Robots kunnen aankleden
+- : Robots kunnen aankleden (Verschillende accessoires)
 - : Meerdere robots
 - : Thema van game moet een kinderkamer zijn
 
