@@ -18,7 +18,7 @@ Datum : 2026-10-05
 | ---------- | ------ | --- | ----------- |
 | 2026-10-05 | 1.0    | Thijmen | functioneel ontwerp ingevuld |
 | 2026-10-05 | 1.0    | Marijn | functioneel ontwerp ingevuld |
-|            |        |     |             |
+| 2026-10-29 | 1.1    | Thijmen    | Uitleg opdrachtgever verbetert|
 
 <div style="page-break-after: always;"></div>
 
@@ -48,7 +48,7 @@ In dit document wordt inzicht gegeven over de verschillende technieken die gebru
 
 ### Over het project en de opdrachtgever
 
-De opdrachtgever heet Marjan de Jonge van Ruby Campus. Bij Ruby proberen ze inwoners en MKB bedrijven in Noord-Nederland te digitaliseren. Ruby wil het gebouw ontwikkelen tot een inspirerende plek waar kunst, technologie en innovatie samenkomen. Onze game gaat gebruikt worden om basis school studenten te introduceren aan VR.
+De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Campus. Je kan bij Ruby langskomen als je vragen hebt over wat digitale ontwikkeling in jouw leven kan betekenen. Bij Ruby ondersteunen ze ondernemers met slimme adviezen om processen te verbeteren, bereik te vergroten en kansen te grijpen. En ze helpen studenten door hen opdrachten te geven om hun digitale skills sterker te maken. Ze hebben bijvoorbeeld een workshop gehad over hoe je met AI kan werken en ze hebben een toeristische databank genaamd Touripedia officieel gelanceerd bij Ruby zelf.
 
 ## UML Diagrammen
 ![UML-Chart-Robot-Interactions](../Opdracht-1//Fotos/UMLChartRobotInteractions.png)

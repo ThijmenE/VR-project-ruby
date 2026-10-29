@@ -24,8 +24,7 @@ Datum :
 
 ## Inhoudsopgave
 
-- [Link naar code repository](#link-naar-code-repository)
-- [Link naar live demo](#link-naar-live-demo)
+- [Link naar code repository](https://github.com/ThijmenE/VR-project-ruby)
 - [Werking/Gameplay video](#link-naar-video)
 - [Link projectplan en logs](https://github.com/users/ThijmenE/projects/6/views/3)
 

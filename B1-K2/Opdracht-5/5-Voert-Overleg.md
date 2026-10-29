@@ -19,7 +19,6 @@ Datum :
 <div style="page-break-after: always;"></div>
 
 ## Daily Standup
->:memo: Maak video's van je daily standup en plaats deze hier.
 
 >Benoemt waar in de video de volgende punten aan bod komen:
 - Actief deelnamen aan de dagelijkse stand-up
