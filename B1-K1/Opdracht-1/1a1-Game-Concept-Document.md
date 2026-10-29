@@ -129,8 +129,7 @@ Er zijn geen belangrijke personages, omdat het een sandbox game is.
 
 ### Core Loop
 
-
-- De speler verkent een ruimte → vindt items → gebruik items voor minigames → reactie van gemaakte robot
+- De speler verkent een ruimte in VR → vindt items zoals: Dartpijlen, bowlingbal, basketbal. → gebruik deze items om punten te scoren in de minigames → Door punten te scoren krijg je een reactie van de robot
 
 ### Controls
 
@@ -220,6 +219,8 @@ Er zijn geen belangrijke personages, omdat het een sandbox game is.
 | Week 2        | Robot maker machine | ja |
 | Week 3        | Robot praten/emoties geven | ja |
 | Week 4        | Playtesting van leerlingen/studenten | ja |
+
+Link naar volledige planning: https://github.com/users/ThijmenE/projects/6/views/3
 
 <div style="page-break-after: always;"></div>
 

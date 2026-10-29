@@ -1,6 +1,6 @@
 # Testen
 
-Versienummer : 1.1
+Versienummer : 1.2
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-10-22
+Datum : 2026-10-29
 
 <div style="page-break-after: always;"></div>
 
@@ -20,6 +20,7 @@ Datum : 2026-10-22
 | 2026-10-21 |  1.0   | Thijmen | Planning van testen ingevuld      |
 | 2026-10-22 |  1.1   |  Marijn |  Alle data genoteerd + eindconclusie en verbetervoorstellen |
 | 2026-10-22 |  1.1   |  Thijmen | eindconclusie en verbetervoorstellen|
+| 2026-10-29 |  1.2   |  Marijn | Test cases beter gemaakt|
 
 
 <div style="page-break-after: always;"></div>
@@ -86,54 +87,54 @@ Je hebt een app nodig van de VR bril om hem te gebruiken op je pc. Zodra de game
 | Volgnr | Functionaliteit | Scenario | Test input | Verwachte werking\output | Werkelijke werking\output | Conclusie test |
 |--------|------------------|----------|------------|--------------------------|--------------------------|----------------|
 | |Beschrijving van de functionaliteit (vaak genoemd in functioneel ontwerp) | Hoe gaat getest worden of de functie werkt? | Welke test-data gaan gebruikt worden? | Welk resultaat verwacht je van de functie? | Wat is het resultaat van de test? | Werkt de functie zoals verwacht? Indien van niet geef aan wat fout is. |
-| #1 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen problemen met clipping maar wel met het gooien omdat de pijtles niet dichtbij de controller zit | Werkt beter als verwacht met clipping. Wel lastig|
-| #1 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins. gooit aantal keer in de grond| Werkt zoals we hadden verwacht|
-| #1 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Niet getest| Niet getest|
-| #1 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Gooit door het plafond of door de muur| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
-| #1 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Niet getest| Niet getest|
-| #1 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Niet getest| Niet getest|
-| #2 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen clipping problemen, pijltjes gaan verkeerdom in het bord.| Geen clipping dus dat is goed, alleen nog fixen dat de pijtles met de goede kant het bord in gaan.|
-| #2 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen| Gooit vaak door de grond een muur, bal gooit niet als een bowlingbal| Werkt zoals verwacht. Wisten van de issues af.|
-| #2 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Gebruikt de blokken goed, en gooit ze weg via prullenbak. alleen clippen de blokken door de muur en grond.| We wisten van de clipping issue af.|
-| #2 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Niet getest| Niet getest|
-| #2 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken|Werkt goed, geen problemen|Geen issues|
-| #2 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed, alleen kan je nog te veel spammen met blokken spawnen| Werkt goed, iets langere cooldown op de spawn|
-| #3 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Niet getest| Niet getest|
-| #3 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen| Niet getest| Niet getest|
-| #3 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Bouwen werkt goed, zelfde issue met clipping| Werkt zoals verwacht, wisten van de clipping issue af.|
-| #3 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Werkt goed met de ballen, maar je kan valsspelen door de bal vast te pakken en omhoog en naar beneden te gaan| Werkt goed, alleen kan je valsspelen|
-| #3 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed, alles getest| Werkt zoals verwacht|
-| #3 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues naast spam spawn|
-| #4 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen problemen met clipping maar wel met het gooien omdat de pijtles niet dichtbij de controller zit | Werkt beter als verwacht met clipping. Wel lastig|
-| #4 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins. gooit aantal keer in de grond| Werkt zoals we hadden verwacht|
-| #4 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Werkt goed, spammed blokken| Kan iets te snel blokken spawnen, kleine cooldown|
-| #4 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Gooit door het plafond of door de muur| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
-| #4 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
-| #4 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues naast spam|
-| #5 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen problemen met clipping.| Werkt beter als verwacht met clipping. Wel lastig|
-| #5 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins.| Werkt zoals we hadden verwacht|
-| #5 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Niet getest| Niet getest|
-| #5 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Gooit door het plafond of door de muur werkt wel goed met de ballen| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
-| #5 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
-| #5 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues naast spam|
-| #6 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen problemen met clipping. Kon niet vaak in het bord gooien, lastig.| Werkt beter als verwacht met clipping. Wel lastig om op het bord te gooien|
-| #6 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins.| Werkt zoals we hadden verwacht|
-| #6 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Niet getest| Niet getest|
-| #6 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Gooit door het plafond of door de muur werkt wel goed met de ballen| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
-| #6 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Niet getest| Niet getest|
-| #6 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Niet getest| Niet getest|
-| #7 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen problemen met clipping, wel lastig.| Werkt beter als verwacht met clipping. pijltjes moeten gelijk naar je hand als je ze oppakt|
-| #7 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins.| Werkt zoals we hadden verwacht. gelijk naar hand als je de bal oppakt, dan word het makkelijker.|
-| #7 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Bouwt met blokken, wel weer clipping problemen| naast clipping geen problemen met het bouwen zelf|
-| #7 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Niet door plafond of muur gegaan, gooien ging goed| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
-| #7 | Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
-| #7 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
-| #8 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling (clipping problemen)| Geen problemen met clipping, wel lastig om goed te gooien.| Werkt beter als verwacht met clipping. Pijltjes moeten gelijk naar je hand als je ze oppakt.|
-| #8 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins. De pins omgooien werkt goed| Werkt zoals we hadden verwacht. gelijk naar hand als je de bal oppakt, dan word het makkelijker.|
-| #8 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk maar clipping problemen (weten we vanaf)| Bouwt veel met blokken, wel weer clipping problemen| Naast clipping geen problemen met het bouwen zelf|
-| #8 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen maar dat is de bedoeling| Niet door plafond of muur gegaan, gooien ging goed| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
-| #8| Knoppenmanager | De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
-| #8 | Blokken spawner| De knoppen gebruiken| Performance code| Dat de knoppen werken| Werkt goed| Geen issues|
+| #1 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling. Dartpijl gaat nog wel vaak door het dartbord heen| pijltjes gingen niet door het dartbord, maar het gooien ging lastig door de rotatie van de pijltjes | Pijltjes gingen niet door het dartbord heen|
+| #1 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond door de afstand tussen de bal en de speler maar de bal kan nog door de muren en grond door de afstand tussen de bal en de speler| Bal is te licht dus je gooit perongeluk over de pins. Je gooit een aantal keer in de grond vanwege de afstand tussen bal en speler| Werkt zoals we hadden verwacht|
+| #1 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk te gebruiken maar de blokken komen regelmatig in elkaar vast te zitten| Niet getest| Niet getest|
+| #1 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen door de afstand tussen bal en speler. Je kan nog valsspelen door de afstand te gebruiken| Je gooit perongeluk door de grond en muur, door de afstand tussen bal en speler| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
+| #1 | Knoppenmanager | De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Niet getest| Niet getest|
+| #1 | Blokken spawner| De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Niet getest| Niet getest|
+| #2 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling. Dartpijl gaat nog wel vaak door het dartbord heen| pijltjes gingen niet door het dartbord, maar het gooien ging lastig door de rotatie van de pijltjes| Pijltjes gingen niet door de muur of grond dus dat is goed, alleen nog fixen dat de pijtles met de goede kant het bord in gaan.|
+| #2 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond door de afstand tussen de bal en de speler| Gooit vaak door de grond een muur, bal gooit niet als een bowlingbal| Werkt zoals verwacht. Wisten van de issues af.|
+| #2 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk te gebruiken maar de blokken komen regelmatig in elkaar vast te zitten| Gebruikt de blokken goed, en gooit ze weg via prullenbak. alleen clippen de blokken door de muur en grond.| Werkt zoals verwacht, alleen gaan de blokken nog regelmatig door elkaar of door de grond en muur|
+| #2 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen door de afstand tussen bal en speler. Je kan nog valsspelen door de afstand te gebruiken| Niet getest| Niet getest|
+| #2 | Knoppenmanager | De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt|Werkt goed, geen problemen|Geen issues|
+| #2 | Blokken spawner| De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed, alleen kan je nog te veel spammen met blokken spawnen| Werkt goed, iets langere cooldown op de spawn|
+| #3 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling. Dartpijl gaat nog wel vaak door het dartbord heen| Niet getest| Niet getest|
+| #3 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond door de afstand tussen de bal en de speler| Niet getest| Niet getest|
+| #3 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk te gebruiken maar de blokken komen regelmatig in elkaar vast te zitten| Bouwen werkt goed, alleen gaat het nog door elkaar heen| Werkt zoals verwacht, alleen gaan de blokken nog regelmatig door elkaar of door de grond en muur|
+| #3 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen door de afstand tussen bal en speler. Je kan nog valsspelen door de afstand te gebruiken| Werkt goed met de ballen, maar je kan valsspelen door de bal vast te pakken en omhoog en naar beneden te gaan| Werkt goed, alleen kan je valsspelen|
+| #3 | Knoppenmanager | De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed, alles getest| Werkt zoals verwacht|
+| #3 | Blokken spawner| De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues naast spam spawn|
+| #4 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling. Dartpijl gaat nog wel vaak door het dartbord heen| Geen problemen met dat de pijltjes door de muur of grond heen gaan, maar wel met het gooien omdat de pijltes niet dichtbij de controller zit | Pijltjes gingen niet door de muur of grond dus dat is goed, alleen nog fixen dat de pijtles met de goede kant het bord in gaan|
+| #4 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond door de afstand tussen de bal en de speler maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins. gooit aantal keer in de grond| Werkt zoals we hadden verwacht|
+| #4 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk te gebruiken maar de blokken komen regelmatig in elkaar vast te zitten| Werkt goed, spammed blokken| Kan iets te snel blokken spawnen, kleine cooldown|
+| #4 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen door de afstand tussen bal en speler. Je kan nog valsspelen door de afstand te gebruiken| Gooit door het plafond of door de muur| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
+| #4 | Knoppenmanager | De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues|
+| #4 | Blokken spawner| De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues naast spam|
+| #5 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling. Dartpijl gaat nog wel vaak door het dartbord heen| pijltjes gingen niet door het dartbord, maar het gooien ging lastig door de rotatie van de pijltjes| Pijltjes gingen niet door de muur of grond dus dat is goed, alleen nog fixen dat de pijtles met de goede kant het bord in gaan|
+| #5 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond door de afstand tussen de bal en de speler maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins.| Werkt zoals we hadden verwacht|
+| #5 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk te gebruiken maar de blokken komen regelmatig in elkaar vast te zitten| Niet getest| Niet getest|
+| #5 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen door de afstand tussen bal en speler. Je kan nog valsspelen door de afstand te gebruiken| Gooit door het plafond of door de muur werkt wel goed met de ballen| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
+| #5 | Knoppenmanager | De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues|
+| #5 | Blokken spawner| De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues naast spam|
+| #6 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling. Dartpijl gaat nog wel vaak door het dartbord heen| pijltjes gingen niet door het dartbord, maar het gooien ging lastig door de rotatie van de pijltjes Kon niet vaak in het bord gooien, lastig.| Pijltjes gingen niet door de muur of grond dus dat is goed, alleen nog fixen dat de pijtles met de goede kant het bord in gaan om op het bord te gooien|
+| #6 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond door de afstand tussen de bal en de speler maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins.| Werkt zoals we hadden verwacht|
+| #6 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk te gebruiken maar de blokken komen regelmatig in elkaar vast te zitten| Niet getest| Niet getest|
+| #6 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen door de afstand tussen bal en speler. Je kan nog valsspelen door de afstand te gebruiken| Gooit door het plafond of door de muur werkt wel goed met de ballen| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
+| #6 | Knoppenmanager | De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Niet getest| Niet getest|
+| #6 | Blokken spawner| De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Niet getest| Niet getest|
+| #7 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling. Dartpijl gaat nog wel vaak door het dartbord heen| pijltjes gingen niet door de grond of muur, wel lastig.| Werkt beter als verwacht met clipping. pijltjes moeten gelijk naar je hand als je ze oppakt|
+| #7 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond door de afstand tussen de bal en de speler maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins.| Werkt zoals we hadden verwacht. gelijk naar hand als je de bal oppakt, dan word het makkelijker.|
+| #7 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk te gebruiken maar de blokken komen regelmatig in elkaar vast te zitten| Bouwt met blokken, blokken gaan door de muur en grond| naast dat de blokken door elkaar heen gaan geen problemen met het bouwen zelf|
+| #7 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen door de afstand tussen bal en speler. Je kan nog valsspelen door de afstand te gebruiken| Niet door plafond of muur gegaan, gooien ging goed| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
+| #7 | Knoppenmanager | De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues|
+| #7 | Blokken spawner| De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues|
+| #8 | Darten | De minigame spelen | Performance testers en code| Lastig om te spelen maar dat is de bedoeling. Dartpijl gaat nog wel vaak door het dartbord heen| Geen problemen met dat de pijltjes door de grond of muur gaan, wel lastig om goed te gooien.| Werkt beter als verwacht. Pijltjes moeten gelijk naar je hand als je ze oppakt.|
+| #8 | Bowlen | De minigame spelen| Performance testers en code| Makkelijk te spelen maar de bal kan nog door de muren en grond door de afstand tussen de bal en de speler maar de bal kan nog door de muren en grond| Bal is te licht dus je gooit te makkelijk over de pins. De pins omgooien werkt goed| Werkt zoals we hadden verwacht. gelijk naar hand als je de bal oppakt, dan word het makkelijker.|
+| #8 | Bouwblokken | De minigame spelen| Performance testers en code| Makkelijk te gebruiken maar de blokken komen regelmatig in elkaar vast te zitten| Bouwt veel met blokken, wel gaan de blokken weer door elkaar heen| Naast dat de blokken door elkaar of grond/muur heen gaan geen problemen met het bouwen zelf|
+| #8 | Basketbal | De minigame spelen| Performance testers en code| Moeilijk te spelen door de afstand tussen bal en speler. Je kan nog valsspelen door de afstand te gebruiken| Niet door plafond of muur gegaan, gooien ging goed| Makkelijk om te doen maar basketbal moet gelijk naar de speler zijn hand.|
+| #8| Knoppenmanager | De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues|
+| #8 | Blokken spawner| De knoppen gebruiken| Performance code| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues|
 
 ## Algemene info van testers:
 
