@@ -220,15 +220,60 @@ De eisen en wensen van de opdrachtgever zijn verwerkt in de game. Er zijn nog fo
 
 ## Verbetervoorstellen
 
-
 Dingen die wij nog moeten aanpassen en hoe wij dat gaan doen:
 
-Box colliders, de bouw blokken clippen heel makkelijk door elkaar of omgeving. Oplossing: Collision Detection en dan op Continuous zetten, en wanneer ze een seconde niet bewegen wordt het op kinematic gezet zodat je het niet meer kan bewegen. En wanneer het weer opgepakt wordt gaat kinematic weer uit.
+### Box Colliders (Clipping Issue)
 
-Bowling bal, Pins zijn goed. De bal moet meer als een bowling bal gedragen. Hoogte moet gecapped worden (met 5% van huidige hoogte).
+Probleem: Bouwblokken gaan vaak gemakkelijk door elkaar of door de spelomgeving heen.
 
-basketbal score, Ballen zijn goed. Alleen kan je de bal oppakken en als je die van je af houd kan je omhoog en naar beneden in de hoop waardoor je veel punten kan scoren. Oplossing: als je de bal oppakt moet de bal gelijk naar de speler zijn hand toe zonder afstand te kunnen krijgen. Dan kan de speler de bal niet meer in de hoop krijgen en dus niet meer veel punten scoren. We zouden ook nog een cooldown op de score kunnen zetten dat je niet zo snel achter elkaar punten kunt scoren.
+Oplossing:
 
-Tutorial, Wanneer je de game start staat de tutorial open en op de eerste card staat hoe je het kan afsluiten voor het geval dat je het niet wilt gebruiken.
+• Zet de Collision Detection van de Rigidbody op Continuous (of Continuous Dynamic voor bewegende objecten).
+• Implementeer een script dat de status monitort: zodra een blok 1 seconde stilligt, wordt de Rigidbody op Kinematic gezet. Dit stopt alle physics-berekeningen en voorkomt doorzakken.
+• Zodra de speler het blok opnieuw oppakt, wordt de Kinematic-modus direct uitgeschakeld.
 
-Darten, zelfde probleem met de hand. Je pakt de pijl bij de punt beet met de flight omhoog. Waardoor als je de pijl gooit gaat soms de pijl verkeerd om in het bord. Oplossing: locatie + rotatie moet worden aangepast op de pijl.
+Dit zorgt ervoor dat blokken die stil liggen niet meer kunnen bewegen tenzij ze worden opgepakt door de speler.
+
+### Basketbal Score (Infinite Points Exploit)
+
+Probleem: Spelers kunnen de bal vasthouden en handmatig door de basket heen en weer bewegen om oneindig veel punten te scoren.
+
+Oplossing:
+
+• Snap-to-hand: Bij het oppakken van de bal wordt de positie direct hard naar de hand van de speler gesnapt (geen offset of afstand toegestaan), zodat het makkelijker te spelen is en zodat je niet kunt valsspelen.
+• Score Cooldown: Een script cooldown (bijv. 1,5 tot 2 seconden) op de trigger van de basket, zodat er niet direct achter elkaar punten geregistreerd kunnen worden om valsspelen te voorkomen.
+
+Dit zorgt ervoor dat je niet kunt valsspelen en dat het spelen makkelijker is.
+
+### Darten (Verkeerde Grip & Logica)
+
+Probleem: De pijl wordt bij de punt vastgepakt met de flight (achterkant) omhoog, waardoor deze vaak achterstevoren in het dartbord belandt.
+
+Oplossing:
+
+• Pas de Local Position & Rotation offset van de pijl aan, zodat de pijltjes goed in je hand liggen en je de pijltjes goed naar het bord kunt gooien.
+• Zorg ervoor dat het rotatie-ankerpunt dwingt dat de pijl horizontaal in de hand ligt (met de punt naar voren gericht) Zodat de pijltjes vaker met de goede kant het bord in gaan.
+
+Dit zorgt ervoor dat de pijltjes goed vliegen naar het bord en dat het met de punt van de pijl in het bord beland.
+
+### Bowlingbal (Physics Balans)
+
+Probleem: De bal stijgt te snel op bij het gooien, waardoor spelers over de pins heen gooien in plaats van ertegenaan.
+
+Oplossing:
+
+• Hoogte-cap: Begrens de maximale Y-waarde (hoogte) van de bowlingbal-velocity of positie zodra deze gegooid wordt.
+• Berekening: De maximale hoogte wordt gecapped op 5% van de huidige maximale hoogte, zodat de bal strak over de baan blijft rollen en niet zo hoog de lucht in gaat.
+
+Dit zorgt ervoor dat de bal niet hoog gegooid kan worden zodat het meer lijkt op echt bowlen.
+
+### Tutorial Menu:
+
+Probleem: Spelers moeten direct weten hoe ze de tutorial kunnen overslaan als ze de game al kennen of willen spelen zonder tutorial.
+
+Oplossing:
+
+• Zorg dat het tutorial-scherm automatisch opent bij de start van de game.
+• Plaats op de allereerste kaart / UI-scherm een duidelijke knop of instructie, zodat spelers direct de UI zouden kunnen afsluiten als ze willen beginnen zonder een tutorial.
+
+Dit zorgt ervoor dat de speler gelijk de uitleg kan lezen of wegdrukken, zodat ze weten dat de knoppen op de controller een functie hebben.
