@@ -75,6 +75,16 @@ public class RobotButton : MonoBehaviour
             }
 
             Debug.Log($"Created robot with {personality} personality.");
+
+            Robottext robotText = GetComponent<Robottext>();
+            if (robotText == null)
+            {
+                Debug.LogError("Cannot schedule robot dialogue because this object has no Robottext component.", this);
+            }
+            else
+            {
+                robotText.RobotCreated();
+            }
         }
         else
         {

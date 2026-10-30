@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public enum RobotPersonality
 {
@@ -10,6 +11,20 @@ public enum RobotPersonality
 
 public class Robottext : MonoBehaviour
 {
+    private Coroutine robotDialogueCoroutine;
+
+    public float praatCooldown = 5f;
+
+    public void RobotCreated()
+    {
+        if (robotDialogueCoroutine != null)
+        {
+            StopCoroutine(robotDialogueCoroutine);
+        }
+
+        robotDialogueCoroutine = StartCoroutine(RobotPraten(praatCooldown));
+    }
+
     public void RobotText()
     {
         RobotButton robotButton = GetComponent<RobotButton>();
@@ -65,6 +80,21 @@ public class Robottext : MonoBehaviour
         string randomSentence = sentences[randomIndex];
 
         dialoguemanager dialogueManager = FindObjectOfType<dialoguemanager>();
+        if (dialogueManager == null)
+        {
+            Debug.LogError("Cannot show robot dialogue because no dialogue manager exists in the scene.", this);
+            return;
+        }
+
         dialogueManager.StartDialogue(randomSentence);
+    }
+
+    private IEnumerator RobotPraten(float delay)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(delay);
+            RobotText();
+        }
     }
 }
