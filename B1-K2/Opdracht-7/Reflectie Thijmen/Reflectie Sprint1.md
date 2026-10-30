@@ -1,5 +1,3 @@
-# Game Concept Document
-
 Versienummer : 1
 
 Auteur : Thijmen
