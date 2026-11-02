@@ -3,10 +3,13 @@ using UnityEngine;
 
 public class Bowlenscript : MonoBehaviour
 {
+    private const float FallenPinAngle = 45f;
+
     [SerializeField] private List<GameObject> pins = new List<GameObject>();
     [SerializeField] private GameObject BowlingBal;
 
     private List<ObjectStatus> ItemsOpslaan = new List<ObjectStatus>();
+    private bool bowlingLinePlayed;
 
     void Start()
     {
@@ -24,6 +27,22 @@ public class Bowlenscript : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        int fallenPins = 0;
+
+        foreach (ObjectStatus status in ItemsOpslaan)
+        {
+            if (status.gameObject != null &&
+                Quaternion.Angle(status.startRotation, status.gameObject.transform.rotation) >= FallenPinAngle)
+            {
+                fallenPins++;
+            }
+        }
+
+        CheckBowlenScore(fallenPins);
+    }
+
     void BeginPos(GameObject obj)
     {
         ObjectStatus status = new ObjectStatus
@@ -39,6 +58,8 @@ public class Bowlenscript : MonoBehaviour
 
     public void ResetGame()
     {
+        bowlingLinePlayed = false;
+
         foreach (ObjectStatus status in ItemsOpslaan)
         {
             if (status.gameObject != null)
@@ -52,6 +73,16 @@ public class Bowlenscript : MonoBehaviour
                     status.rigidbody.angularVelocity = Vector3.zero;
                 }
             }
+        }
+    }
+
+    public void CheckBowlenScore(int score)
+    {
+        if (score > 7 && !bowlingLinePlayed)
+        {
+            bowlingLinePlayed = true;
+            Robottext robotText = FindObjectOfType<Robottext>();
+            robotText.ScoreBowlen(score);
         }
     }
 

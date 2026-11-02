@@ -4,9 +4,9 @@ using System.Collections.Generic;
 public class RobotButton : MonoBehaviour
 {
     [SerializeField] private bool randomizePersonalityOnBuild = true;
-    [SerializeField] private RobotPersonality personality = RobotPersonality.Happy;
+    [SerializeField] private RobotPersonality _personality = RobotPersonality.Happy;
 
-    public RobotPersonality Personality => personality;
+    public RobotPersonality Personality => _personality;
 
     public GameObject head;
     public GameObject torso;
@@ -22,8 +22,9 @@ public class RobotButton : MonoBehaviour
 
     [SerializeField] private GameObject robot;
 
-    private List<ObjectStatus> ItemsOpslaan = new List<ObjectStatus>();
+    private List<ObjectStatus> itemsOpslaan = new List<ObjectStatus>();
 
+    // Slaat de beginpositie van de robot op zodra de game start.
     void Start()
     {
         if (robot != null)
@@ -32,6 +33,7 @@ public class RobotButton : MonoBehaviour
         }
     }
 
+    // Bouwt de robot op met de geselecteerde meshes, kiest een persoonlijkheid en start zijn praat-gedrag.
     public void RobotCreate()
     {
         head.TryGetComponent(out RobotAssembly headAssembly);
@@ -64,17 +66,17 @@ public class RobotButton : MonoBehaviour
                 robot = headMeshOutput.gameObject;
             }
 
-            if (ItemsOpslaan.Count == 0)
+            if (itemsOpslaan.Count == 0)
             {
                 BeginPos(robot);
             }
 
             if (randomizePersonalityOnBuild)
             {
-                personality = (RobotPersonality)Random.Range(0, System.Enum.GetValues(typeof(RobotPersonality)).Length);
+                _personality = (RobotPersonality)Random.Range(0, System.Enum.GetValues(typeof(RobotPersonality)).Length);
             }
 
-            Debug.Log($"Created robot with {personality} personality.");
+            Debug.Log($"Created robot with {_personality} personality.");
 
             Robottext robotText = GetComponent<Robottext>();
             if (robotText == null)
@@ -92,6 +94,7 @@ public class RobotButton : MonoBehaviour
         }
     }
 
+    // Onthoudt de transformatie- en natuurkundige startgegevens van het meegegeven game-object.
     void BeginPos(GameObject obj)
     {
         ObjectStatus status = new ObjectStatus
@@ -102,12 +105,13 @@ public class RobotButton : MonoBehaviour
             rigidbody = obj.GetComponent<Rigidbody>()
         };
 
-        ItemsOpslaan.Add(status);
+        itemsOpslaan.Add(status);
     }
 
+    // Zet de robot en al zijn opgeslagen onderdelen terug naar hun oorspronkelijke beginpositie en stopt alle beweging.
     public void ResetRobot()
     {
-        foreach (ObjectStatus status in ItemsOpslaan)
+        foreach (ObjectStatus status in itemsOpslaan)
         {
             if (status.gameObject != null)
             {

@@ -20,6 +20,7 @@ public class Basketbalscore : MonoBehaviour
         {
             score++;
             UpdateScoreUI();
+            CheckBasketbalScore();
             StartCoroutine(WaitAfterScore());
         }
     }
@@ -43,5 +44,14 @@ public class Basketbalscore : MonoBehaviour
     {
         score = 0;
         UpdateScoreUI();
+    }
+
+    public void CheckBasketbalScore()
+    {
+        if (score > 0 && score % 5 == 0)
+        {
+            Robottext robotText = FindObjectOfType<Robottext>();
+            robotText.ScoreBasketbal(score);
+        }
     }
 }

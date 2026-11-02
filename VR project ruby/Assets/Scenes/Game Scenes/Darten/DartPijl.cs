@@ -4,6 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class DartPijl : MonoBehaviour
 {
+    private static int dartsInBoard = 0;
     private Rigidbody rb;
     private XRGrabInteractable grabInteractable;
     private FixedJoint boardJoint;
@@ -11,6 +12,7 @@ public class DartPijl : MonoBehaviour
     private Collider boardCollider;
     private bool isGrabbed;
     private bool touchingBoard;
+    private bool isCountedInBoard;
 
     private void Awake()
     {
@@ -36,6 +38,7 @@ public class DartPijl : MonoBehaviour
         }
 
         ReleaseFromBoard();
+        RemoveDartFromBoard();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -59,12 +62,14 @@ public class DartPijl : MonoBehaviour
         touchingBoard = false;
         boardCollider = null;
         boardBody = null;
+        RemoveDartFromBoard();
         ReleaseFromBoard();
     }
 
     private void OnDartGrabbed(SelectEnterEventArgs args)
     {
         isGrabbed = true;
+        RemoveDartFromBoard();
         ReleaseFromBoard();
     }
 
@@ -91,6 +96,13 @@ public class DartPijl : MonoBehaviour
         boardJoint.enableCollision = false;
         boardJoint.breakForce = Mathf.Infinity;
         boardJoint.breakTorque = Mathf.Infinity;
+
+        if (!isCountedInBoard)
+        {
+            isCountedInBoard = true;
+            dartsInBoard++;
+            CheckDartScore();
+        }
     }
 
     private void ReleaseFromBoard()
@@ -100,6 +112,15 @@ public class DartPijl : MonoBehaviour
             Destroy(boardJoint);
             boardJoint = null;
         }
+    }
+
+    private void RemoveDartFromBoard()
+    {
+        if (!isCountedInBoard)
+            return;
+
+        isCountedInBoard = false;
+        dartsInBoard = Mathf.Max(0, dartsInBoard - 1);
     }
 
     private static Rigidbody GetOrCreateBoardBody(Collider boardCollider)
@@ -116,5 +137,17 @@ public class DartPijl : MonoBehaviour
         }
 
         return body;
+    }
+
+    private void CheckDartScore()
+    {
+        if (dartsInBoard == 3)
+        {
+            Robottext robotText = FindObjectOfType<Robottext>();
+            if (robotText != null)
+            {
+                robotText.ScoreDarten();
+            }
+        }
     }
 }
