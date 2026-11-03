@@ -20,12 +20,6 @@ public class RobotButton : MonoBehaviour
     public MeshFilter hatMeshOutput;
     public MeshFilter faceMeshOutput;
 
-    public Material headMaterialOutput;
-    public Material torsoMaterialOutput;
-    public Material legsMaterialOutput;
-    public Material hatMaterialOutput;
-    public Material faceMaterialOutput;
-
     [SerializeField] private GameObject robot;
 
     private List<ObjectStatus> ItemsOpslaan = new List<ObjectStatus>();
