@@ -4,9 +4,9 @@ using System.Collections.Generic;
 public class RobotButton : MonoBehaviour
 {
     [SerializeField] private bool randomizePersonalityOnBuild = true;
-    [SerializeField] private RobotPersonality _personality = RobotPersonality.Happy;
+    [SerializeField] private RobotPersonality personality = RobotPersonality.Happy;
 
-    public RobotPersonality Personality => _personality;
+    public RobotPersonality Personality => personality;
 
     public GameObject head;
     public GameObject torso;
@@ -20,11 +20,16 @@ public class RobotButton : MonoBehaviour
     public MeshFilter hatMeshOutput;
     public MeshFilter faceMeshOutput;
 
+    public Material headMaterialOutput;
+    public Material torsoMaterialOutput;
+    public Material legsMaterialOutput;
+    public Material hatMaterialOutput;
+    public Material faceMaterialOutput;
+
     [SerializeField] private GameObject robot;
 
-    private List<ObjectStatus> itemsOpslaan = new List<ObjectStatus>();
+    private List<ObjectStatus> ItemsOpslaan = new List<ObjectStatus>();
 
-    // Slaat de beginpositie van de robot op zodra de game start.
     void Start()
     {
         if (robot != null)
@@ -33,7 +38,6 @@ public class RobotButton : MonoBehaviour
         }
     }
 
-    // Bouwt de robot op met de geselecteerde meshes, kiest een persoonlijkheid en start zijn praat-gedrag.
     public void RobotCreate()
     {
         head.TryGetComponent(out RobotAssembly headAssembly);
@@ -50,11 +54,11 @@ public class RobotButton : MonoBehaviour
             MeshFilter hatMeshInput = hatAssembly.currentMeshFilter;
             MeshFilter faceMeshInput = faceAssembly.currentMeshFilter;
 
-            headMeshOutput.sharedMesh = headMeshInput.sharedMesh;
-            torsoMeshOutput.sharedMesh = torsoMeshInput.sharedMesh;
-            legsMeshOutput.sharedMesh = legsMeshInput.sharedMesh;
-            hatMeshOutput.sharedMesh = hatMeshInput != null ? hatMeshInput.sharedMesh : null;
-            faceMeshOutput.sharedMesh = faceMeshInput != null ? faceMeshInput.sharedMesh : null;
+            CopyPart(headMeshInput, headMeshOutput, "head");
+            CopyPart(torsoMeshInput, torsoMeshOutput, "torso");
+            CopyPart(legsMeshInput, legsMeshOutput, "legs");
+            CopyPart(hatMeshInput, hatMeshOutput, "hat");
+            CopyPart(faceMeshInput, faceMeshOutput, "face");
 
             if (robot == null && headMeshOutput.transform.parent != null)
             {
@@ -66,27 +70,17 @@ public class RobotButton : MonoBehaviour
                 robot = headMeshOutput.gameObject;
             }
 
-            if (itemsOpslaan.Count == 0)
+            if (ItemsOpslaan.Count == 0)
             {
                 BeginPos(robot);
             }
 
             if (randomizePersonalityOnBuild)
             {
-                _personality = (RobotPersonality)Random.Range(0, System.Enum.GetValues(typeof(RobotPersonality)).Length);
+                personality = (RobotPersonality)Random.Range(0, System.Enum.GetValues(typeof(RobotPersonality)).Length);
             }
 
-            Debug.Log($"Created robot with {_personality} personality.");
-
-            Robottext robotText = GetComponent<Robottext>();
-            if (robotText == null)
-            {
-                Debug.LogError("Cannot schedule robot dialogue because this object has no Robottext component.", this);
-            }
-            else
-            {
-                robotText.RobotCreated();
-            }
+            Debug.Log($"Created robot with {personality} personality.");
         }
         else
         {
@@ -94,7 +88,34 @@ public class RobotButton : MonoBehaviour
         }
     }
 
-    // Onthoudt de transformatie- en natuurkundige startgegevens van het meegegeven game-object.
+    private static void CopyPart(MeshFilter input, MeshFilter output, string partName)
+    {
+        if (output == null)
+        {
+            Debug.LogWarning($"Cannot copy the {partName}: its output MeshFilter is not assigned.");
+            return;
+        }
+
+        output.sharedMesh = input != null ? input.sharedMesh : null;
+
+        Renderer outputRenderer = output.GetComponent<Renderer>();
+        if (outputRenderer == null)
+        {
+            Debug.LogWarning($"Cannot copy materials for the {partName}: its output has no Renderer.");
+            return;
+        }
+
+        Renderer inputRenderer = input != null ? input.GetComponent<Renderer>() : null;
+        if (input != null && inputRenderer == null)
+        {
+            Debug.LogWarning($"Cannot copy materials for the {partName}: its input has no Renderer.");
+        }
+
+        outputRenderer.sharedMaterials = inputRenderer != null
+            ? inputRenderer.sharedMaterials
+            : new Material[0];
+    }
+
     void BeginPos(GameObject obj)
     {
         ObjectStatus status = new ObjectStatus
@@ -105,13 +126,12 @@ public class RobotButton : MonoBehaviour
             rigidbody = obj.GetComponent<Rigidbody>()
         };
 
-        itemsOpslaan.Add(status);
+        ItemsOpslaan.Add(status);
     }
 
-    // Zet de robot en al zijn opgeslagen onderdelen terug naar hun oorspronkelijke beginpositie en stopt alle beweging.
     public void ResetRobot()
     {
-        foreach (ObjectStatus status in itemsOpslaan)
+        foreach (ObjectStatus status in ItemsOpslaan)
         {
             if (status.gameObject != null)
             {

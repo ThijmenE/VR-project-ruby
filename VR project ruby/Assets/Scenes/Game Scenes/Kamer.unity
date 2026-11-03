@@ -3822,8 +3822,7 @@ MeshRenderer:
   m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 008b739af724c454baada449e97f2a00, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4673,8 +4672,7 @@ MeshRenderer:
   m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 99d781da009defa438988bce7fb1917b, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5299,6 +5297,11 @@ MonoBehaviour:
   legsMeshOutput: {fileID: 983644150}
   hatMeshOutput: {fileID: 159798701}
   faceMeshOutput: {fileID: 204614720}
+  headMaterialOutput: {fileID: 0}
+  torsoMaterialOutput: {fileID: 0}
+  legsMaterialOutput: {fileID: 0}
+  hatMaterialOutput: {fileID: 0}
+  faceMaterialOutput: {fileID: 0}
   robot: {fileID: 1995449213}
 --- !u!114 &228729645
 MonoBehaviour:
@@ -15379,8 +15382,7 @@ MeshRenderer:
   m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d7cd8c263df0e9d4a8ef13595091b3d0, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21443,8 +21445,7 @@ MeshRenderer:
   m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 300b53572f538f64883a6fabfbe9a082, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21749,8 +21750,7 @@ MeshRenderer:
   m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 66987dbb93372e440865aa4d11cb33d8, type: 2}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
