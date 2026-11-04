@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-09-30
+Datum : 2026-11-4
 
 <div style="page-break-after: always;"></div>
 
@@ -20,6 +20,8 @@ Datum : 2026-09-30
 | 2026-09-30 | 1.0    | Marijn     | Game Concept Document ingevuld|
 | 2026-10-05 | 1.1    | Marijn     | Spelfouten en punctuatie verbeterd|
 | 2026-10-29 | 1.2    | Thijmen    | Uitleg opdrachtgever verbetert|
+| 2026-11-4  | 1.3    | Thijmen    | Onderbouwing ingevuld|
+| 2026-11-4  | 1.3    | Marijn     | Onderbouwing ingevuld|
 
 <div style="page-break-after: always;"></div>
 
@@ -225,6 +227,55 @@ Link naar volledige planning: https://github.com/users/ThijmenE/projects/6/views
 <div style="page-break-after: always;"></div>
 
 ## Onderbouwing
+
+Genre
+We hebben gekozen voor een VR sandbox game omdat Ruby graag VR wil introduceren aan jongeren (12 jaar/groep 8).
+De game moet dus simpel op te pakken zijn voor kinderen met weinig/geen game ervaring.
+In een sandbox is geen risico en kun je onze minigames leren waardoor ze een goede eerste VR ervaring kunnen krijgen.
+
+Doelgroep
+De doelgroep is basischool leerlingen (rond de 12 jaar oud).
+We hebben deze doelgroep omdat we in overleg met Ruby hebben besloten een VR game te maken voor basischool leerlingen omdat ze graag een introductie willen geven aan VR.
+
+Platform
+Onze game is in VR omdat de opdrachtgever graag een VR game wil hebben om jongeren te introduceren aan VR.
+
+Speelstijl
+Het spel moet simpel zijn zodat het makkelijk opgepakt kan worden door leerlingen.
+Daarom leek ons singeplayer de beste keuze omdat het niet competatief kan worden wanneer je alleen speelt.
+Verder is de bedoelde speel sessie van ons spel 5-15 minuten omdat het alleen bedoelt is om een introductie te zijn aan VR en daarom waarschijnlijk alleen op locatie bij Ruby gespeelt kan worden.
+
+Verhaal
+Omdat de spelers alleen bij Ruby kunnen spelen, waardoor de game niet lang gespeelt kan worden en omdat het een sandbox game is hebben we besloten er geen verhaal aan de game toe te voegen.
+
+Setting en Wereld
+Het speelt af in een (kinder)kamer omdat het goed bij de doelgroep past en een rustige omgeving is, wat weer past bij onze sfeer.
+Omdat de game in een hedendaagse tijd afspeelt past een moderne (kinder)kamer goed bij onze sfeer.
+
+Personages
+Wij hebben geen belangrijke personages in onze game omdat de game alleen op locatie bij Ruby gespeelt kan worden, waardoor je niet in een verhaal kan komen met allemaal personages en vinden wij dat in een sandbox game geen personages nodig zijn.
+
+Core Loop
+We hebben een makkelijke core loop gekozen waarbij de speler een kamer in vr kan ontdekken en minigames kan spelen.
+Hierdoor kan de speler vrij rondlopen en doen wat hij of zij wil.
+In de kamer zijn verschillende minigames te spelen waarbij je reacties kan krijgen van de robot. Dit past goed bij onze game omdat het spel makkelijk te begrijpen is.
+
+Controls
+We hebben de controls van de game gekozen door wat voor ons natuurlijk voelt (grip button voor dingen oppakken omdat je dan knijpt, trigger knop voor UI knoppen omdat dat voelt als een select knop).
+En de menu knoppen kunnen niet echt natuurlijk voelen maar daarom hebben we ze allemaal op de linker controller gestopt zodat het overzichtelijk blijft.
+
+Progressie en Beloningen
+De progressie in onze game komt neer op het maken van de robot.
+Zodra de robot er is zal hij positief reageren op de minigames die je hebt gespeeld.
+De beloning is de reacties van de robot voor deze minigames.
+
+Visuele Stijl
+Voor de game willen we een kleurrijk kleurpalet gebruiken omdat het voor jongere kinderen gemaakt word en daarom goed bij onze doelgroep zal passen.
+Verder willen we een cartoony font hebben voor onze UI teksten om dezelfde reden
+
+Audio en Muziek
+We hebben een rustige achtergrond muziek in de game gestopt om te helpen met de sfeer van de game.
+
 
 **Haalbaarheid:**
 
