@@ -37,7 +37,7 @@ public class Robottext : MonoBehaviour
         }
         else
         {
-            dialogueManager.ShowDialogue();
+            dialogueManager.showDialogue = true;
         }
 
         robotDialogueCoroutine = StartCoroutine(RobotPraten(praatCooldown));

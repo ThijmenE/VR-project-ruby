@@ -75,6 +75,12 @@ public class RobotButton : MonoBehaviour
             }
 
             Debug.Log($"Created robot with {personality} personality.");
+
+            Robottext robotText = GetComponent<Robottext>();
+            if (robotText != null)
+            {
+                robotText.RobotCreated();
+            }
         }
         else
         {

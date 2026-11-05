@@ -5,7 +5,7 @@ public class dialoguemanager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
-    public bool showDialogue = false;
+    public bool showDialogue;
     public GameObject robot;
 
     private Canvas dialogueCanvas;
@@ -28,8 +28,15 @@ public class dialoguemanager : MonoBehaviour
             return;
         }
 
-        showDialogue = false;
-        dialogueCanvas.gameObject.SetActive(false);
+        dialogueCanvas.enabled = false;
+    }
+
+    private void Update()
+    {
+        if (showDialogue && dialogueCanvas != null && !dialogueCanvas.enabled)
+        {
+            ShowDialogue();
+        }
     }
 
     public void StartDialogue(string sentence)
@@ -60,10 +67,9 @@ public class dialoguemanager : MonoBehaviour
     public void ShowDialogue()
     {
         showDialogue = true;
-
         if (dialogueCanvas != null)
         {
-            dialogueCanvas.gameObject.SetActive(true);
+            dialogueCanvas.enabled = true;
         }
     }
 }
