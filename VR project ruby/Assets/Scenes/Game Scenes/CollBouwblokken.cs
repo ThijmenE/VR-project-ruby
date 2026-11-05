@@ -7,27 +7,24 @@ public class CollBouwblokken : MonoBehaviour
 {
     private Rigidbody rb;
 
-    private Rigidbody boxRb;
     private XRGrabInteractable grabInteractable;
-    private FixedJoint Joint;
     private Rigidbody boxBody;
     private Collider boxCollider;
-    private bool isGrabbed;
     private bool touching;
+    private Coroutine freezeCoroutine;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         grabInteractable = GetComponent<XRGrabInteractable>();
-        StartCoroutine(FreezeTimer());
     }
 
     private void OnEnable()
     {
         if (grabInteractable != null)
         {
-            grabInteractable.selectEntered.AddListener(OnDartGrabbed);
-            grabInteractable.selectExited.AddListener(OnDartReleased);
+            grabInteractable.selectEntered.AddListener(OnGrabbed);
+            grabInteractable.selectExited.AddListener(OnReleased);
         }
     }
 
@@ -35,22 +32,51 @@ public class CollBouwblokken : MonoBehaviour
     {
         if (grabInteractable != null)
         {
-            grabInteractable.selectEntered.RemoveListener(OnDartGrabbed);
-            grabInteractable.selectExited.RemoveListener(OnDartReleased);
+            grabInteractable.selectEntered.RemoveListener(OnGrabbed);
+            grabInteractable.selectExited.RemoveListener(OnReleased);
         }
 
-        Release();
+        if (freezeCoroutine != null)
+        {
+            StopCoroutine(freezeCoroutine);
+            freezeCoroutine = null;
+        }
     }
 
-    private float lastVelocity;
-
-    private IEnumerator FreezeTimer()
+    private void OnGrabbed(SelectEnterEventArgs args)
     {
-        while (true)
+        CancelFreeze();
+        rb.isKinematic = false;
+    }
+
+    private void OnReleased(SelectExitEventArgs args)
+    {
+        rb.isKinematic = false;
+
+        if (grabInteractable.isSelected)
+            return;
+
+        CancelFreeze();
+        freezeCoroutine = StartCoroutine(FreezeAfterRelease());
+    }
+
+    private IEnumerator FreezeAfterRelease()
+    {
+        yield return new WaitForSeconds(1f);
+
+        Vector3 previousPosition = transform.position;
+        Quaternion previousRotation = transform.rotation;
+
+        while (!grabInteractable.isSelected)
         {
-            lastVelocity = rb.linearVelocity.magnitude;
-            yield return new WaitForSeconds(2f);
-            if (Mathf.Abs(rb.linearVelocity.magnitude - lastVelocity) < 0.01f)
+            yield return new WaitForSeconds(0.1f);
+
+            Vector3 currentPosition = transform.position;
+            Quaternion currentRotation = transform.rotation;
+            bool positionIsStable = Vector3.Distance(previousPosition, currentPosition) < 0.01f;
+            bool rotationIsStable = Quaternion.Angle(previousRotation, currentRotation) < 1f;
+
+            if (positionIsStable && rotationIsStable && !grabInteractable.isSelected)
             {
                 rb.linearVelocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
@@ -58,21 +84,20 @@ public class CollBouwblokken : MonoBehaviour
                 break;
             }
 
+            previousPosition = currentPosition;
+            previousRotation = currentRotation;
         }
-            yield return null;
+
+        freezeCoroutine = null;
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void CancelFreeze()
     {
-        
-        Debug.Log("Collision exit");
-        if (collision.gameObject != null)
+        if (freezeCoroutine == null)
             return;
 
-        touching = false;
-        boxCollider = null;
-        boxBody = null;
-        Release();
+        StopCoroutine(freezeCoroutine);
+        freezeCoroutine = null;
     }
 
     private static Rigidbody GetOrCreateboxBody(Collider boxCollider)
