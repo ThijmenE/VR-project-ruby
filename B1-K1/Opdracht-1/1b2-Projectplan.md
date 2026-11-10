@@ -1,6 +1,6 @@
 # Projectplan
 
-Versienummer : 1.3
+Versienummer : 1.4
 
 Auteur : Thijmen, Marijn
 
@@ -21,6 +21,7 @@ Datum : 2026-10-29
 | 2026-10-27 | 1.1    | Marijn  | Afwijkingen ingevuld |
 | 2026-10-29 | 1.2    | Thijmen    | Uitleg opdrachtgever verbetert|
 | 2026-10-27 | 1.3    | Marijn  | Datums toegevoegd aan afwijkingen|
+| 2026-11-10 | 1.4    | Thijmen    | meer afwijkingen ingevuld|
 
 <div style="page-break-after: always;"></div>
 
@@ -104,3 +105,13 @@ Wij hebben het project staan voor 4 weken maar we hebben de planning gebaseerd o
 2026-10-21 - De tutorial hadden we ook op de player zijn hand gezet en dat zorgde voor problemen met de blokken spawner. Als je ze beide aanzette gingen ze door elkaar heen. Ook hadden we een probleem met de cards van de ui omdat hij daar doorheen moest loopen in de scene. Het heeft ons uiteindelijk geen tijd gekost.
 
 2026-10-21 - Bij de prullenbak konden we eerst de bouwblokken niet verwijderen omdat de settings in de blokken niet goed waren, dus dat heeft ons iets meer tijd gekost dan normaal.
+
+2026-10-25 - Robot machine kwam iets later af dan op de planning en heeft op latere 2026-11-4 nog toevoegingen gekregen zodat het beter werkt met het robot praten en models met meerdere mesh filters of kleuren.
+
+2026-11-6 - Bouwblokken hadden de hele tijd collision problemen waardoor ze makkelijk in elkaar vast kwamen te zetten of heel snel over andere objecten heen gleed. De bouwblokken zijn nu automatisch aan je hand vast en gaan door objecten in de buurt heen waardoor je de blokken weer lost krijgt als ze ergens vast komen te zitten. Ook bevriezen de blokken na een seconde zodra rotatie en de positie van de blokken heel weinig verandert.
+
+2026-10-28 | 2026-11-10 - Begonnen met een test model maken voor de robot machine om te zien of alles goed werkte. Later met echt model gaan werken waar veel tijd koste om de grote en rotatie goed te krijgen. Daarna bezig geweest met hoeden en brillen om hier rotatie en grote goed op te krijgen.
+
+2026-10-28 | 2026-11-10 - Robot animaties zijn weggehaald omdat het niet goed kan werken met de manier waarop de robot machine is gemaakt.
+
+2026-11-2 - Het praten van de robot is afgekomen voor alle minigames maar de zinnen voor het gooien schuden en vallen was eerst stil gezet omdat we eerst belangrijkere dingen af wouden krijgen zoals de robot machine zelf helemaal klaar en de bouwblokken.
