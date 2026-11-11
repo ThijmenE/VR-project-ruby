@@ -9,9 +9,10 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
 
 
-    public void LoadMenu() // Loads a scene from the build profiles based on name
+    public void StopGame() // closes the game when a build has been made
     {
-        SceneManager.LoadScene("UI");
+        Application.Quit();
+        Debug.Log("Stopping game");
     }
 
     public void AudioSlider()
