@@ -627,6 +627,7 @@ GameObject:
   - component: {fileID: 455281239283689549}
   - component: {fileID: 5739898250505523763}
   - component: {fileID: 2433804068941249170}
+  - component: {fileID: 201691717024561416}
   m_Layer: 0
   m_Name: 1x1Cube
   m_TagString: Blok
@@ -763,7 +764,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0
-  m_MovementType: 1
+  m_MovementType: 2
   m_PredictedVisualsTransform: {fileID: 0}
   m_VelocityDamping: 1
   m_VelocityScale: 1
@@ -833,6 +834,18 @@ MonoBehaviour:
   m_MinimumScaleRatio: 1
   m_MaximumScaleRatio: 1
   m_ScaleMultiplier: 0.25
+--- !u!114 &201691717024561416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2916595089074878231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e3bf244cfe12dd49b78b95075adc6e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollBouwblokken
 --- !u!1 &3111428470335181043
 GameObject:
   m_ObjectHideFlags: 0
