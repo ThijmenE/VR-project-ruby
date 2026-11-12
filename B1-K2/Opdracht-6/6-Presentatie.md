@@ -18,4 +18,3 @@ Datum :
  - Uitleg van de functionaliteiten
  - Afstemmen aan de toehoorder
  - Beantwoorden van vragen met steekhoudende argumenten
-
