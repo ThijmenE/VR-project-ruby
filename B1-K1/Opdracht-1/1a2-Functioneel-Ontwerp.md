@@ -1,6 +1,6 @@
 # Functioneel Ontwerp
 
-Versienummer : 1.1
+Versienummer : 1.2
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-10-05
+Datum : 2026-11-12
 
 <div style="page-break-after: always;"></div>
 
@@ -17,8 +17,9 @@ Datum : 2026-10-05
 | Datum      | Versie | Wie | Wijzigingen |
 | ---------- | ------ | --- | ----------- |
 | 2026-10-05 | 1.0    | Thijmen | functioneel ontwerp ingevuld |
-| 2026-10-05 | 1.0    | Marijn | functioneel ontwerp ingevuld |
-| 2026-10-29 | 1.1    | Thijmen    | Uitleg opdrachtgever verbetert|
+| 2026-10-05 | 1.0    | Marijn  | functioneel ontwerp ingevuld |
+| 2026-10-29 | 1.1    | Thijmen | Uitleg opdrachtgever verbeterd|
+| 2026-10-05 | 1.2    | Marijn  | Spelfouten en interpunctie verbeterd|
 
 <div style="page-break-after: always;"></div>
 
@@ -48,7 +49,7 @@ De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Camp
 
 ## Actoren
 
-Omdat ons project een singleplayer game is is de enige actor een gast, omdat die de game speelt zonder dat andere actoren iets kunnen doen.
+Omdat ons project een singleplayer game is, is de enige actor een gast, omdat die de game speelt zonder dat andere actoren iets kunnen doen.
 
 ### Functionele eisen en omschrijving
 
@@ -58,9 +59,9 @@ Omdat ons project een singleplayer game is is de enige actor een gast, omdat die
 | Wil ik...          | Een robot maken                     |
 | Zodat ik...        | Met een robot kan spelen            |
 | Prioriteit         | Medium                              |
-| Acceptatiecriteria | Benen, torso en hoofd in machine, optioneel hoed en/of gezicht accessoire |
-| Scenario           | Pak robot onderdeel, stop in machine, wanneer 3 lichaamsdelen erin zitten druk je de knop in, robot word gemaakt |
-| Bijzonderheden     | nvt                                 |
+| Acceptatiecriteria | Benen, torso en hoofd in machine, optioneel een hoed en/of gezichtaccessoire |
+| Scenario           | Pak een robotonderdeel, stop het in de machine. Wanneer er drie lichaamsdelen in zitten, druk je de knop in en wordt de robot gemaakt.|
+| Bijzonderheden     | n.v.t                                 |
 
 | Titel              | Robot persoonlijkheid |
 | ------------------ | ----------------------------------- |
@@ -70,7 +71,7 @@ Omdat ons project een singleplayer game is is de enige actor een gast, omdat die
 | Prioriteit         | Medium                              |
 | Acceptatiecriteria | Een robot die verschillende dingen kan zeggen en reageert |
 | Scenario           | Als je met de robot speelt of iets goed doet in een minigame |
-| Bijzonderheden     | nvt                                 |
+| Bijzonderheden     | n.v.t                                 |
 
 ## Definition of Done
 
@@ -78,12 +79,12 @@ Omdat ons project een singleplayer game is is de enige actor een gast, omdat die
     - Alle functionaliteiten zoals beschreven in de user story zijn geïmplementeerd.
     - De functionaliteiten voldoen aan de specificaties en acceptatiecriteria.
 2. **Code Kwaliteit**:
-    - De code is geschreven volgens de vastgestelde afspraken (camelcase, veel notities).
+    - De code is geschreven volgens de vastgestelde afspraken (camelCase, veel notities).
     - Er zijn geen onbehandelde compilerwaarschuwingen of -fouten.
     - De code is goed leesbaar en gedocumenteerd.
 3. **Code Testing**:
     - De code van groepsgenoten wordt door elkaar getest.
-    - Als code fout is, word deze aangepast door groepsgenoten met notitie erachter van wat is aangepast.
+    - Als code fout is, wordt deze aangepast door groepsgenoten met notitie erachter van wat is aangepast.
     - Alle tests slagen zonder fouten.
 4. **Integratietesting**:
     - De nieuwe code is geïntegreerd in de bestaande codebase zonder conflicten.
@@ -92,10 +93,10 @@ Omdat ons project een singleplayer game is is de enige actor een gast, omdat die
     - De functionaliteiten zijn getest in de productieachtige omgeving.
     - De gebruikersacceptatietests zijn succesvol afgerond.
 6. **Documentatie**:
-    - Alle benodigde documentatie is bijgewerkt, inclusief gebruikershandleidingen, ReadMe, Project-plan afwijkingen, enz.
+    - Alle benodigde documentatie is bijgewerkt, inclusief gebruikershandleidingen, README, projectplan, afwijkingen, enz.
 7. **Deployment**:
     - De code is klaar voor implementatie naar de productieomgeving.
-    - Game build moet makkelijk te downloaden zijn vanuit de repository.
+    - De game build moet makkelijk te downloaden zijn vanuit de repository.
 8. **Code Review**:
     - Code reviews zijn uitgevoerd en eventuele feedback is geïmplementeerd.
 9. **Product Owner Goedkeuring**:

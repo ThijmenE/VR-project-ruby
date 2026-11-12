@@ -1,6 +1,6 @@
 # Game Concept Document
 
-Versienummer : 1.2
+Versienummer : 1.4
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-11-4
+Datum : 2026-11-12
 
 <div style="page-break-after: always;"></div>
 
@@ -19,9 +19,10 @@ Datum : 2026-11-4
 | 2026-09-30 | 1.0    | Thijmen    | Game Concept Document ingevuld|
 | 2026-09-30 | 1.0    | Marijn     | Game Concept Document ingevuld|
 | 2026-10-05 | 1.1    | Marijn     | Spelfouten en punctuatie verbeterd|
-| 2026-10-29 | 1.2    | Thijmen    | Uitleg opdrachtgever verbetert|
+| 2026-10-29 | 1.2    | Thijmen    | Uitleg opdrachtgever verbeterd|
 | 2026-11-4  | 1.3    | Thijmen    | Onderbouwing ingevuld|
 | 2026-11-4  | 1.3    | Marijn     | Onderbouwing ingevuld|
+| 2026-11-4  | 1.4    | Marijn     | Spelfouten en interpunctie verbeterd|
 
 <div style="page-break-after: always;"></div>
 
@@ -69,8 +70,8 @@ De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Camp
 
 ## Game Overzicht
 
-In het spel moet je een robot in elkaar zetten waardoor hij "tot leven komt" en op dingen kan reageren door animaties en een tekstbubbel boven zijn hoofd.
-Verder zijn er andere interactieve dingen in de kamer om mee te spelen (blokken, basketbal net met bal, etc).
+In het spel moet je een robot in elkaar zetten waardoor hij "tot leven komt" en op dingen kan reageren door middel van animaties en een tekstbubbel boven zijn hoofd.
+Verder zijn er andere interactieve dingen in de kamer om mee te spelen (blokken, basketbalnet met bal, etc).
 
 ### Genre
 
@@ -87,13 +88,13 @@ Verder zijn er andere interactieve dingen in de kamer om mee te spelen (blokken,
 | Leeftijdsgroep   |  Dit project word gemaakt voor kinderen in groep acht (11-13 jaar).|
 | Gamingervaring   | Geen/Minimaal |
 | Interesses       | VR/Sandbox games |
-| PEGI-classificatie | Pegi 3     |
+| PEGI-classificatie | PEGI 3     |
 
 ### Platform
 
 | Platform | Versie / Specificaties |
 | -------- | ---------------------- |
-| Computer/VR | Een computer die VR kan runnen, een VR headset met 2 controllers. |
+| Computer/VR | Een computer die VR kan draaien, een VR headset met 2 controllers. |
 |          |                        |
 
 ### Speelstijl
@@ -131,7 +132,7 @@ Er zijn geen belangrijke personages, omdat het een sandbox game is.
 
 ### Core Loop
 
-- De speler verkent een ruimte in VR → vindt items zoals: Dartpijlen, bowlingbal, basketbal. → gebruik deze items om punten te scoren in de minigames → Door punten te scoren krijg je een reactie van de robot
+- De speler verkent een ruimte in VR → vindt items zoals Dartpijlen, bowlingbal, basketbal. → gebruik deze items om punten te scoren in de minigames → Door punten te scoren, krijg je een reactie van de robot
 
 ### Controls
 
@@ -165,7 +166,7 @@ Er zijn geen belangrijke personages, omdat het een sandbox game is.
 | ModelStijl       | Low poly meshes |
 | UI-stijl         | Cartoony     |
 | Referentiespellen| Model: Muck, UI: Slime rancher 2 |
-| Kleurenpalet     | Felle makkelijk te identificeerbaar (foto hier onder) |
+| Kleurenpalet     | Felle, makkelijk te identificeren kleuren (foto hieronder) |
 
 ![Kleuren-Palet](../Opdracht-1//Fotos/KleurenPalet.png)
 
@@ -175,7 +176,7 @@ Er zijn geen belangrijke personages, omdat het een sandbox game is.
 | ----------------- | ------------ |
 | Muziekstijl       | Ambient      |
 | Sfeer             | Rustige achtergrond muziek |
-| Geluidseffecten   | Wanneer objecten worden opgepakt/als er op word gericht |
+| Geluidseffecten   | Wanneer objecten worden opgepakt of als er op word gericht |
 | Stemopnames       | Geen         |
 
 <div style="page-break-after: always;"></div>
@@ -187,7 +188,7 @@ Er zijn geen belangrijke personages, omdat het een sandbox game is.
 | Game Engine          | Unity          | Wij hebben het meeste ervaring in Unity en Unity heeft een goede basis voor VR projecten. |
 | Programmeertaal      | C#             | Dit is de taal die gebruikt word in Unity. |
 | Versiebeheersysteem  | Git            | Alle game engines ondersteunen Git. |
-| Art tool(s)          | Blender        | Blender is gratis en wij hebben allebei ervaring hierin. |
+| Art tool(s)          | Blender        | Blender is gratis en wij hebben allebei ervaring hiermee. |
 | Audio tool(s)        | Unity Native Audio System | Is ingebouwd in Unity |
 
 **Minimale systeemvereisten (speler):**
@@ -210,7 +211,7 @@ Er zijn geen belangrijke personages, omdat het een sandbox game is.
 | ----------- | ------------------- | ----------- |
 | Must have   | VR-ondersteuning en basisbeweging | Dit is nodig voor standaard VR functionaliteit. |
 | Should have | Geavanceerde interacties | De robot maker machine combineert meerdere models samen. |
-| Could have  | Geavanceerde audio | Zodat de ervaring meer realistisch is. |
+| Could have  | Geavanceerde audio | Zodat de ervaring realistischer is. |
 | Won't have  | Een verhaal | Dit is niet nodig in een sandbox game en de bedoeling van de game is om VR te leren. |
 
 ### Globale Planning
@@ -229,49 +230,49 @@ Link naar volledige planning: https://github.com/users/ThijmenE/projects/6/views
 ## Onderbouwing
 
 Genre
-We hebben gekozen voor een VR sandbox game omdat Ruby graag VR wil introduceren aan jongeren (12 jaar/groep 8).
+We hebben gekozen voor een VR-sandbox game, omdat Ruby graag VR wil introduceren aan jongeren (12 jaar/groep 8).
 De game moet dus simpel op te pakken zijn voor kinderen met weinig/geen game ervaring.
-In een sandbox is geen risico en kun je onze minigames leren waardoor ze een goede eerste VR ervaring kunnen krijgen.
+In een sandbox is geen risico en kun je onze minigames leren, waardoor ze een goede eerste VR-ervaring kunnen krijgen.
 
 Doelgroep
-De doelgroep is basischool leerlingen (rond de 12 jaar oud).
-We hebben deze doelgroep omdat we in overleg met Ruby hebben besloten een VR game te maken voor basischool leerlingen omdat ze graag een introductie willen geven aan VR.
+De doelgroep is basischoolleerlingen (rond de 12 jaar oud).
+We hebben deze doelgroep omdat we in overleg met Ruby hebben besloten een VR game te maken voor basischoolleerlingen, omdat ze graag een introductie willen geven aan VR.
 
 Platform
-Onze game is in VR omdat de opdrachtgever graag een VR game wil hebben om jongeren te introduceren aan VR.
+Onze game is in VR, omdat de opdrachtgever graag een VR game wil hebben om jongeren te introduceren aan VR.
 
 Speelstijl
-Het spel moet simpel zijn zodat het makkelijk opgepakt kan worden door leerlingen.
-Daarom leek ons singeplayer de beste keuze omdat het niet competatief kan worden wanneer je alleen speelt.
-Verder is de bedoelde speel sessie van ons spel 5-15 minuten omdat het alleen bedoelt is om een introductie te zijn aan VR en daarom waarschijnlijk alleen op locatie bij Ruby gespeelt kan worden.
+Het spel moet simpel zijn, zodat het makkelijk opgepakt kan worden door leerlingen.
+Daarom leek ons singeplayer de beste keuze, omdat het niet competitief kan worden wanneer je alleen speelt.
+Verder is de bedoelde speelsessie van ons spel 5-15 minuten, omdat het alleen bedoelt is als introductie tot VR en daarom waarschijnlijk alleen op locatie bij Ruby gespeeld kan worden.
 
 Verhaal
-Omdat de spelers alleen bij Ruby kunnen spelen, waardoor de game niet lang gespeelt kan worden en omdat het een sandbox game is hebben we besloten er geen verhaal aan de game toe te voegen.
+Omdat de spelers alleen bij Ruby kunnen spelen, waardoor de game niet lang gespeelt kan worden, en omdat het een sandbox game is, hebben we besloten er geen verhaal aan de game toe te voegen.
 
 Setting en Wereld
-Het speelt af in een (kinder)kamer omdat het goed bij de doelgroep past en een rustige omgeving is, wat weer past bij onze sfeer.
-Omdat de game in een hedendaagse tijd afspeelt past een moderne (kinder)kamer goed bij onze sfeer.
+Het speelt af in een (kinder)kamer, omdat het goed bij de doelgroep past en een rustige omgeving is, wat weer past bij onze sfeer.
+Omdat de game in een hedendaagse tijd afspeelt, past een moderne (kinder)kamer goed bij onze sfeer.
 
 Personages
-Wij hebben geen belangrijke personages in onze game omdat de game alleen op locatie bij Ruby gespeelt kan worden, waardoor je niet in een verhaal kan komen met allemaal personages en vinden wij dat in een sandbox game geen personages nodig zijn.
+Wij hebben geen belangrijke personages in onze game, omdat de game alleen op locatie bij Ruby gespeelt kan worden, waardoor je niet in een verhaal met allemaal personages kunt komen. Ook vinden wij dat in een sandboxgame geen personages nodig zijn.
 
 Core Loop
 We hebben een makkelijke core loop gekozen waarbij de speler een kamer in vr kan ontdekken en minigames kan spelen.
 Hierdoor kan de speler vrij rondlopen en doen wat hij of zij wil.
-In de kamer zijn verschillende minigames te spelen waarbij je reacties kan krijgen van de robot. Dit past goed bij onze game omdat het spel makkelijk te begrijpen is.
+In de kamer zijn verschillende minigames te spelen waarbij je reacties kan krijgen van de robot. Dit past goed bij onze game, omdat het spel makkelijk te begrijpen is.
 
 Controls
 We hebben de controls van de game gekozen door wat voor ons natuurlijk voelt (grip button voor dingen oppakken omdat je dan knijpt, trigger knop voor UI knoppen omdat dat voelt als een select knop).
-En de menu knoppen kunnen niet echt natuurlijk voelen maar daarom hebben we ze allemaal op de linker controller gestopt zodat het overzichtelijk blijft.
+De menuknoppen kunnen niet echt natuurlijk aanvoelen, maar daarom hebben we ze allemaal op de linkercontroller gestopt, zodat het overzichtelijk blijft.
 
 Progressie en Beloningen
 De progressie in onze game komt neer op het maken van de robot.
-Zodra de robot er is zal hij positief reageren op de minigames die je hebt gespeeld.
-De beloning is de reacties van de robot voor deze minigames.
+Zodra de robot er is, zal hij positief reageren op de minigames die je hebt gespeeld.
+De beloning bestaat uit de reacties van de robot op deze minigames.
 
 Visuele Stijl
-Voor de game willen we een kleurrijk kleurpalet gebruiken omdat het voor jongere kinderen gemaakt word en daarom goed bij onze doelgroep zal passen.
-Verder willen we een cartoony font hebben voor onze UI teksten om dezelfde reden
+Voor de game willen we een kleurrijk kleurpalet gebruiken, omdat het voor jongere kinderen gemaakt wordt en daarom goed bij onze doelgroep zal passen.
+Verder willen we een cartoony font hebben voor onze UI teksten om dezelfde reden.
 
 Audio en Muziek
 We hebben een rustige achtergrond muziek in de game gestopt om te helpen met de sfeer van de game.
@@ -281,13 +282,13 @@ We hebben een rustige achtergrond muziek in de game gestopt om te helpen met de 
 
 Het game design van ons project is te halen, omdat we redelijk wat ervaring hebben in Unity en vooral low poly models gaan maken.
 
-De technologie is te halen, omdat we vooral 2 grote functies nodig hebben (robot machine maker en de robot persoonlijkheden/emoties). We kunnen hierdoor makkelijk taken verdelen zodat eerst 1 iemand de machine kan doen en de ander de emoties. Terwijl het andere teamlid bezig is met een grote functie kan er veel gedaan worden aan kleinere systemen, zodat we de hele tijd bezig zijn.
+De technologie is te halen, omdat we vooral 2 grote functies nodig hebben (robot machine maker en de robot persoonlijkheden/emoties). We kunnen hierdoor makkelijk taken verdelen zodat eerst 1 iemand de machine kan doen en de ander de emoties. Terwijl het andere teamlid bezig is met een grote functie, kan er veel gedaan worden aan kleinere systemen, zodat we de hele tijd bezig zijn.
 
-Wij denken dat dit project te halen is in 4 sprints/weken omdat we gaan werken in de preset van VR Unity, waardoor de basis van sommige vr punten gedaan zijn.
+Wij denken dat dit project te halen is in 4 sprints/weken, omdat we gaan werken in de preset van VR Unity, waardoor de basis van sommige vr punten gedaan zijn.
 
 **Risico's en maatregelen:**
 
 | Risico | Kans | Impact | Maatregel |
 | ------ | ---- | ------ | --------- |
-| Tijd loopt uit op belangrijke systemen | Midden | Hoog | Wanneer er problemen komen word dit aangegeven en gaat er gezamelijk gewerkt worden aan het probleem |
-| Veel tijd kwijt aan models maken | groot | laag | Als de models niet op tijd af komen kunnen er assets gebruikt worden om deze te vervangen |
+| Tijd loopt uit op belangrijke systemen | Midden | Hoog | Wanneer er problemen komen, wordt dit aangegeven en gaat er gezamelijk gewerkt worden aan het probleem |
+| Veel tijd kwijt aan models maken | groot | laag | Als de models niet op tijd af komen, kunnen er assets gebruikt worden om deze te vervangen |

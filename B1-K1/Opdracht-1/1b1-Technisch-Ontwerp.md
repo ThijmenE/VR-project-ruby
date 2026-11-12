@@ -1,6 +1,6 @@
 # Technisch Ontwerp
 
-Versienummer : 1.1
+Versienummer : 1.2
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-10-05
+Datum : 2026-11-12
 
 <div style="page-break-after: always;"></div>
 
@@ -17,8 +17,9 @@ Datum : 2026-10-05
 | Datum      | Versie | Wie | Wijzigingen |
 | ---------- | ------ | --- | ----------- |
 | 2026-10-05 | 1.0    | Thijmen | functioneel ontwerp ingevuld |
-| 2026-10-05 | 1.0    | Marijn | functioneel ontwerp ingevuld |
-| 2026-10-29 | 1.1    | Thijmen    | Uitleg opdrachtgever verbetert|
+| 2026-10-05 | 1.0    | Marijn  | functioneel ontwerp ingevuld |
+| 2026-10-29 | 1.1    | Thijmen | Uitleg opdrachtgever verbeterd|
+| 2026-11-12 | 1.2    | Marijn  | Spelfouten en interpunctie verbeterd|
 
 <div style="page-break-after: always;"></div>
 
@@ -57,14 +58,14 @@ De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Camp
 
 ## Software en techniek
 
-Wij werken met Unity Editor version 6000.4.3f1. Achter alle methods willen we notities hebben staan zodat we ook later goed weten wat alle code deed. Wij programeren met Camelcase. Wij gaan werken in een Github repository, waarin we per feature een branch aanmaken. De code word eerst getest op die branch door een groepsgenoot voordat die gemerged word naar de main branch.
+Wij werken met Unity Editor version 6000.4.3f1. Achter alle methods willen we notities hebben staan, zodat we ook later goed weten wat alle code deed. Wij programmeren met CamelCase. Wij gaan werken in een GitHub-repository, waarin we per feature een branch aanmaken. De code wordt eerst getest op die branch door een groepsgenoot voordat die gemerged wordt naar de main branch.
 
 ## Onderbouwing
 
-In onze ontwerpkeuzes is haalbaarheid goed te doen. Wij hebben User stories gemaakt op onze planning waar een duidelijke tijdsindicatie bij staat.
+In onze ontwerpkeuzes is de haalbaarheid goed te doen. Wij hebben user stories gemaakt voor onze planning, waar een duidelijke tijdsindicatie bij staat.
 
-Er zijn geen problemen met privacy omdat er geen data word gevraagd van de gebruiker en de game lokaal word gelanceerd.
+Er zijn geen problemen met privacy, omdat er geen data wordt gevraagd van de gebruiker en de game lokaal wordt gelanceerd.
 
-In ons project hebben we geen security problemen omdat het lokaal word gelanceerd en en geen data word opgeslagen.
+In ons project hebben we geen securityproblemen, omdat de game lokaal wordt gelanceerd en er geen data wordt opgeslagen.
 
-Ons project voldoet aan de eisen van de AVG en OWASP-top 10
+Ons project voldoet aan de eisen van de AVG en de OWASP Top 10.

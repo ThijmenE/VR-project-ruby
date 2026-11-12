@@ -20,7 +20,7 @@ Datum : 2026-10-01
 | 2026-10-01 | 1.0    | Marijn  | PvE ingevuld |
 | 2026-10-05 | 1.1    | Marijn  |Spelfouten en punctuatie verbeterd |
 | 2026-10-29 | 1.2    | Marijn  |Moscow beter genoteerd en foto toegevoegd|
-| 2026-10-29 | 1.3    | Thijmen    | Uitleg opdrachtgever verbetert|
+| 2026-10-29 | 1.3    | Thijmen    | Uitleg opdrachtgever verbeterd|
 
 <div style="page-break-after: always;"></div>
 
@@ -45,8 +45,7 @@ Datum : 2026-10-01
 
 ### Over dit document
 
-In dit document worden de uit te voeren werkzaamheden,
-projectdoelstellingen, besprekingen en opleveringen vastgelegd. Het een en ander wordt in een logische chronologisch volgorde in een strokenplanning opgenomen.
+In dit document worden de uit te voeren werkzaamheden, projectdoelstellingen, besprekingen en opleveringen vastgelegd. Het een en ander wordt in een logische chronologisch volgorde in een strokenplanning opgenomen.
 
 ### Over het project en de opdrachtgever
 
@@ -56,28 +55,28 @@ De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Camp
 
 ### Informatiebronnen
 
-Afstemming gesprek: B1-K2/Opdracht-5/Videos/VR project opdacht afstemmen ruby.mp4
+Afstemming gesprek: B1-K2/Opdracht-5/Videos/VR project opdracht afstemmen ruby.mp4
 
 ![Fotomail](../Opdracht-1/Fotos/FotomailMarjan.png)
 
 ### Eisen en wensen (MoSCoW)
 
 Must have
-- : De game moet makkelijk en simpel te spelen zijn
-- : De gebruiker kan robot bouwen door robotonderdelen te kiezen
-- : Robots moeten iets kunnen doen (drinken, eten, spelen, dansen)
-- : Meer te doen dan alleen met robots spelen (minigames: darten, basketbal, bowlen, bouwblokken)
+- : De game moet makkelijk en simpel te spelen zijn.
+- : De gebruiker kan robot bouwen door robotonderdelen te kiezen.
+- : Robots moeten iets kunnen doen (drinken, eten, spelen, dansen).
+- : Er moet meer te doen zijn dan alleen met robots spelen (minigames: darten, basketbal, bowlen, bouwblokken).
 
 Should have
-- : Robots kunnen aankleden (Verschillende accessoires)
-- : Meerdere robots
-- : Thema van game moet een kinderkamer zijn
+- : Robots kunnen aankleden (Verschillende accessoires).
+- : Meerdere robots.
+- : Thema van game moet een kinderkamer zijn.
 
 Could have
-- : Robot onderdelen liggen door de kamer verspreid
+- : Robotonderdelen liggen door de kamer verspreid.
 
 Won't have (now)
-- : Dieren (zal niet goed werken met het concept)
+- : Dieren (zal niet goed werken met het concept).
 
 ## Betrokkenen
 
@@ -87,8 +86,8 @@ Marijn: Notulist, programmeur, modelleur, aanspreekpunt, +31633677013, mlubbers5
 
 ## Projectgrenzen
 
-Zodra het project is afgerond krijgt ruby het project en komen er geen updates meer (tenzij er een gamebreaking bug in de game zit). Er komen geen transacties in de game voor voor echt geld. De game is bedoeld om kort gespeeld te worden dus er komen geen uitbreidingen. Omdat de game bedoeld is voor jonge kinderen komt er geen realistisch geweld of seksuele onderwerpen in de game voor.
+Zodra het project is afgerond, krijgt Ruby het project en komen er geen updates meer (tenzij er een gamebreaking bug in de game zit). Er komen geen transacties in de game voor echt geld. De game is bedoeld om kort gespeeld te worden, dus er komen geen uitbreidingen. Omdat de game bedoeld is voor jonge kinderen, komen er geen realistisch geweld of seksuele onderwerpen in de game voor.
 
 ## Technische eisen
 
-Om de game te runnen heb je een computer/laptop nodig die VR ondersteund. Verouderde systemen gaat waarschijnlijk geen VR projecten kunnen runnen, daarom stellen we voor dat je tenminste windows 10/11 hebt of alternatief MacOS10.15 of hoger. En natuurlijk heb je een VR headset nodig, alle nieuwere VR headsets werken voor ons project.
+Om de game te runnen, heb je een computer/laptop nodig die VR ondersteunt. Verouderde systemen gaan waarschijnlijk geen VR-projecten kunnen runnen. Daarom stellen we voor dat je ten minste Windows 10/11 hebt of alternatief macOS 10.15 of hoger. En natuurlijk heb je een VR-headset nodig. Alle nieuwere VR-headsets werken voor ons project.
