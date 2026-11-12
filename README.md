@@ -42,8 +42,11 @@ De robot kan reageren op de activiteiten die je uitvoert. Hierdoor krijg je tijd
 Het project is ontwikkeld met de volgende software en technologieën:
 
 Unity: Game engine.
+
 C#: Programmeertaal.
+
 Blender: Voor het maken en bewerken van 3D-modellen.
+
 Git: Voor versiebeheer.
 
 ## Minimale systeemvereisten
