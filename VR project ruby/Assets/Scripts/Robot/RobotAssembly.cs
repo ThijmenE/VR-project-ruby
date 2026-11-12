@@ -7,12 +7,12 @@ public class RobotAssembly : MonoBehaviour
     public bool isActive { get; private set; }
     public MeshFilter currentMeshFilter { get; private set; }
 
-    void Awake()
+    void Awake()// pakt een component van de XR socket ineractor
     {
         socket = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor>();
     }
 
-    void Update()
+    void Update()// zet de meshes en materials over van de object die in de sockets zitten
     {
         if (socket == null) return;
 

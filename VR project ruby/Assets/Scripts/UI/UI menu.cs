@@ -7,7 +7,7 @@ public class UImenu : MonoBehaviour
 {
     private bool card1Active;
 
-    public void StartGame() // Loads a scene from the build profiles based on name
+    public void StartGame() // laad een scene
     {
         SceneManager.LoadScene("UI");
     }

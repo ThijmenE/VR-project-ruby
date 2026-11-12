@@ -14,7 +14,7 @@ public class Basketbalscore : MonoBehaviour
         UpdateScoreUI();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)// wanneer de tag van het object dat door de ring gaat "Basketbal" is runt de code in deze method
     {
         if (other.CompareTag("Basketbal") && !isWaiting)
         {
@@ -25,14 +25,14 @@ public class Basketbalscore : MonoBehaviour
         }
     }
 
-    private IEnumerator WaitAfterScore()
+    private IEnumerator WaitAfterScore()// seconde cooldown tussen punten scoren
     {
         isWaiting = true;
         yield return new WaitForSeconds(1f);
         isWaiting = false;
     }
 
-    private void UpdateScoreUI()
+    private void UpdateScoreUI()// update de UI om 1 punt toe te voegen
     {
         if (scoreText != null)
         {
@@ -40,13 +40,13 @@ public class Basketbalscore : MonoBehaviour
         }
     }
 
-    public void ResetScore()
+    public void ResetScore()// zet de score op 0
     {
         score = 0;
         UpdateScoreUI();
     }
 
-    public void CheckBasketbalScore()
+    public void CheckBasketbalScore()// elke 5 punten in basketbal zegt de robot iets tegen je
     {
         if (score > 0 && score % 5 == 0)
         {

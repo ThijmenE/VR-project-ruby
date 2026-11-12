@@ -4,9 +4,9 @@ using System.Collections.Generic;
 public class RobotButton : MonoBehaviour
 {
     [SerializeField] private bool randomizePersonalityOnBuild = true;
-    [SerializeField] private RobotPersonality personality = RobotPersonality.Happy;
+    [SerializeField] private robotPersonality personality = robotPersonality.Happy;
 
-    public RobotPersonality Personality => personality;
+    public robotPersonality Personality => personality;
 
     public GameObject head;
     public GameObject torso;
@@ -24,7 +24,7 @@ public class RobotButton : MonoBehaviour
 
     private List<ObjectStatus> ItemsOpslaan = new List<ObjectStatus>();
 
-    void Start()
+    void Start()// pakt het begin positie van de robot
     {
         if (robot != null)
         {
@@ -32,7 +32,7 @@ public class RobotButton : MonoBehaviour
         }
     }
 
-    public void RobotCreate()
+    public void RobotCreate()// bekijkt alle onderdelen in de sockets en maakt slaat de mesh en materials op met de goede tags
     {
         head.TryGetComponent(out RobotAssembly headAssembly);
         torso.TryGetComponent(out RobotAssembly torsoAssembly);
@@ -71,7 +71,7 @@ public class RobotButton : MonoBehaviour
 
             if (randomizePersonalityOnBuild)
             {
-                personality = (RobotPersonality)Random.Range(0, System.Enum.GetValues(typeof(RobotPersonality)).Length);
+                personality = (robotPersonality)Random.Range(0, System.Enum.GetValues(typeof(robotPersonality)).Length);
             }
 
             Debug.Log($"Created robot with {personality} personality.");
@@ -88,7 +88,7 @@ public class RobotButton : MonoBehaviour
         }
     }
 
-    private static void CopyPart(MeshFilter input, MeshFilter output, string partName)
+    private static void CopyPart(MeshFilter input, MeshFilter output, string partName)// zet de delen over op de output objects
     {
         if (output == null)
         {
@@ -116,7 +116,7 @@ public class RobotButton : MonoBehaviour
             : new Material[0];
     }
 
-    void BeginPos(GameObject obj)
+    void BeginPos(GameObject obj)// pakt de start locatie van de robot
     {
         ObjectStatus status = new ObjectStatus
         {
@@ -129,7 +129,7 @@ public class RobotButton : MonoBehaviour
         ItemsOpslaan.Add(status);
     }
 
-    public void ResetRobot()
+    public void ResetRobot()// reset de locatie van de robot naar de originele locatie
     {
         foreach (ObjectStatus status in ItemsOpslaan)
         {

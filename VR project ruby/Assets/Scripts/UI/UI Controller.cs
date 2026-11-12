@@ -12,18 +12,18 @@ public class UIController : MonoBehaviour
 
     private bool card1Active;
 
-    public void StartGame() // Loads a scene from the build profiles based on name
+    public void StartGame() // laad een scene
     {
         SceneManager.LoadScene("Kamer");
     }
 
-    public void StopGame() // closes the game when a build has been made
+    public void StopGame() // sluit de game af
     {
         Application.Quit();
         Debug.Log("Stopping game");
     }
 
-    public void NextCard() // enables and disables the active cards in the menu scene
+    public void NextCard() // laat het volgende kaart zien
     {
         if (card1 == null || card2 == null)
         {
@@ -36,7 +36,7 @@ public class UIController : MonoBehaviour
         card2.SetActive(!card1Active);
     }
 
-    public void AudioSlider()
+    public void AudioSlider()// linkt de slider ingame aan het geluid van de audio
     {
         AudioListener.volume = audioSlider.value;
     }

@@ -6,13 +6,13 @@ public class BowlingBal : MonoBehaviour
     private Rigidbody rb;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.IXRInteractable interactable;
 
-    void Awake()
+    void Awake()// pakt de rigidbody en interactable
     {
         rb = GetComponent<Rigidbody>();
         interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.IXRInteractable>();
     }
 
-    void OnEnable()
+    void OnEnable()// voegt een listener toe aan de interactable
     {
         if (interactable != null)
         {
@@ -20,7 +20,7 @@ public class BowlingBal : MonoBehaviour
         }
     }
 
-    void OnDisable()
+    void OnDisable()// haalt een listerner van de interactable af
     {
         if (interactable != null)
         {
@@ -28,12 +28,12 @@ public class BowlingBal : MonoBehaviour
         }
     }
 
-    public void OnBallReleased(SelectExitEventArgs args)
+    public void OnBallReleased(SelectExitEventArgs args)// gebeurd wanneer de bal word losgelaten
     {
         Invoke(nameof(FlattenTrajectory), 0.1f);
     }
 
-    private void FlattenTrajectory()
+    private void FlattenTrajectory()// zorgt ervoor dat alleen de hoogte van de gegooide bal maar 10% zo hoog kan als dat hij normaal kan
     {
         Vector3 currentVelocity = rb.linearVelocity;
 

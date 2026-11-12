@@ -13,13 +13,13 @@ public class CollBouwblokken : MonoBehaviour
     private bool touching;
     private Coroutine freezeCoroutine;
 
-    private void Awake()
+    private void Awake()// pakt de components van de rigidbody en gradinteractable
     {
         rb = GetComponent<Rigidbody>();
         grabInteractable = GetComponent<XRGrabInteractable>();
     }
 
-    private void OnEnable()
+    private void OnEnable()// wanneer je een item pakt worden de listeners toegevoegd
     {
         if (grabInteractable != null)
         {
@@ -28,7 +28,7 @@ public class CollBouwblokken : MonoBehaviour
         }
     }
 
-    private void OnDisable()
+    private void OnDisable()// wanneer je een item loslaat worden de listeners verwijdert
     {
         if (grabInteractable != null)
         {
@@ -43,13 +43,13 @@ public class CollBouwblokken : MonoBehaviour
         }
     }
 
-    private void OnGrabbed(SelectEnterEventArgs args)
+    private void OnGrabbed(SelectEnterEventArgs args)// wanneer je een item pakt word kinematic modus uitgezet
     {
         CancelFreeze();
         rb.isKinematic = false;
     }
 
-    private void OnReleased(SelectExitEventArgs args)
+    private void OnReleased(SelectExitEventArgs args)// wanneer een item word losgelaten gaat kinematic modus aan een seconde nadat het item ongeveer stil ligt
     {
         rb.isKinematic = false;
 
@@ -60,7 +60,7 @@ public class CollBouwblokken : MonoBehaviour
         freezeCoroutine = StartCoroutine(FreezeAfterRelease());
     }
 
-    private IEnumerator FreezeAfterRelease()
+    private IEnumerator FreezeAfterRelease()// een check voor wanneer de blokken minder dan 0.01 afstand verplaatst en minder dan een graad roteert om het object op kinematic te zetten
     {
         yield return new WaitForSeconds(1f);
 
@@ -91,7 +91,7 @@ public class CollBouwblokken : MonoBehaviour
         freezeCoroutine = null;
     }
 
-    private void CancelFreeze()
+    private void CancelFreeze()// deze method stopt de freeze coroutine
     {
         if (freezeCoroutine == null)
             return;
@@ -100,7 +100,7 @@ public class CollBouwblokken : MonoBehaviour
         freezeCoroutine = null;
     }
 
-    private static Rigidbody GetOrCreateboxBody(Collider boxCollider)
+    private static Rigidbody GetOrCreateboxBody(Collider boxCollider)// als er geen rigidbody word gevonden word er een aangemaakt
     {
         Rigidbody body = boxCollider.attachedRigidbody;
         if (body == null)

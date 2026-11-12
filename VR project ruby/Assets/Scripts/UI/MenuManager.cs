@@ -12,14 +12,14 @@ public class MenuManager : MonoBehaviour
     private InputAction yButtonAction;
     private InputAction xButtonAction;
     private InputAction menuButtonAction;
-    void Awake()
+    void Awake()// slaat de status op van de bools
     {
         blokStatus = blokMenu.activeSelf;
         menuStatus = menu.activeSelf;
         uitlegStatus = uitleg.activeSelf;
     }
 
-    void OnEnable()
+    void OnEnable()// kijkt naar de input, opent een menu en sluit andere menus af (als er een menu open is)
     {
         yButtonAction = new InputAction(
             name: "Toggle Block Menu",
@@ -46,7 +46,7 @@ public class MenuManager : MonoBehaviour
         menuButtonAction.Enable();
     }
 
-    void OnDisable()
+    void OnDisable()// sluit menu af
     {
         yButtonAction.performed -= OnYButtonPressed;
         yButtonAction.Dispose();
@@ -58,22 +58,22 @@ public class MenuManager : MonoBehaviour
         menuButtonAction.Dispose();
     }
 
-    void OnYButtonPressed(InputAction.CallbackContext context)
+    void OnYButtonPressed(InputAction.CallbackContext context)// laat menu verschijnen met Y knop
     {
         BlokMenuSpawn();
     }
 
-       void OnXButtonPressed(InputAction.CallbackContext context)
+       void OnXButtonPressed(InputAction.CallbackContext context)// laat menu verschijnen met X knop
     {
         UitlegSpawn();
     }
 
-    void OnMenuButtonPressed(InputAction.CallbackContext context)
+    void OnMenuButtonPressed(InputAction.CallbackContext context)// laat menu verschijnen met menu knop
     {
         MenuSpawn();
     }
 
-    public void BlokMenuSpawn()
+    public void BlokMenuSpawn()// laat het blokmenu verschijnen
     {
         if (menuStatus == true || uitlegStatus == true)
         {
@@ -92,7 +92,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public void MenuSpawn()
+    public void MenuSpawn()// laat het menu verschijnen
     {
         if (blokStatus == true || uitlegStatus == true)
         {
@@ -112,7 +112,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-        public void UitlegSpawn()
+        public void UitlegSpawn()// laat de uitleg verschijnen
     {
         if (blokStatus == true || menuStatus == true)
         {

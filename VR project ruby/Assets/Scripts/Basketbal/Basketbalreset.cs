@@ -4,11 +4,11 @@ using UnityEngine;
 public class basketbalreset : MonoBehaviour
 {
     [SerializeField] private List<GameObject> basketBallen = new List<GameObject>();
-    [SerializeField] private Basketbalscore basketbalScore;
+    [SerializeField] private Basketbalscore basketBalScore;
 
     private List<objectStatus> itemsOpslaan = new List<objectStatus>();
 
-    private void Start()
+    private void Start() //als er objects in de lijst staan runt hij het script
     {
         foreach (GameObject ball in basketBallen)
         {
@@ -19,7 +19,7 @@ public class basketbalreset : MonoBehaviour
         }
     }
 
-    private void beginPos(GameObject obj)
+    private void beginPos(GameObject obj) //verzamelt de locatie van elk object in de lijst
     {
         objectStatus status = new objectStatus
         {
@@ -32,7 +32,7 @@ public class basketbalreset : MonoBehaviour
         itemsOpslaan.Add(status);
     }
 
-    public void resetGame()
+    public void resetGame()// reset alle objects in de lijst naar hun begin locatie
     {
         foreach (objectStatus status in itemsOpslaan)
         {
@@ -50,9 +50,9 @@ public class basketbalreset : MonoBehaviour
             }
         }
 
-        if (basketbalScore != null)
+        if (basketBalScore != null)
         {
-            basketbalScore.ResetScore();
+            basketBalScore.ResetScore();
         }
     }
 

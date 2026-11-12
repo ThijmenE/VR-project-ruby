@@ -6,16 +6,16 @@ public class Bowlenscript : MonoBehaviour
     private const float FallenPinAngle = 45f;
 
     [SerializeField] private List<GameObject> pins = new List<GameObject>();
-    [SerializeField] private GameObject BowlingBal;
+    [SerializeField] private GameObject bowlingBal;
 
-    private List<ObjectStatus> ItemsOpslaan = new List<ObjectStatus>();
+    private List<ObjectStatus> itemsOpslaan = new List<ObjectStatus>();
     private bool bowlingLinePlayed;
 
-    void Start()
+    void Start()// als er objecten in de lijst staat worden deze opgeslagen
     {
-        if (BowlingBal != null)
+        if (bowlingBal != null)
         {
-            BeginPos(BowlingBal);
+            BeginPos(bowlingBal);
         }
 
         foreach (GameObject pin in pins)
@@ -27,11 +27,11 @@ public class Bowlenscript : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void Update()// reset de locatie van alle objecten in de lijst
     {
         int fallenPins = 0;
 
-        foreach (ObjectStatus status in ItemsOpslaan)
+        foreach (ObjectStatus status in itemsOpslaan)
         {
             if (status.gameObject != null &&
                 Quaternion.Angle(status.startRotation, status.gameObject.transform.rotation) >= FallenPinAngle)
@@ -43,7 +43,7 @@ public class Bowlenscript : MonoBehaviour
         CheckBowlenScore(fallenPins);
     }
 
-    void BeginPos(GameObject obj)
+    void BeginPos(GameObject obj)// pakt de start positie en rotatie van elk object in de lijst
     {
         ObjectStatus status = new ObjectStatus
         {
@@ -53,14 +53,14 @@ public class Bowlenscript : MonoBehaviour
             rigidbody = obj.GetComponent<Rigidbody>()
         };
 
-        ItemsOpslaan.Add(status);
+        itemsOpslaan.Add(status);
     }
 
-    public void ResetGame()
+    public void ResetGame()// reset de locatie en rotatie van elk object in de lijst
     {
         bowlingLinePlayed = false;
 
-        foreach (ObjectStatus status in ItemsOpslaan)
+        foreach (ObjectStatus status in itemsOpslaan)
         {
             if (status.gameObject != null)
             {
@@ -76,7 +76,7 @@ public class Bowlenscript : MonoBehaviour
         }
     }
 
-    public void CheckBowlenScore(int score)
+    public void CheckBowlenScore(int score)// checkt hoeveel pins er omver zijn gegooid zodat de robot praat
     {
         if (score > 7 && !bowlingLinePlayed)
         {

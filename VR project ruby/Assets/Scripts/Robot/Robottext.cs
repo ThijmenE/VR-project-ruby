@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public enum RobotPersonality
+public enum robotPersonality
 {
     Happy,
     Enthusiastic,
@@ -11,7 +11,7 @@ public enum RobotPersonality
 
 public class Robottext : MonoBehaviour
 {
-    public enum RobotMinigame
+    public enum robotMinigame
     {
         Darten,
         Bowlen,
@@ -22,8 +22,7 @@ public class Robottext : MonoBehaviour
 
     public float praatCooldown = 15f;
 
-    // Start of reset de herhalende timer die de robot om de zoveel seconden laat praten.
-    public void RobotCreated()
+    public void RobotCreated()// zegt een zin wanneer de robot gemaakt word
     {
         if (robotDialogueCoroutine != null)
         {
@@ -43,8 +42,7 @@ public class Robottext : MonoBehaviour
         robotDialogueCoroutine = StartCoroutine(RobotPraten(praatCooldown));
     }
 
-    // Controleert of de robot een persoonlijkheid heeft en start vervolgens de introductie.
-    public void RobotText()
+    public void RobotText()// Controleert of de robot een persoonlijkheid heeft en start vervolgens de introductie.
     {
         RobotButton robotButton = GetComponent<RobotButton>();
         if (robotButton == null)
@@ -56,12 +54,11 @@ public class Robottext : MonoBehaviour
         RobotIntroduction(robotButton.Personality);
     }
 
-    // Kiest een willekeurige introductiezin op basis van de huidige persoonlijkheid van de robot.
-    private void RobotIntroduction(RobotPersonality personality)
+    private void RobotIntroduction(robotPersonality personality)// Kiest een willekeurige introductiezin op basis van de huidige persoonlijkheid van de robot.
     {
         string[] sentences = personality switch
         {
-            RobotPersonality.Happy => new[]
+            robotPersonality.Happy => new[]
             {
                 "Ik ben erg blij vandaag.",
                 "Vandaag is een mooie dag.",
@@ -69,7 +66,7 @@ public class Robottext : MonoBehaviour
                 "Dit is heel cool!",
                 "Zullen we samenwerken?"
             },
-            RobotPersonality.Enthusiastic => new[]
+            robotPersonality.Enthusiastic => new[]
             {
                 "Ik ben erg enthousiast om je te helpen!",
                 "Dit wordt erg leuk!",
@@ -77,7 +74,7 @@ public class Robottext : MonoBehaviour
                 "Dit ga je heel leuk vinden!",
                 "Dit is het beste idee ooit!"
             },
-            RobotPersonality.Sad => new[]
+            robotPersonality.Sad => new[]
             {
                 "Ik voel me een beetje verdrietig vandaag.",
                 "Deze dag is niet zo goed.",
@@ -85,7 +82,7 @@ public class Robottext : MonoBehaviour
                 "Soms ben ik niet goed genoeg.",
                 "Ik hoop dat alles snel beter gaat."
             },
-            RobotPersonality.Scared => new[]
+            robotPersonality.Scared => new[]
             {
                 "Waar zijn we?",
                 "Ik vindt deze plek eng",
@@ -99,14 +96,13 @@ public class Robottext : MonoBehaviour
         ToonZinInDialogueManager(sentences);
     }
 
-    // Start een willekeurige zin voor een specifieke minigame en herstart de rust-timer van de robot.
-    public void RobotPratenMinigames(RobotMinigame minigame)
+    public void RobotPratenMinigames(robotMinigame minigame)// Start een willekeurige zin voor een specifieke minigame en herstart de rust-timer van de robot.
     {
         string[] minigameSentences = minigame switch
         {
-            RobotMinigame.Darten => GetDartenSentences(),
-            RobotMinigame.Bowlen => GetBowlenSentences(),
-            RobotMinigame.Basketbal => GetBasketbalSentences(),
+            robotMinigame.Darten => GetDartenSentences(),
+            robotMinigame.Bowlen => GetBowlenSentences(),
+            robotMinigame.Basketbal => GetBasketbalSentences(),
             _ => new string[0]
         };
 
@@ -119,32 +115,28 @@ public class Robottext : MonoBehaviour
         ToonZinInDialogueManager(minigameSentences);
     }
 
-    // Laat de robot reageren zodra alle drie de dartpijlen met succes in het bord zijn gegooid.
-    public void ScoreDarten()
+    public void ScoreDarten()// Laat de robot reageren zodra alle drie de dartpijlen met succes in het bord zijn gegooid.
     {
-        RobotPratenMinigames(RobotMinigame.Darten);
+        RobotPratenMinigames(robotMinigame.Darten);
     }
 
-    // Controleert of er meer dan 5 kegels zijn omgegooid om de robot te laten praten.
-    public void ScoreBowlen(int aantalKegelsOm)
+    public void ScoreBowlen(int aantalKegelsOm)// Controleert of er meer dan 5 kegels zijn omgegooid om de robot te laten praten.
     {
         if (aantalKegelsOm > 7)
         {
-            RobotPratenMinigames(RobotMinigame.Bowlen);
+            RobotPratenMinigames(robotMinigame.Bowlen);
         }
     }
 
-    // Controleert met de modulo-operator of de score door 5 te delen is.
-    public void ScoreBasketbal(int huidigeScore)
+    public void ScoreBasketbal(int huidigeScore)// Controleert met de modulo-operator of de score door 5 te delen is.
     {
         if (huidigeScore > 0 && huidigeScore % 5 == 0)
         {
-            RobotPratenMinigames(RobotMinigame.Basketbal);
+            RobotPratenMinigames(robotMinigame.Basketbal);
         }
     }
 
-    // Geeft een lijst met beschikbare zinnen voor de darten minigame terug.
-    private string[] GetDartenSentences()
+    private string[] GetDartenSentences()// Geeft een lijst met beschikbare zinnen voor de darten minigame terug.
     {
         return new[]
         {
@@ -155,8 +147,7 @@ public class Robottext : MonoBehaviour
         };
     }
 
-    // Geeft een lijst met beschikbare zinnen voor de bowlen minigame terug.
-    private string[] GetBowlenSentences()
+    private string[] GetBowlenSentences()// Geeft een lijst met beschikbare zinnen voor de bowlen minigame terug.
     {
         return new[]
         {
@@ -167,8 +158,7 @@ public class Robottext : MonoBehaviour
         };
     }
 
-    // Geeft een lijst met beschikbare zinnen voor de basketbal minigame terug.
-    private string[] GetBasketbalSentences()
+    private string[] GetBasketbalSentences()// Geeft een lijst met beschikbare zinnen voor de basketbal minigame terug.
     {
         return new[]
         {
@@ -179,8 +169,7 @@ public class Robottext : MonoBehaviour
         };
     }
 
-    // Kiest een willekeurige zin uit de meegegeven lijst en stuurt deze door naar de dialogue manager.
-    private void ToonZinInDialogueManager(string[] gekozenZinnen)
+    private void ToonZinInDialogueManager(string[] gekozenZinnen)// Kiest een willekeurige zin uit de meegegeven lijst en stuurt deze door naar de dialogue manager.
     {
         if (gekozenZinnen == null || gekozenZinnen.Length == 0) return;
 
@@ -197,8 +186,7 @@ public class Robottext : MonoBehaviour
         dialogueManager.StartDialogue(randomSentence);
     }
 
-    // Loop die na de cooldown automatisch de standaard robotText aanroept.
-    private IEnumerator RobotPraten(float delay)
+    private IEnumerator RobotPraten(float delay)// Loop die na de cooldown automatisch de standaard robotText aanroept.
     {
         while (true)
         {

@@ -14,13 +14,13 @@ public class DartPijl : MonoBehaviour
     private bool touchingBoard;
     private bool isCountedInBoard;
 
-    private void Awake()
+    private void Awake()// pakt de rigidbody en grabinteractable
     {
         rb = GetComponent<Rigidbody>();
         grabInteractable = GetComponent<XRGrabInteractable>();
     }
 
-    private void OnEnable()
+    private void OnEnable()// wanneer de pijl gepakt word worden er listeners toegevoegd
     {
         if (grabInteractable != null)
         {
@@ -29,7 +29,7 @@ public class DartPijl : MonoBehaviour
         }
     }
 
-    private void OnDisable()
+    private void OnDisable()// wanneer de pijl word losgelaten worden de listeners verwijdert
     {
         if (grabInteractable != null)
         {
@@ -41,7 +41,7 @@ public class DartPijl : MonoBehaviour
         RemoveDartFromBoard();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)// wanneer er collision is met het dartbord worden de pijltjes bevroren
     {
         if (!collision.gameObject.CompareTag("DartBoard"))
             return;
@@ -54,7 +54,7 @@ public class DartPijl : MonoBehaviour
             AttachToBoard(collision.contactCount > 0 ? collision.contacts[0].point : collision.collider.ClosestPoint(transform.position));
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnCollisionExit(Collision collision)// pijltjes worden losgelaten en kunnen weer bewegen
     {
         if (!collision.gameObject.CompareTag("DartBoard"))
             return;
@@ -66,14 +66,14 @@ public class DartPijl : MonoBehaviour
         ReleaseFromBoard();
     }
 
-    private void OnDartGrabbed(SelectEnterEventArgs args)
+    private void OnDartGrabbed(SelectEnterEventArgs args)// gebeurd wanneer de pijltjes worden vastgepakt
     {
         isGrabbed = true;
         RemoveDartFromBoard();
         ReleaseFromBoard();
     }
 
-    private void OnDartReleased(SelectExitEventArgs args)
+    private void OnDartReleased(SelectExitEventArgs args)// gebeurd wanneer het de pijltjes worden losgelaten
     {
         isGrabbed = false;
 
@@ -83,7 +83,7 @@ public class DartPijl : MonoBehaviour
         }
     }
 
-    private void AttachToBoard(Vector3 contactPoint)
+    private void AttachToBoard(Vector3 contactPoint)// gebeurd wanneer de pijltjes in contact komen met het dartbord
     {
         if (boardBody == null || boardJoint != null)
             return;
@@ -105,7 +105,7 @@ public class DartPijl : MonoBehaviour
         }
     }
 
-    private void ReleaseFromBoard()
+    private void ReleaseFromBoard()// verwijdert de joints wanneer de pijltjes gepakt worden uit het bord
     {
         if (boardJoint != null)
         {
@@ -114,7 +114,7 @@ public class DartPijl : MonoBehaviour
         }
     }
 
-    private void RemoveDartFromBoard()
+    private void RemoveDartFromBoard()// haalt de pijltjes uit het bord
     {
         if (!isCountedInBoard)
             return;
@@ -123,7 +123,7 @@ public class DartPijl : MonoBehaviour
         dartsInBoard = Mathf.Max(0, dartsInBoard - 1);
     }
 
-    private static Rigidbody GetOrCreateBoardBody(Collider boardCollider)
+    private static Rigidbody GetOrCreateBoardBody(Collider boardCollider)// pakt de collider van het dartbord en bevriest de pijltjes wanneer die de collider raken
     {
         Rigidbody body = boardCollider.attachedRigidbody;
         if (body == null)
@@ -139,7 +139,7 @@ public class DartPijl : MonoBehaviour
         return body;
     }
 
-    private void CheckDartScore()
+    private void CheckDartScore()// tekt hoeveel pijltjes in het bord zitten en laat de robot parten als er 3 in zijn
     {
         if (dartsInBoard == 3)
         {

@@ -9,7 +9,7 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
 
 
-    public void StopGame() // closes the game when a build has been made
+    public void StopGame() // sluit de game af
     {
         Application.Quit();
         Debug.Log("Stopping game");

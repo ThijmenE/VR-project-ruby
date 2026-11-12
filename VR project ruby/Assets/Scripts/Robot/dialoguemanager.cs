@@ -10,7 +10,7 @@ public class dialoguemanager : MonoBehaviour
 
     private Canvas dialogueCanvas;
 
-    private void Awake()
+    private void Awake()// verzamelt components in awake
     {
         if (dialogueText != null)
         {
@@ -31,7 +31,7 @@ public class dialoguemanager : MonoBehaviour
         dialogueCanvas.enabled = false;
     }
 
-    private void Update()
+    private void Update()// laat het dialoog zien van de robot
     {
         if (showDialogue && dialogueCanvas != null && !dialogueCanvas.enabled)
         {
@@ -39,7 +39,7 @@ public class dialoguemanager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(string sentence)
+    public void StartDialogue(string sentence)// zorgt ervoor dat er een zin verschijnt op de canvas
     {
         ShowDialogue();
 
@@ -54,7 +54,7 @@ public class dialoguemanager : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    public void EndDialogue()// maakt de tekst op de canvas leeg
     {
         if (dialogueText != null)
         {
@@ -64,7 +64,7 @@ public class dialoguemanager : MonoBehaviour
         Debug.Log("End of conversation");
     }
 
-    public void ShowDialogue()
+    public void ShowDialogue()// laat de canvas zien waar het dialoog op staat
     {
         showDialogue = true;
         if (dialogueCanvas != null)

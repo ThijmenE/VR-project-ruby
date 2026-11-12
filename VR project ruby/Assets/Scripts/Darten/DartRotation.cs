@@ -11,12 +11,12 @@ public class DartRotation : MonoBehaviour
     [SerializeField] private float spinSpeed = 1080f;
     [SerializeField] private float liftFactor = 0.5f;  
 
-    void Start()
+    void Start()// pakt de rigidbody
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    public void OnDartReleased()
+    public void OnDartReleased()// wanneer het pijltje gegooid word komt er rotatie op de pijltjes
     {
         isFlying = true;
         currentSpinAngle = 0f;
@@ -33,7 +33,7 @@ public class DartRotation : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void FixedUpdate()// de berekening van het gegooide pijltje runt in de fixed update
     {
         if (isFlying)
         {
@@ -56,7 +56,7 @@ public class DartRotation : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)// checkt of het pijltje iets aanraakt
     {
         isFlying = false;
     }
