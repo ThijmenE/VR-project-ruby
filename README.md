@@ -1,5 +1,16 @@
 # VR Project Ruby
 
+## Download Project:
+Om het project te downloaden en openen moet je:
+1. De link klikken en de zip file downloaden.
+2. De zip file uitpakken in je folders.
+3. het uitgepakte folder openen en open VR project ruby.exe.
+
+**LET OP** je moet een vr headset al aangesloten hebben aan je computer/laptop om de game goed te openen, anders krijg je foutmeldingen wanneer je het project opent.
+Als dit gebeurd moet je de Unity launcher afsluiten (wanneer je de Windows knop indrukt kan je je taakbalk zien, rechtermuisklik op de Unity launcher doen en het dan afsluiten), je headset goed aansluiten en opnieuw de game openen.
+
+[Download de game hier](https://github.com/ThijmenE/VR-project-ruby/releases/download/v1.0/Vr.project.zip)
+
 ## Over de game:
 
 In deze game kan de speler een virtuele kamer ontdekken en verschillende activiteiten uitvoeren.
