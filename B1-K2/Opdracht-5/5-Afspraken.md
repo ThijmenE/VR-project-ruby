@@ -1,6 +1,6 @@
 # Afspraken
 
-Versienummer : 1
+Versienummer : 1.1
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,18 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-10-01
+Datum : 2026-11-13
+
+<div style="page-break-after: always;"></div>
+
+## Versiebeheer
+
+| Datum      | Versie | Wie | Wijzigingen |
+| ---------- | ------ | --- | ----------- |
+| 2026-10-05 | 1.0    | Thijmen    | Game Concept Document ingevuld|
+| 2026-10-05 | 1.0    | Marijn     | Game Concept Document ingevuld|
+| 2026-11-13 | 1.1    | Thijmen |  Afspraken nakomen ingevuld  |
+| 2026-11-13 | 1.1    | Marijn |  Afspraken nakomen ingevuld   |
 
 <div style="page-break-after: always;"></div>
 
@@ -40,5 +51,23 @@ Ben je ziek, voor 9 uur melden aan groep.
 
 Overleg afspraken: .../B1-K2/Opdracht-5/Videos/AfsprakenPortfolio.mp4
 
+Ook in de google drive te vinden. Link: https://drive.google.com/drive/folders/1dsDmUwHecj-JX98afhMbE7iZYyBBVvNV?usp=drive_link
+
 ## Afspraken nakomen
->:memo: Toon aan aan dat je afspraken nakomt en dat je verantwoordelijkheid neemt voor je taken en bijdrage. Maak screenshots of video's van je gemaakte afspraken. Laat zien wat je hebt gedaan om aan je afspraken te voldoen. Geef aan wat je hebt gedaan om aan je afspraken te voldoen en wat het resultaat was. Geef ook aan of de afspraken nagekomen zijn en wat het resultaat was. Zo niet, geef dan aan wat je hebt gedaan om aan je afspraken te voldoen en wat het resultaat was.
+
+In de scripts staat alles in camelCase en heeft elke method een notitie erbij staan met wat het doet. Resultaat is een overzichtelijke en georganiseerde code.
+
+![Bewijsziek](../Opdracht-5/foto's%20bewijs%20afspraken/Bewijsziek.png)
+![Bewijsziek](../Opdracht-5/foto's%20bewijs%20afspraken/Bewijsziek2.png)
+CoolFloppop is Thijmen op discord.
+
+De sprints die we hebben gehad staan in de github projects. Daar staat al het bewijs is van de sprints en planning. Hierdoor konden we goed zien wat haalbaar was per sprint, en we zetten een goede deadline om ons te motiveren.
+
+In de github kan je ook zien dat we voor elke feature een nieuwe branch hebben aangemaakt. Dit zorgt voor overzicht in de repository.
+
+We hebben alles in een branch gestopt en klaar gemaakt voordat het naar de main is gepushed. Dit zorgt ervoor dat alles in een keer goed naar de main branch gaat. Dat voorkomt merch conflicts.
+
+De issues die we hebben gehad in het project staan in de github projects. Als je klikt op een Userstory dan zie je comments van problemen waar we tijdens het project tegen aan zijn gelopen. Ook hebben we labels in elke Userstory staan met prioriteit, hoelang het duurt en hoelang we ermee bezig zijn geweest. Dit zorgt voor duidelijkheid in de planning en goed voor de taakverdeling.
+
+De link naar onze github: https://github.com/ThijmenE/VR-project-ruby
+De link naar onze planning: https://github.com/users/ThijmenE/projects/6/views/3
