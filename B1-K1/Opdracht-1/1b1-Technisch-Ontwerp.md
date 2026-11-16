@@ -18,9 +18,10 @@ Datum : 2026-11-16
 | ---------- | ------ | --- | ----------- |
 | 2026-10-05 | 1.0    | Thijmen | functioneel ontwerp ingevuld |
 | 2026-10-05 | 1.0    | Marijn  | functioneel ontwerp ingevuld |
-| 2026-10-29 | 1.1    | Thijmen | Uitleg opdrachtgever verbeterd|
-| 2026-11-12 | 1.2    | Marijn  | Spelfouten en interpunctie verbeterd|
-| 2026-11-16 | 1.3    | Marijn  | Nieuwe UML Charts toegevoegd|
+| 2026-10-29 | 1.1    | Thijmen | Uitleg opdrachtgever verbeterd |
+| 2026-11-12 | 1.2    | Marijn  | Spelfouten en interpunctie verbeterd |
+| 2026-11-16 | 1.3    | Marijn  | Nieuwe UML Charts toegevoegd |
+| 2026-11-16 | 1.3    | Thijmen | Uitleg van eigen UML diagrammen toegevoegd |
 
 <div style="page-break-after: always;"></div>
 
@@ -55,11 +56,11 @@ De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Camp
 ## UML Diagrammen
 ![UML-Chart-Robot-Interactionsoud](../Opdracht-1/Fotos/UMLChartRobotMakerMachineOud.png)
 
-Dit is de oude UML diagram.
+Dit is de oude UML diagram. In deze diagram had ik eerst bedacht om alle onderdelen in aparte scripts aan elkaar te linken, maar terwijl ik het aan het maken was kwam ik erachter dat ik gameobjects kon linken aan elkaar. Deze onderdelen nemen de mesh en kleur over van elkaar naar de robot zelf.
 
 ![UML-Chart-Robot-Interactionsnieuw](../Opdracht-1//Fotos/UMLChartRobotMachineNieuw.png)
 
-Dit is de nieuwe UML diagram.
+Dit is de nieuwe UML diagram. Hier kun je zien dat ik in 1 script alle robot onderdelen als gameobjects heb verbonden zodat ik de mesh en kleur makkelijk kon overzetten naar de robot zelf. De mesh en kleur worden als child object uit de Socket interactors (Unity VR library script) gehaald en word dan overgezet naar het doel object.
 
 ![UMLChartRobotMakerMachineoud](../Opdracht-1/Fotos/UMLChartRobotInteractionsoud.png)
 

@@ -16,7 +16,7 @@ Datum : 2026-11-16
 
 | Datum      | Versie | Wie | Wijzigingen |
 | ---------- | ------ | --- | ----------- |
-| 2026-10-05 | 1.0    | Thijmen | verbetervoorstellen op basis van je testen ingevuld |
+| 2026-11-16 | 1.0    | Thijmen | verbetervoorstellen op basis van je testen ingevuld |
 
 <div style="page-break-after: always;"></div>
 
