@@ -1,6 +1,6 @@
 # Programma van Eisen
 
-Versienummer : 1.3
+Versienummer : 1.4
 
 Auteur : Thijmen, Marijn
 
@@ -18,9 +18,10 @@ Datum : 2026-10-01
 | ---------- | ------ | --- | ----------- |
 | 2026-10-01 | 1.0    | Thijmen | PvE ingevuld |
 | 2026-10-01 | 1.0    | Marijn  | PvE ingevuld |
-| 2026-10-05 | 1.1    | Marijn  |Spelfouten en punctuatie verbeterd |
-| 2026-10-29 | 1.2    | Marijn  |Moscow beter genoteerd en foto toegevoegd|
+| 2026-10-05 | 1.1    | Marijn  | Spelfouten en punctuatie verbeterd |
+| 2026-10-29 | 1.2    | Marijn  | Moscow beter genoteerd en foto toegevoegd|
 | 2026-10-29 | 1.3    | Thijmen    | Uitleg opdrachtgever verbeterd|
+| 2026-11-16 | 1.4    | Marijn  | Aanleiding project toegevoegd|
 
 <div style="page-break-after: always;"></div>
 
@@ -52,6 +53,12 @@ In dit document worden de uit te voeren werkzaamheden, projectdoelstellingen, be
 De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Campus. Je kan bij Ruby langskomen als je vragen hebt over wat digitale ontwikkeling in jouw leven kan betekenen. Bij Ruby ondersteunen ze ondernemers met slimme adviezen om processen te verbeteren, bereik te vergroten en kansen te grijpen. En ze helpen studenten door hen opdrachten te geven om hun digitale skills sterker te maken. Ze hebben bijvoorbeeld een workshop gehad over hoe je met AI kan werken en ze hebben een toeristische databank genaamd Touripedia officieel gelanceerd bij Ruby zelf.
 
 ## Behoeftebeschrijving opdrachtgever
+
+### Aanleiding project
+
+Wij hebben een mail gekregen van de WOO om een opdracht op te pakken en dat kwam van Ruby. In de mail stonden de vraagstukken die je hieronder ziet. Met deze vraagstukken hebben wij een game idee uitgewerkt en die kort aan Marjan laten zien om te kijken of we de ideeën die we hadden verder uit konden werken. De uitgewerkte ideeën zijn uitgewerkt in het Game-Concept-Document.
+
+![Vraagstukkenproject](../Opdracht-1/Fotos/Fotovraagstukken.png)
 
 ### Informatiebronnen
 

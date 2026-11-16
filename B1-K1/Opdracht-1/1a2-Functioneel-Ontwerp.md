@@ -1,6 +1,6 @@
 # Functioneel Ontwerp
 
-Versienummer : 1.2
+Versienummer : 1.3
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-11-12
+Datum : 2026-11-16
 
 <div style="page-break-after: always;"></div>
 
@@ -20,6 +20,7 @@ Datum : 2026-11-12
 | 2026-10-05 | 1.0    | Marijn  | functioneel ontwerp ingevuld |
 | 2026-10-29 | 1.1    | Thijmen | Uitleg opdrachtgever verbeterd|
 | 2026-10-05 | 1.2    | Marijn  | Spelfouten en interpunctie verbeterd|
+| 2026-11-16 | 1.3    | Marijn  | Actoren beter uitgewerkt|
 
 <div style="page-break-after: always;"></div>
 
@@ -51,27 +52,11 @@ De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Camp
 
 Omdat ons project een singleplayer game is, is de enige actor een gast, omdat die de game speelt zonder dat andere actoren iets kunnen doen.
 
-### Functionele eisen en omschrijving
+De gast staat centraal in de game en voert de volgende kernacties uit:
 
-| Titel              | Robot maker machine                 |
-| ------------------ | ----------------------------------- |
-| Als een...         | Gebruiker                           |
-| Wil ik...          | Een robot maken                     |
-| Zodat ik...        | Met een robot kan spelen            |
-| Prioriteit         | Medium                              |
-| Acceptatiecriteria | Benen, torso en hoofd in machine, optioneel een hoed en/of gezichtaccessoire |
-| Scenario           | Pak een robotonderdeel, stop het in de machine. Wanneer er drie lichaamsdelen in zitten, druk je de knop in en wordt de robot gemaakt.|
-| Bijzonderheden     | n.v.t                                 |
+- Een robot samenstellen: De gast gebruikt onderdelen van de robot die verspreid liggen over de kamer om een robot te maken in een robot makermachine. In de kamer liggen: Benen, torso's, hoofden, hoeden en brillen die je in de machine kunt stoppen. De hoeden en brillen zijn optioneel, als je een torso, hoofd en benen in de machine hebt kan je door middel van een knop de robot maken.
 
-| Titel              | Robot persoonlijkheid |
-| ------------------ | ----------------------------------- |
-| Als een...         | Gebruiker                           |
-| Wil ik...          | Een robot die kan praten            |
-| Zodat ik...        | Een bond vorm met AI                |
-| Prioriteit         | Medium                              |
-| Acceptatiecriteria | Een robot die verschillende dingen kan zeggen en reageert |
-| Scenario           | Als je met de robot speelt of iets goed doet in een minigame |
-| Bijzonderheden     | n.v.t                                 |
+- Interactie met de robot: Na het bouwen van de robot speelt de gast ermee. De robot krijgt bij het bouwen een eigen persoonlijkheid (Blij, enthousiast, zielig, bang). De robot kan praten en reageert op acties die de gast uitvoerd. Wanneer de gast iets goed doet in een minigame reageert de robot erop. Hierdoor bouwt de gast tijdens het spelen een band op met de AI.
 
 ## Definition of Done
 

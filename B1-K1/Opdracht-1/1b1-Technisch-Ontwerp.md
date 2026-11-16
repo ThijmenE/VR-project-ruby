@@ -1,6 +1,6 @@
 # Technisch Ontwerp
 
-Versienummer : 1.2
+Versienummer : 1.3
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-11-12
+Datum : 2026-11-16
 
 <div style="page-break-after: always;"></div>
 
@@ -20,6 +20,7 @@ Datum : 2026-11-12
 | 2026-10-05 | 1.0    | Marijn  | functioneel ontwerp ingevuld |
 | 2026-10-29 | 1.1    | Thijmen | Uitleg opdrachtgever verbeterd|
 | 2026-11-12 | 1.2    | Marijn  | Spelfouten en interpunctie verbeterd|
+| 2026-11-16 | 1.3    | Marijn  | Nieuwe UML Charts toegevoegd|
 
 <div style="page-break-after: always;"></div>
 
@@ -52,9 +53,21 @@ In dit document wordt inzicht gegeven over de verschillende technieken die gebru
 De opdrachtgever van ons project heet Marjan de Jonge en ze is van van Ruby Campus. Je kan bij Ruby langskomen als je vragen hebt over wat digitale ontwikkeling in jouw leven kan betekenen. Bij Ruby ondersteunen ze ondernemers met slimme adviezen om processen te verbeteren, bereik te vergroten en kansen te grijpen. En ze helpen studenten door hen opdrachten te geven om hun digitale skills sterker te maken. Ze hebben bijvoorbeeld een workshop gehad over hoe je met AI kan werken en ze hebben een toeristische databank genaamd Touripedia officieel gelanceerd bij Ruby zelf.
 
 ## UML Diagrammen
-![UML-Chart-Robot-Interactions](../Opdracht-1//Fotos/UMLChartRobotInteractions.png)
+![UML-Chart-Robot-Interactionsoud](../Opdracht-1/Fotos/UMLChartRobotMakerMachineOud.png)
 
-![UMLChartRobotMakerMachine](../Opdracht-1//Fotos/UMLChartRobotMakerMachine.png)
+Dit is de oude UML diagram.
+
+![UML-Chart-Robot-Interactionsnieuw](../Opdracht-1//Fotos/UMLChartRobotMachineNieuw.png)
+
+Dit is de nieuwe UML diagram.
+
+![UMLChartRobotMakerMachineoud](../Opdracht-1/Fotos/UMLChartRobotInteractionsoud.png)
+
+Dit is de oude UML diagram. In deze UML is alles los van elkaar gemaakt, maar tijdens het coderen kwam ik erachter dat het op een makkelijkere manier kon. Ik kon namelijk de Minigames praten voor de robot in een script gooien samen met het praten van de robot. Dit zorgde ervoor dat het gezamelijk in een script stond. Wij hebben tijdens het project ervoor gekozen om animaties van de robot niet te gaan gebruiken, dus dan kon er ook uit. Hieronder zie je de nieuwe UML die ik heb gemaakt.
+
+![UMLChartRobotMakerMachinenieuw](../Opdracht-1//Fotos/UMLChartRobotInteractionsnieuw.png)
+
+Dit is de nieuwe UML diagram. Ik heb 3 verschilende script gemaakt voor het praten van de robot. Robottext, dialoguemanager en Dialogue. Ik heb van Thijmen zijn Robotbutton de persoonlijkheid toegevoegd. Zelf vind ik de nieuwe UML een stuk beter, omdat het vergeleken met de andere UML het er een stuk overzichtelijker eruit ziet.
 
 ## Software en techniek
 
