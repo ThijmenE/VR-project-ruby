@@ -1,6 +1,6 @@
 # Testen
 
-Versienummer : 1.3
+Versienummer : 1.4
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-10-29
+Datum : 2026-11-16
 
 <div style="page-break-after: always;"></div>
 
@@ -23,6 +23,7 @@ Datum : 2026-10-29
 | 2026-10-29 |  1.2   |  Marijn | Test cases beter gemaakt|
 | 2026-11-16 |  1.3   |  Marijn | Hele document beter geformuleerd|
 | 2026-11-16 |  1.3   |  Thijmen | meegeholpen met formuleren|
+| 2026-11-16 |  1.4   |  Thijmen | Algemene informatie veranderd in gebruikers/usability test resultaten|
 
 
 <div style="page-break-after: always;"></div>
@@ -145,77 +146,39 @@ Je hebt een app nodig van de VR bril om hem te gebruiken op je pc. Zodra de game
 | #8| Knoppenmanager | De tester drukt op X/Y/Menu knop om een menu te openen| menu interface en VR-controllers| Speler kan drukken op de knoppen en het menu verschijnt| Werkt goed| Geen issues|
 | #8 | Blokken spawner| De speler drukt op Y om het blokken menu te openen en kan dan blokken spawnen| Spawnknoppen, blokprefabs en VR-controller| De blokken verschijnen in de scene wanneer de speler op de UI knoppen drukt| Werkt goed| Geen issues|
 
-## Algemene info van testers:
+## gebruikerstest/usability test resultaten:
 
 ### Tester 1:
 
-Vind het lastig om VR te begrijpen:
-pijltjes en bowling bal als je ze pakt gelijk naar je hand toe.
-pijltjes iets dichterbij het bord, langs de reset button. Anders ben je te ver weg.
-basketbal gaf punt terwijl je op de rand gooit.
-cooldown op de basketbal minigame anders kan je heel snel punten scoren dood vals te spelen.
-tutorial slaat op waar je gebleven was. Dat word gereset worden.
+Tester 1 heeft moeite om VR te begrijpen. Het lukte haar wel gelijk om de pijltjes en ballen naar zichzelf toe te halen met joysticks. de dart pijltjes waren iets te ver weg voor de tester dus gaan wij de pijltjes naast de reset knop neer zetten. We zagen ook dat de basketbal een punt kon geven als je de buitenkant van de ring raakt.
 
 ### Tester 2:
 
-pakt snel Vr op.
-heeft darten snel door. zelfde issue als tester 1 met de items oppakken.
-heeft snel door hoe de minigames werken.
-ook de issue met tutorial.
-bowlen werkt niet goed met de bal.
-gebruikt de bouw blokken goed. Werkt goed en kan het snel oppakken.
-gooit de bouwblokken weg via prullenbak en werkt goed.
-blokken blijven in de muur zitten (clipping).
-blijft lang gamen, vindt het erg leuk.
+Tester 2 begreep VR en de minigames snel. Het oppakken van voorwerpen gaf hetzelfde probleem als bij tester 1. Ook liep tester 2 tegen het probleem met de tutorial aan. Het bowlen werkte niet goed met de bal. Tester 2 kon goed met de bouwblokken werken en had snel door hoe deze werkten. De prullenbak werkte goed om blokken weg te gooien, maar blokken bleven soms in de muur steken. Tester 2 bleef lang spelen en vond de game erg leuk.
 
 ### Tester 3:
 
-vind Vr lastig.
-gaat goed met basketbal.
-zelfde issue met dingen vastpakken.
-bouwblokken gaan gelijk door de grond heen.
-vind de bouwblokken leuk om mee te spelen.
-menu button werkt goed ook met de slider.
-kan valsspelen met basketbal door bal vast te pakken en omhoog en naar beneden te doen.
-vindt het ook heel leuk, blijft lang gamen.
+Tester 3 vond VR lastig, maar kon goed met basketbal spelen. Het oppakken van voorwerpen gaf hetzelfde probleem als bij de andere testers. De bouwblokken vielen direct door de grond, maar tester 3 vond het leuk om ermee te spelen. De menuknop en slider werkten goed. Bij basketbal kon tester 3 valsspelen door de bal vast te houden en ermee omhoog en omlaag te bewegen. Tester 3 vond de game erg leuk en bleef lang spelen.
 
 ### Tester 4:
 
-Heeft Vr snel door.
-valsspelen in basketbal.
-begrijpt het bowlen goed en gaat makkelijk.
-heeft ook dezelfde issues als de andere tester.
-weet niet goed dat je knoppen hebt op de controller.
-spamt bouwblokken (misschien langere cooldown)
+Tester 4 begreep VR snel en kon goed met bowlen spelen. Bij basketbal kon tester 4 valsspelen. Ook merkte tester 4 dezelfde problemen met voorwerpen op als de andere testers. Tester 4 wist niet dat er knoppen op de controller zitten en creeërde vaak bouwblokken. Een langere cooldown kan helpen om het vaak spawnen te beperken.
 
 ### Tester 5:
 
-kijkt naar controller voor info over wat alles doet.
-gooit basketbal door de muur heen.
-begrijpt VR goed.
-weet ook niet dat er knoppen zijn op de controller.
-vind het ook erg leuk.
+Tester 5 begreep VR goed en keek op de controller om te zien wat de knoppen doen. Tester 5 wist niet dat er knoppen op de controller zitten. Tijdens het spelen ging de basketbal door de muur. Tester 5 vond de game erg leuk.
 
 ### Tester 6:
 
-vindt vr lastig.
-vindt darten en leuk maar is wel lastig.
-bowling bal gaat door de grond. issue komt vaak voor.
+Tester 6 vond VR lastig. Tester 6 vond darten leuk, maar had moeite met het spel. De bowlingbal ging door de grond; dit probleem kwam vaker voor.
 
 ### Tester 7:
 
-vindt het lastig.
-begrijpt de controls niet.
-gebruikt de button op de controller.
-items oppakken ging lastig.
+Tester 7 vond het lastig om de bediening te begrijpen en gebruikte een knop op de controller. Ook had tester 7 moeite met het oppakken van voorwerpen.
 
 ### Tester 8:
 
-leest de controller buttons.
-begrijpt de buttons goed op de controller.
-begrijpt de controls niet zo goed.
-bowlen gaat goed.
-Darten snel opgepakt.
+Tester 8 las de knoppen op de controller en begreep wat deze doen. De bediening van de game was nog niet helemaal duidelijk. Bowlen ging goed en tester 8 had darten snel door.
 
 <div style="page-break-after: always;"></div>
 
