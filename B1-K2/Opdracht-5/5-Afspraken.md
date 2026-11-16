@@ -1,6 +1,6 @@
 # Afspraken
 
-Versienummer : 1.1
+Versienummer : 1.2
 
 Auteur : Thijmen, Marijn
 
@@ -8,7 +8,7 @@ Studentnummer : 0266883, 0265825
 
 Klas : 24SDG
 
-Datum : 2026-11-13
+Datum : 2026-11-16
 
 <div style="page-break-after: always;"></div>
 
@@ -16,10 +16,11 @@ Datum : 2026-11-13
 
 | Datum      | Versie | Wie | Wijzigingen |
 | ---------- | ------ | --- | ----------- |
-| 2026-10-05 | 1.0    | Thijmen    | Game Concept Document ingevuld|
-| 2026-10-05 | 1.0    | Marijn     | Game Concept Document ingevuld|
-| 2026-11-13 | 1.1    | Thijmen |  Afspraken nakomen ingevuld  |
-| 2026-11-13 | 1.1    | Marijn |  Afspraken nakomen ingevuld   |
+| 2026-10-05 | 1.0    | Thijmen    | Game Concept Document ingevuld |
+| 2026-10-05 | 1.0    | Marijn     | Game Concept Document ingevuld |
+| 2026-11-13 | 1.1    | Thijmen |  Afspraken nakomen ingevuld |
+| 2026-11-13 | 1.1    | Marijn  |  Afspraken nakomen ingevuld |
+| 2026-11-16 | 1.2    | Marijn  |  Afspraken beter smart gevurmuleerd |
 
 <div style="page-break-after: always;"></div>
 
@@ -36,18 +37,19 @@ Daily standup tussen 8:30 en 9:00 elke dag in 2.11a (tenzij we niet op locatie z
 Sprints duren 1 week (vakantie telt niet mee).
 Het project duurt 4 sprints
 
-Gedurende het project gaan we camelcase gebruiken tijdens het programeren.
+Gedurende het project (van start tot oplevering) schrijven alle teamleden code met camelCase, zodat de code voor iedereen leesbaar blijft.
 
 Achter alle methods die worden gemaakt moet in een notitie zetten wat die method doet.
 
-Wanneer een feature klaar is word die code eerst getest door andere groepsgenoten voordat het gemerged word met de Main branch.
-Alle fouten die gevonden worden door groepsgenoten moeten genoteerd worden achter de lijn die verbetert was in een notitie.
+Voor elke aangemaakte method plaatst de schrijver van de code een comment bij de method die de functie ervan beschrijft.
 
-Voor elke grote feature of kleine groep features, word verschillende branches aangemaakt in de repository. In Unity word er voor elke grote feature of kleine groep features een aparte scene aangemaakt om merge conflicts te voorkomen.
+Wanneer tijdens een code review of test een fout wordt gevonden, plaatst degene die het oplost een korte comment achter de aangepaste regel code, zodat de wijziging voor alle groepsgenoten direct duidelijk is.
+
+Voor elke grote feature of kleine groep features, word verschillende branches aangemaakt in de repository. In Unity word er voor elke grote feature of kleine groep features een aparte scene aangemaakt om merge conflicts te voorkomen. En zodat niemand direct op de main-branch werkt.
 
 Alle nodige features worden in de Github project gestopt en worden goed op de tijdlijn genoteerd. In elke feature word beschreven hoelang je denkt dat het duurt om te maken en wanneer deze is afgerond in de beschrijving van de feature. Als er issues zijn word die in het issues blok gestopt zodat teamgenoten ernaar kunnen kijken en kan oplossen.
 
-Ben je ziek, voor 9 uur melden aan groep.
+Bij ziekte meldt het teamlid dit uiterlijk voor 9 uur's ochtends, zodat de groep er vroeg al vanaf weet en zodat we rekening kunnen houden met de planning/taken.
 
 Overleg afspraken: .../B1-K2/Opdracht-5/Videos/AfsprakenPortfolio.mp4
 
