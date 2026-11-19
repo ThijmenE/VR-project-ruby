@@ -1,0 +1,60 @@
+# Evaluatieverslag voortgang
+
+Versienummer : 1
+
+Auteur : Marijn
+
+Studentnummer : 0265825
+
+Klas : 24SDG
+
+Datum : 2026-11-19
+
+<div style="page-break-after: always;"></div>
+
+## Inhoudsopgave
+
+- [Evaluatieverslag voortgang](#evaluatieverslag-voortgang)
+  - [Inhoudsopgave](#inhoudsopgave)
+  - [Inleiding](#inleiding)
+  - [Reflectiemeeting](#reflectiemeeting)
+    - [Proces](#proces)
+  - [Team](#team)
+  - [Eigen functioneren](#eigen-functioneren)
+  - [Verbtervoorstellen](#verbetervoorstellen)
+
+<div style="page-break-after: always;"></div>
+
+## Inleiding
+
+Dit document is opgesteld als bewijs na oplevering van het (deel)product. Hierin zijn relevante punten voor evaluatie en reflectie benoemd met betrekking tot de eigen prestatie, alsmede op het teamproces en/of de werkwijze. Zorg ervoor dat dit duidelijk gedocumenteerd is met behulp van documenten, screenshots of video's. Het kan hier gaan om het proces in de voorbereidende en ontwerpfase tot aan de oplevering.
+
+## Reflectiemeeting
+
+>:memo:In de reflectiemeeting wordt besproken wat er goed ging en wat er beter kan. De kandidaat geeft aan wat er goed ging en wat er beter kan.
+
+### Proces
+
+>Tijdens een reflectiemeeting benoem en vraag naar zowel positieve punten als verbeterpunten van het proces. Neem ook een korte evaluatie op over bijvoorbeeld de teamgrootte en de inzet van de individuele teamleden. Dit document is opgesteld als bewijs na oplevering van het (deel)product. Hierin zijn relevante punten voor evaluatie en reflectie benoemd met betrekking tot de eigen prestatie, alsmede op het teamproces en/of de werkwijze. Zorg ervoor dat dit duidelijk gedocumenteerd is met behulp van documenten, screenshots of video's. Het kan hier gaan om het proces in de voorbereidende en ontwerpfase tot aan de oplevering.
+
+## Team
+
+Samenwerking binnen het team: Het samenwerken tijdens het project ging erg goed. We hebben gewerkt met de scrum methode, waar we elke dag een daily standup moesten flmen en alles noteren in onze github. Dit zorgde ervoor dat we goed wisten van elkaar wie waar mee bezig was en of alles goed ging.We zitten elke dag op locatie wat er voor zorgde dat we goed overzicht hadden over waar we mee bezig waren en elkaar konden helpen wanneer nodig. We hadden wel sommige dagen aan het einde van de dag iets meer moeite met concentreren, waardoor we elkaar gingen afleiden en niet veel meer hadden gedaan. Een oplossing daarvoor is dat we kleine taken later op de dag doen waar je minder concentratie voor nodig hebt.
+
+Communicatie met opdrachtgever: Er was goed contact tussen de opdrachtgever en ons. Wij hebben met de opdrachtgever meetings gehad om haar eisen en wensen in de game toe te voegen. Ook hebben we veel contact gehad over de mail, waar we onze planning hebben doorgestuurd en haar op de hoogte hebben gehouden. We zijn ook een paar keer bij Ruby geweest om de game te laten zien en feedback te vragen. We hebben ook bij Ruby nog een playtest uitgevoerd waar we veel feedback van hebben gekregen.
+
+Communicatie met begeleider: navragen
+
+## Eigen functioneren
+
+Het functioneren tijdens het project ging goed. Thijmen en ik hebben beide gewerkt in github waar we alles van het project in hebben gezet. We hadden een goede planning gemaakt en alles duidelijk genoteerd.
+
+Ik was notulist in dit project, dus ik heb voornamelijk contact gehad met de opdrachtgever. Ook dat ging erg goed. Ik heb professionele mails gestuurd en ben netjes gebleven naar de opdrachtgever. Als we bij Ruby op locatie waren heb ik me netjes gekleed en professioneel gedragen.
+
+begeleider
+
+## Verbetervoorstellen
+
+ We hadden wel sommige dagen aan het einde van de dag iets meer moeite met concentreren, waardoor we elkaar gingen afleiden en niet veel meer hadden gedaan. Een oplossing daarvoor is dat we kleine taken later op de dag doen waar je minder concentratie voor nodig hebt, zodat we nog wel productief bezig zijn.
+
+ We hebben tijdens het project veel verschillende branches aangemaakt voor elke feature in de game, alleen hebben we als we de basis af hadden het naar de kamer branch gestuurd en gingen we daarop verder werken. Dat zorgde ervoor dat elke feature update in 1 branch werd gedaan, terwijl we er allemaal losse branches voor hadden aangemaakt. Dus de volgende keer als we een project hebben zoals deze moeten wij blijven werken op de losse branches en niet op 1 grote branch, want als we werken op allemaal losse branches is alles veel overzichtelijker en krijg je minder snel kans op merge conflicts.
