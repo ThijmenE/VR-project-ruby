@@ -139,7 +139,8 @@ Dit zorgt ervoor dat de speler gelijk de uitleg kan lezen of wegdrukken, zodat z
 | Bijzonderheden     | n.v.t                               |
 
 ## Verbetervoorstellen op basis van je oplevering
-Beschrijf hier de verbetervoorstellen die je hebt op basis van je oplevering.
+
+Er is uit de eindpresentatie geen feedback gekomen over features of systemen die niet goed zijn uitgewerkt in het project.
 
 ## Verbetervoorstellen op basis van je reflectie
 Beschrijf hier de verbetervoorstellen die je hebt op basis van je reflectie.

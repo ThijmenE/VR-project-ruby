@@ -3,13 +3,13 @@
 
 Versienummer : 1
 
-Auteur : Thijmen, Marijn
+Auteur : Thijmen
 
-Studentnummer : 0266883, 0265825
+Studentnummer : 0266883
 
 Klas : 24SDG
 
-Datum : 
+Datum : 2026-11-19
 
 <div style="page-break-after: always;"></div>
 
@@ -28,30 +28,24 @@ Datum :
 
 ## Inleiding
 
-<!-- In dit document wordt een evaluatie gegeven over het proces om de wensen en eisen, planning en ontwerp te komen. Daarnaast wordt een beeld gegeven van de voortgang. -->
+In dit document wordt een evaluatie gegeven over het proces om de wensen en eisen, planning en ontwerp te komen. Daarnaast wordt een beeld gegeven van de voortgang.
 
 ## Wat ging goed
 
-> Beschrijf hier wat er goed ging tijdens een sprint. Beschrijf per teamlid de positieve ervaringen en successen en benoem de factoren die hebben bijgedragen aan het succes.
+Bijna alle ingeplande features kwamen af in de tijden die we hebben ingepland. We gingen er van te voren ook alvast van uit dat er uitloop zal zijn en hebben daarom een extra week ingepland voor debuggen of uitloop. Hierdoor hadden we minder stres tijdens het project en hebben we nog steeds een mooi product kunnen klaar zetten. Ook waren de sprints ingepland met een algemeen thema, sprint 1 was minigames en basis systemen, sprint 2 was een eerste build voor de playtest maken, sprint 3 was voor alles robot gerelateerd en sprint 4 voor debuggen of oudere features updaten/afmaken.
+Alle code is geschreven met de afspraken over hoe we gaan programeren in gedachte waardoor de code goed overzichtelijk is geworden.
 
 > Het mooiste is als je een video maakt van retroperspectief en hier een link plaatst naar de video.
 
 ## Wat kan beter
-> Beschrijf hier wat er beter kan tijdens een sprint. Beschrijf per teamlid de negatieve ervaringen en successen en benoem de factoren die hebben bijgedragen aan de ervaringen.
+Het werken op sommige branches kon van ons allebei beter. We maakten de eerste versie van een feature af en die gingen we toen mergen naar een branch waar meerdere features op staan. Maar daarna gingen we doorwerken op de branches met meerdere features inplaats van de originele branches waardoor er veel meer kans kwam op merge conflicts of andere problemen.
 
 > Het mooiste is als je een video maakt van retroperspectief en hier een link plaatst naar de video.
 
 ## Voortgang van taken
 
-> Beschrijf hier de voortgang van de taken die zijn uitgevoerd. Geef aan welke taken zijn afgerond en welke taken nog openstaan. Geef ook aan welke taken vertraging hebben opgelopen en waarom. Evalueer de individuele bijdragen aan toegewezen taken en geef een beoordeling van de kwaliteit van de opgeleverde taken.
-
-## Samenwerking en communicatie
-
-> Beschrijf hier de samenwerking en communicatie binnen het team. Geef aan wat er goed ging en wat er beter kan. Beschrijf ook de communicatie met de opdrachtgever en de begeleider.
-
-## Actiepunten
-
-> Beschrijf hier de concrete actiepunten die voortkomen uit de evaluatie. Geef aan wie verantwoordelijk is voor het uitvoeren van de actiepunten en wanneer deze uitgevoerd moeten zijn.
+Alle taken zijn klaar en de game kwam eruit te zien hoe we wouden. We hebben in de planning alle details staan van features waar we problemen mee hadden. We hadden het meeste moeite met het blokken bouwen omdat we met de Unity XR toolkit library aan het werken waren, maar we konden het niet goed werkende krijgen zonder dat alle blokken heel makkelijk vast kwamen te zitten in elkaar of de grond. Daarom heb ik in week 4 van het project de blokken helemaal aangepast zodat ze altijd door elkaar heen gaan wanneer ze vastgehouden worden om de problemen te voorkomen met in elkaar vast zitten.
 
 ## Verbetervoorstellen
-> :memo: Beschrijf hier de verbetervoorstellen die je hebt voor de applicatie. Stel vast welke werkzaamheden er nog uitgevoerd moeten worden om de applicatie te verbeteren en plan deze in.
+
+Wanneer we weer met veel features op verschillende branches werken moeten we ook goed op die branches blijven werken om die specifieke features te updaten. Dit gaat veel moeite schelen in latere projecten door merge conflicts te voorkomen.
