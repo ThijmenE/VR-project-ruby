@@ -8,7 +8,7 @@ Studentnummer : 0265825
 
 Klas : 24SDG
 
-Datum : 2026-11-19
+Datum : 2026-11-26
 
 <div style="page-break-after: always;"></div>
 
@@ -31,7 +31,9 @@ Dit document is opgesteld als bewijs na oplevering van het (deel)product. Hierin
 
 ## Reflectiemeeting
 
->:memo:In de reflectiemeeting wordt besproken wat er goed ging en wat er beter kan. De kandidaat geeft aan wat er goed ging en wat er beter kan.
+Dit staat in de Google Drive onder de naam: Evaluatie.mp4
+
+Link naar de drive: https://drive.google.com/drive/folders/1dsDmUwHecj-JX98afhMbE7iZYyBBVvNV
 
 ### Proces
 

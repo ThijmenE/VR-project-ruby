@@ -8,7 +8,7 @@ Studentnummer : 0265825
 
 Klas : 24SDG
 
-Datum : 2026-11-19
+Datum : 2026-11-26
 
 <div style="page-break-after: always;"></div>
 
@@ -17,6 +17,7 @@ Datum : 2026-11-19
 - [Evaluatieverslag voortgang](#evaluatieverslag-voortgang)
   - [Inhoudsopgave](#inhoudsopgave)
   - [Inleiding](#inleiding)
+  - [Retrospectivemeeting](#retrospectivemeeting)
   - [Wat ging goed](#wat-ging-goed)
   - [Wat kan beter](#wat-kan-beter)
   - [Voortgang van taken](#voortgang-van-taken)
@@ -28,6 +29,12 @@ Datum : 2026-11-19
 ## Inleiding
 
 In dit document wordt een evaluatie gegeven over het proces om de wensen en eisen, planning en ontwerp te komen. Daarnaast wordt een beeld gegeven van de voortgang.
+
+## Retrospectivemeeting
+
+Dit staat in de Google Drive onder de naam: Retrospective.mp4
+
+Link naar de drive: https://drive.google.com/drive/folders/1dsDmUwHecj-JX98afhMbE7iZYyBBVvNV
 
 ## Wat ging goed
 
