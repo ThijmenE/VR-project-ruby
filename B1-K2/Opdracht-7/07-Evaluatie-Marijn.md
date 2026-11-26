@@ -43,18 +43,14 @@ Samenwerking binnen het team: Het samenwerken tijdens het project ging erg goed.
 
 Communicatie met opdrachtgever: Er was goed contact tussen de opdrachtgever en ons. Wij hebben met de opdrachtgever meetings gehad om haar eisen en wensen in de game toe te voegen. Ook hebben we veel contact gehad over de mail, waar we onze planning hebben doorgestuurd en haar op de hoogte hebben gehouden. We zijn ook een paar keer bij Ruby geweest om de game te laten zien en feedback te vragen. We hebben ook bij Ruby nog een playtest uitgevoerd waar we veel feedback van hebben gekregen.
 
-Communicatie met begeleider: navragen
-
 ## Eigen functioneren
 
 Het functioneren tijdens het project ging goed. Thijmen en ik hebben beide gewerkt in github waar we alles van het project in hebben gezet. We hadden een goede planning gemaakt en alles duidelijk genoteerd.
 
 Ik was notulist in dit project, dus ik heb voornamelijk contact gehad met de opdrachtgever. Ook dat ging erg goed. Ik heb professionele mails gestuurd en ben netjes gebleven naar de opdrachtgever. Als we bij Ruby op locatie waren heb ik me netjes gekleed en professioneel gedragen.
 
-begeleider
-
 ## Verbetervoorstellen
 
- We hadden wel sommige dagen aan het einde van de dag iets meer moeite met concentreren, waardoor we elkaar gingen afleiden en niet veel meer hadden gedaan. Een oplossing daarvoor is dat we kleine taken later op de dag doen waar je minder concentratie voor nodig hebt, zodat we nog wel productief bezig zijn.
+Samenwerking: Om te zorgen dat we aan het einde van de dag niet meer zo snel afgeleid raken en productief blijven, gaan we in het volgende project van 4 weken onze taken slimmer inplannen. Elke ochtend tijdens de stand-up verdelen we het werk zo dat we het lastige codeerwerk voor 14:00 uur doen, en de kleinere, simpelere taken (zoals kleine bugfixes, dingen opruimen of documentatie) bewaren voor na 14:00 uur. Dit willen wij op het github bijhouden, zodat we aan het einde van de dag nog wel productief bezig kunnen.
 
- We hebben tijdens het project veel verschillende branches aangemaakt voor elke feature in de game, alleen hebben we als we de basis af hadden het naar de kamer branch gestuurd en gingen we daarop verder werken. Dat zorgde ervoor dat elke feature update in 1 branch werd gedaan, terwijl we er allemaal losse branches voor hadden aangemaakt. Dus de volgende keer als we een project hebben zoals deze moeten wij blijven werken op de losse branches en niet op 1 grote branch, want als we werken op allemaal losse branches is alles veel overzichtelijker en krijg je minder snel kans op merge conflicts.
+Aan het begin van het volgende project ga ik per feature in een aparte branch werken. Aan het einde van elke dag controleer ik of mijn branch is bijgewerkt met de alle veranderingen van de hoofdbranch en los ik eventuele mergeconflicten direct op. Dit doe ik tijdens het gehele project, van de start tot de einddatum. Daardoor voorkom ik dat branches verouderd raken en dat grote mergeconflicten pas laat in het project ontstaan.

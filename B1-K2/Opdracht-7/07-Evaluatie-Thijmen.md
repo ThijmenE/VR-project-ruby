@@ -19,7 +19,6 @@ Datum : 2026-11-19
   - [Inleiding](#inleiding)
   - [Reflectiemeeting](#reflectiemeeting)
     - [Proces](#proces)
-    - [Product](#product)
   - [Team](#team)
   - [Eigen functioneren](#eigen-functioneren)
   - [Verbetervoorstellen](#verbetervoorstellen)
@@ -45,8 +44,6 @@ We konden ons vaak de laatste 1/2 uur van de dag slecht concentreren waardoor we
 
 opdrachtgever: Er was goed contact tussen de opdrachtgever en ons. Elke keer dat we een vraag hadden hebben we haar gemailed of waren we op locatie bij Ruby om te werken. Ook hadden we een meeting gehad om de eisen en wensen van het project te bespreken. Verder was er ook halverwege het project een playtest geregeld door de opdrachtgever en er komt nog weer een playtest sessie aan binnenkort om het volledige project te laten testen.
 
-begeleider: NAVRAGEN BIJ JOOST
-
 ## Eigen functioneren
 
 Tijdens het project ging het eigen functioneren grotendeels goed. Ik heb me aan de planning gehouden die in de github staat en aan de afspraken die ik samen met Marijn heb opgezet.
@@ -55,10 +52,8 @@ Verder hadden we veel branches gemaakt in de repository voor verschillende featu
 
 Het contact met de opdrachtgever ging ook goed. Alle mailtjes waren samen met Marijn voorbereid en had hij verstuurd en wanneer we op locatie waren bij de opdrachtgever heb ik me profesioneel gedragen. 
 
-begeleider
-
 ## Verbetervoorstellen
 
-We kunnen in de toekomst beter alle grote of lastigere taken eerder op de dag doen zodat we later op de dag de simpelere taken kunnen afmaken waarvoor we dan misschien wel genoeg concentratie over hebben om nog wat taken te maken.
+Samenwerking: Om te zorgen dat we aan het einde van de dag niet meer zo snel afgeleid raken en productief blijven, gaan we in het volgende project van 4 weken onze taken slimmer inplannen. Elke ochtend tijdens de stand-up verdelen we het werk zo dat we het lastige codeerwerk voor 14:00 uur doen, en de kleinere, simpelere taken (zoals kleine bugfixes, dingen opruimen of documentatie) bewaren voor na 14:00 uur. Dit willen wij op het github bijhouden, zodat we aan het einde van de dag nog wel productief bezig kunnen.
 
-Wanneer we weer met veel features op verschillende branches werken moeten we ook goed op die branches blijven werken om die specifieke features te updaten. Dit gaat veel moeite schelen in latere projecten door merge conflicts te voorkomen.
+Aan het begin van het volgende project ga ik per feature in een aparte branch werken. Aan het einde van elke dag controleer ik of mijn branch is bijgewerkt met de alle veranderingen van de hoofdbranch en los ik eventuele mergeconflicten direct op. Dit doe ik tijdens het gehele project, van de start tot de einddatum. Daardoor voorkom ik dat branches verouderd raken en dat grote mergeconflicten pas laat in het project ontstaan.

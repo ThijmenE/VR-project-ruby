@@ -42,10 +42,14 @@ Het werken op sommige branches kon van ons allebei beter. We maakten de eerste v
 
 > Het mooiste is als je een video maakt van retroperspectief en hier een link plaatst naar de video.
 
+feedback voor marijn: Geen notities geplaats op code waardoor ik later nog alles langs moest gaan.
+
 ## Voortgang van taken
 
 Alle taken zijn klaar en de game kwam eruit te zien hoe we wouden. We hebben in de planning alle details staan van features waar we problemen mee hadden. We hadden het meeste moeite met het blokken bouwen omdat we met de Unity XR toolkit library aan het werken waren, maar we konden het niet goed werkende krijgen zonder dat alle blokken heel makkelijk vast kwamen te zitten in elkaar of de grond. Daarom heb ik in week 4 van het project de blokken helemaal aangepast zodat ze altijd door elkaar heen gaan wanneer ze vastgehouden worden om de problemen te voorkomen met in elkaar vast zitten.
 
 ## Verbetervoorstellen
 
-Wanneer we weer met veel features op verschillende branches werken moeten we ook goed op die branches blijven werken om die specifieke features te updaten. Dit gaat veel moeite schelen in latere projecten door merge conflicts te voorkomen.
+Aan het begin van het volgende project ga ik per feature in een aparte branch werken. Aan het einde van elke dag controleer ik of mijn branch is bijgewerkt met de alle veranderingen van de hoofdbranch en los ik eventuele mergeconflicten direct op. Dit doe ik tijdens het gehele project, van de start tot de einddatum. Daardoor voorkom ik dat branches verouderd raken en dat grote mergeconflicten pas laat in het project ontstaan.
+
+Voordat ik met een nieuwe feature begin, maak ik een uitgewerkte, eenvoudige aanpak. Binnen de eerste twee dagen van een feature kies ik samen in mijn team de meest geschikte aanpak op basis van haalbaarheid en benodigde tijd. Als de gekozen aanpak niet binnen de oorspronkelijke planning past plan ik de resterende werkzaamheden in de vooraf ingerichte extra projectweek.
